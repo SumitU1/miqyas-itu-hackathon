@@ -1,0 +1,13 @@
+{
+ "kb_load_ms": 169.7,
+ "kb_load_peak_mb": 11.4,
+ "queries": 66,
+ "query_ms_mean": 0.565,
+ "query_ms_p95": 0.825,
+ "scenario_wall_s": 1.55,
+ "scenario_model_calls": 19,
+ "scenario_chain_ok": true,
+ "model_latency_s": 0.25,
+ "workers": 4,
+ "retrieval_identical_to_golden": true
+}

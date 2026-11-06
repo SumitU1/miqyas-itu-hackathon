@@ -1,0 +1,39 @@
+{
+ "scenario_id": "S2",
+ "title": "A wearable import crosses the health-data localisation question",
+ "synthetic": true,
+ "decisions": 3,
+ "needs_human": 3,
+ "approvals_simulated": 0,
+ "adviser_questions": 12,
+ "adviser_rulings": 7,
+ "adviser_abstentions": {
+  "evidence-weak": 5
+ },
+ "adviser_evidence": {
+  "strong": 7,
+  "weak": 5
+ },
+ "conflicts": {
+  "jurisdiction-spread": 3
+ },
+ "citation_violations": 0,
+ "assessment_failures": 0,
+ "emergency_shortcuts": 0,
+ "guard_events": 0,
+ "kb_queries": 60,
+ "model_calls": 28,
+ "model_calls_failed": 0,
+ "served_models": [
+  "@cf/qwen/qwen3.8-27b",
+  "IFM/K2-Horizon-375B-A23B",
+  "dots-studio/dots-3-note-preview:free",
+  "qwen/qwen3.8-27b"
+ ],
+ "model_alias": "auto",
+ "kb_build_id": "20261026T1648Z",
+ "audit_records": 132,
+ "head_hash": "689f1c1876c7dad15a5e634f0867983f6ed960eb6b624948d20bf485928b2def",
+ "chain_verified": true,
+ "run_finished_utc": "2026-10-28T06:15:46Z"
+}

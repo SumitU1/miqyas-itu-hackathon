@@ -1,0 +1,72 @@
+{
+  "scenario_id": "S4",
+  "title": "An AI health claim meets the advertising rules",
+  "synthetic": true,
+  "member": {"alias": "Member A and other users (synthetic)", "note": "invented people; no real data"},
+  "chunks": [
+    {
+      "id": "S4-C1",
+      "title": "Draft app-store text promises results",
+      "release_note": "Marketing wants to publish a claim next week and to name the partner clinic.",
+      "question": {
+        "coach": "May this text be published as it stands?",
+        "clinic": "May the clinic be named in this text, and what must it do first?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["Draft app-store text from the Miqyas marketing page: 'Our AI coach reverses prediabetes in 30 days. Guaranteed results, no side effects.' It is due to be published next week."],
+        "clinic": ["The partner clinic was asked to be named in the same text as 'clinically supervised by our doctors'. The clinic has not seen the final wording."],
+        "authority": []
+      },
+      "incomplete": ["Whether the text has gone through any advertising approval."],
+      "policy_questions": [
+        "prior approval is required before publishing a health advertisement",
+        "prohibited expressions in health advertisements such as guaranteed results and no side effects"
+      ],
+      "touches": ["public-claim"]
+    },
+    {
+      "id": "S4-C2",
+      "title": "A paid influencer posts a before-and-after story",
+      "release_note": "An influencer shared a user's blood-sugar story; the media desk got a complaint.",
+      "question": {
+        "coach": "What must Miqyas do about the post and the numbers it supplied?",
+        "authority": "Does the complaint on file require any action about Miqyas?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["A paid influencer posted a before-and-after story about a Miqyas user's blood sugar. Miqyas has no record that the user agreed to appear. Miqyas had given the influencer the user's anonymised numbers."],
+        "clinic": [],
+        "authority": ["The media-regulator desk received one public complaint about the influencer post. The complaint does not name Miqyas."]
+      },
+      "incomplete": ["Whether the numbers were truly anonymised, and whether the user can be recognised from the post."],
+      "policy_questions": [
+        "health advertisements by influencers and endorsement of health products and services",
+        "use of patient testimonials and before and after results in health advertising"
+      ],
+      "touches": ["public-claim", "data-transfer"]
+    },
+    {
+      "id": "S4-C3",
+      "title": "The app starts showing AI-written personalised outcome messages",
+      "release_note": "Nobody has decided whether in-app AI messages count as advertising.",
+      "question": {
+        "coach": "Do in-app AI messages that name a medical outcome count as advertising?",
+        "clinic": "Do such messages fall under the clinic's advertising approvals?",
+        "authority": "How should automatically generated personalised health messages be treated?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["In the app, the coach now shows each user a model-written message such as: 'Based on your data, you have a low chance of developing diabetes. Keep using Miqyas.'"],
+        "clinic": ["The clinic's compliance officer asks whether in-app AI messages that name a medical outcome fall under the clinic's advertising approvals."],
+        "authority": ["The regulator desk has no instruction on how to treat automatically generated personalised messages."]
+      },
+      "incomplete": ["Whether any text in the knowledge base addresses AI-generated or personalised health messages."],
+      "policy_questions": [
+        "AI generated or automated personalised health messages in health advertising",
+        "health claims by AI systems must be accurate and not misleading"
+      ],
+      "touches": ["public-claim", "clinical"]
+    }
+  ]
+}

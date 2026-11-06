@@ -1,0 +1,1399 @@
+[
+ {
+  "decision_id": "S3-C1-D",
+  "scenario_id": "S3",
+  "round": 1,
+  "chunk_id": "S3-C1",
+  "trigger": {
+   "title": "The clinic requests twelve months of lab results",
+   "release_note": "A DHA-licensed partner clinic in Dubai asks for the member's labs before a video visit.",
+   "incomplete": [
+    "How the clinic verified the patient's identity."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The supplied passages do not address consent or the scope of data sharing with a clinic; they define terms and describe AI strategy/ethics. The consent record itself is the only basis for the scope: it covers lab results from the last 12 months and does not list the mood and sleep notes. Therefore, the lab results may be sent, but the mood and sleep notes must not be sent.",
+    "provisions": [],
+    "proposed_action": {
+     "class": "share",
+     "text": "Send only the lab results from the last 12 months that the member consented to share; do not send the mood and sleep notes."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "The DHA policy's stated revision date has passed; is there a newer version that governs consent for sharing member data with clinics?",
+     "Do any other applicable passages specify whether a separate tab of mood and sleep notes is covered by a consent that lists only lab results?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DHA-AI-2021:0005",
+     "UAE-AI-STRATEGY-2031:0020",
+     "UAE-AI-STRATEGY-2031:0021",
+     "UAE-AI-STRATEGY-2031:0023",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "UAE-AI-STRATEGY-2031:0013"
+    ],
+    "draft_reply_to_member": "You consented to share your lab results from the last 12 months with the clinic, so we can send those. We will not send your mood and sleep notes because they are not covered by your consent.",
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "clinic",
+    "status": "ok",
+    "finding": "The DHA telehealth standards say explicit patient consent must be secured before commencing telehealth, and that telehealth encounters must be documented and made accessible to the patient and authorized healthcare providers as needed. On that basis, the clinic may receive and use the results only if the member has consented and the clinic is an authorized provider; the first step is to secure that explicit consent before the video visit. The passages do not state how the clinic must verify the patient's identity, and they do not address Miqyas or cross-emirate sharing, so those points remain open.",
+    "provisions": [
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0020"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Before requesting or using the results, inform the member and obtain explicit consent for the telehealth consultation and data sharing."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Do the applicable DHA/DOH data-sharing rules require identity verification before releasing results through Miqyas?",
+     "Is Miqyas an authorized channel for a Dubai clinic to obtain Abu Dhabi HIE data, and does the member's consent cover 12 months of results?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "MOHAP-HEALTHAD-GUIDE:0003",
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DOH-HIE-2020:0007",
+     "DHA-HIS-2024:0020",
+     "DHA-TELEHEALTH-STD-V4:0019",
+     "DHA-TELEHEALTH-STD-V4:0020"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [],
+    "citation_violations": []
+   },
+   {
+    "agent": "clinic",
+    "citations": [
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0021",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27",
+      "locator": "§6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "section": "§6.6.3 Explicit patient consent must be secured before commencing telehealth",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "clinical-unreviewed"
+      ]
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0020",
+      "exists": true,
+      "rank": 2,
+      "support": "supported",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §6.5 For Travelling UAE Citizens and Residents Holding Emirates ID (EID):, PDF pp.25-26",
+      "locator": "§6.5 For Travelling UAE Citizens and Residents Holding Emirates ID (EID):, PDF pp.25-26",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "section": "§6.5 For Travelling UAE Citizens and Residents Holding Emirates ID (EID):",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "clinical-unreviewed"
+      ]
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [],
+  "adviser_answers": [
+   {
+    "question": "what must a telehealth provider do before sharing patient information with another facility",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DHA-TELEHEALTH-POL-2021:0002",
+     "DHA-TELEHEALTH-POL-2021:0003",
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0040",
+     "DHA-TELEHEALTH-STD-V4:0039"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says that before sharing patient information with another facility or entity, a telehealth provider must obtain the patient's explicit consent. The transfer of information must be limited to the needs required by the patient's health condition. Additionally, providers must adopt accurate procedures on how to transfer, save, store, protect, and maintain the confidentiality of the patient's data. If an alternative service provider is recommended, the physician must ensure all necessary patient information and data is transferred through patient consent. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DHA-TELEHEALTH-POL-2021:0003",
+     "DHA-TELEHEALTH-STD-V4:0039",
+     "DHA-TELEHEALTH-STD-V4:0021"
+    ],
+    "conditions": [
+     "The DHA Telehealth Policy (2021) has a stated revision date of 2026-08-16, which has passed, meaning a newer version may exist and should be checked before relying on it.",
+     "The DHA Standards for Telehealth Services are Version 4, issued in 2025 and effective as of 2025-11-26, representing the current standard but subject to future updates.",
+     "The patient's consent must be explicit and obtained prior to the transfer of information.",
+     "The scope of the information shared must be strictly limited to what is necessary for the patient's health condition."
+    ],
+    "binding": false,
+    "caveats": [
+     "clinical-unreviewed",
+     "currency-unconfirmed",
+     "revision-date-passed"
+    ],
+    "for_human": [],
+    "query_used": "what must a telehealth provider do before sharing patient information with another facility",
+    "queries_tried": [
+     {
+      "query": "what must a telehealth provider do before sharing patient information with another facility",
+      "evidence": "strong",
+      "top_score": 17.667
+     },
+     {
+      "query": "patient consent before data transfer facility",
+      "evidence": "weak",
+      "top_score": 14.0
+     },
+     {
+      "query": "approval required telehealth information sharing facility",
+      "evidence": "weak",
+      "top_score": 12.357
+     },
+     {
+      "query": "transfer patient data outside State facility",
+      "evidence": "strong",
+      "top_score": 15.112
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "verification of patient identity before a telehealth consultation",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DHA-TELEHEALTH-STD-V4:0020",
+     "DHA-TELEHEALTH-STD-V4:0041",
+     "DHA-TELEHEALTH-STD-V4:0035",
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0005"
+    ],
+    "query_used": "verification of patient identity before a telehealth consultation",
+    "queries_tried": [
+     {
+      "query": "verification of patient identity before a telehealth consultation",
+      "evidence": "weak",
+      "top_score": 14.367
+     },
+     {
+      "query": "verification of patient identity prior to telehealth",
+      "evidence": "weak",
+      "top_score": 11.981
+     },
+     {
+      "query": "telehealth patient authentication process",
+      "evidence": "weak",
+      "top_score": 11.08
+     },
+     {
+      "query": "identity confirmation for telehealth consultations",
+      "evidence": "weak",
+      "top_score": 11.144
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0020",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §6.5 For Travelling UAE Citizens and Residents Holding Emirates ID (EID):, PDF pp.25-26",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 14.367
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0041",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §13 STANDARD NINE: INSURANCE AND REIMBURSEMENT FOR TELEHEALTH SERVICES, PDF pp.49-51",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 13.073
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0035",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §10.5 Consent is not required for:, PDF pp.42-44",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 13.049
+     }
+    ]
+   },
+   {
+    "question": "The DHA policy's stated revision date has passed; is there a newer version that governs consent for sharing member data with clinics?",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DHA-HIS-2024:0017",
+     "DOH-HIE-2020:0022",
+     "DOH-HIE-2020:0023",
+     "DHA-HIS-2024:0013",
+     "DHA-HIS-2024:0036"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "... (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0013",
+     "DHA-HIS-2024:0036"
+    ],
+    "conditions": [
+     "..."
+    ],
+    "binding": false,
+    "caveats": [],
+    "for_human": [],
+    "query_used": "DHA policy patient consent data sharing facility",
+    "queries_tried": [
+     {
+      "query": "The DHA policy's stated revision date has passed; is there a newer version that governs consent for sharing member data with clinics?",
+      "evidence": "weak",
+      "top_score": 21.721
+     },
+     {
+      "query": "DHA policy patient consent data sharing facility",
+      "evidence": "strong",
+      "top_score": 17.669
+     },
+     {
+      "query": "Dubai Health Authority data transfer consent patient",
+      "evidence": "weak",
+      "top_score": 14.921
+     },
+     {
+      "query": "patient data consent sharing clinic facility policy version",
+      "evidence": "weak",
+      "top_score": 17.291
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "Do the applicable DHA/DOH data-sharing rules require identity verification before releasing results through Miqyas?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DHA-HIS-2024:0022",
+     "DHA-HIS-2024:0007",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0010",
+     "DOH-HIE-2020:0022"
+    ],
+    "query_used": "Do the applicable DHA/DOH data-sharing rules require identity verification before releasing results through Miqyas?",
+    "queries_tried": [
+     {
+      "query": "Do the applicable DHA/DOH data-sharing rules require identity verification before releasing results through Miqyas?",
+      "evidence": "weak",
+      "top_score": 26.87
+     },
+     {
+      "query": "Miqyas identity verification release results",
+      "evidence": "none",
+      "top_score": 9.754
+     },
+     {
+      "query": "DHA DOH data sharing patient identity verification",
+      "evidence": "weak",
+      "top_score": 13.773
+     },
+     {
+      "query": "Miqyas platform patient consent data release rules",
+      "evidence": "weak",
+      "top_score": 10.985
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DHA-HIS-2024:0022",
+      "citation": "[DHA-HIS-2024] §4.13 Sharing Protected Health Information through Mailing/Posting/Courier, PDF pp.24-25",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 26.87
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0007",
+      "citation": "[DHA-HIS-2024] §1 The HIPAA Privacy Rule, PDF pp.7-8",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 18.645
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0017",
+      "citation": "[DHA-HIS-2024] §3 In cases of Public safety emergencies to maintain the health and, PDF pp.18-19",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 16.514
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "inform_member",
+   "text": "Before requesting or using the results, inform the member and obtain explicit consent for the telehealth consultation and data sharing.",
+   "from": "clinic"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches data-transfer",
+   "touches clinical",
+   "adviser abstained (evidence-weak): verification of patient identity before a telehealth consultation",
+   "adviser abstained (evidence-weak): Do the applicable DHA/DOH data-sharing rules require identity verification befor"
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The supplied passages do not address consent or the scope of data sharing with a clinic; they define terms and describe AI strategy/ethics. The consent record itself is the only basis for the scope: it covers lab results from the last 12 months and does not list the mood and sleep notes. Therefore, the lab results may be sent, but the mood and sleep notes must not be sent.",
+    "provisions": [],
+    "confidence": "low"
+   },
+   "clinic": {
+    "finding": "The DHA telehealth standards say explicit patient consent must be secured before commencing telehealth, and that telehealth encounters must be documented and made accessible to the patient and authorized healthcare providers as needed. On that basis, the clinic may receive and use the results only if the member has consented and the clinic is an authorized provider; the first step is to secure that explicit consent before the video visit. The passages do not state how the clinic must verify the patient's identity, and they do not address Miqyas or cross-emirate sharing, so those points remain open.",
+    "provisions": [
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0020"
+    ],
+    "confidence": "low"
+   }
+  }
+ },
+ {
+  "decision_id": "S3-C2-D",
+  "scenario_id": "S3",
+  "round": 2,
+  "chunk_id": "S3-C2",
+  "trigger": {
+   "title": "The member now lives in Abu Dhabi; the clinic is in Dubai",
+   "release_note": "Two emirates' rules may apply to one request.",
+   "incomplete": [
+    "Whether either emirate's exchange rules apply to a private consumer app that is not itself a licensed facility."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The member's move to Abu Dhabi does not automatically change the scope of the consent, which remains limited to lab results from the last 12 months and excludes the mood and sleep notes tab. The coordinator's ruling confirms that sharing requires explicit consent and must be limited to the needs of the health condition, but the provided passages do not specify how a change of residence affects the validity of a consent given to a specific clinic in a different emirate. Therefore, the system cannot assume the consent extends to the new location or that the mood notes are now included.",
+    "provisions": [
+     "UAE-AI-CHARTER-2024:0002"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Notify the member that their current consent covers only lab results for the last 12 months and does not include mood/sleep notes, and ask them to confirm if they wish to update their consent regarding the new Abu Dhabi address and the partner clinic."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Do the applicable data-sharing rules require re-consent or a specific update when a patient changes emirates or the receiving facility's location?",
+     "Does the 'limited to needs required by the patient's health condition' clause in the ruling imply that mood/sleep notes are excluded unless explicitly added to the consent?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "UAE-AI-STRATEGY-2031:0014",
+     "UAE-AI-STRATEGY-2031:0028",
+     "DUBAI-AI-ETHICS-2022:0024",
+     "UAE-AI-CHARTER-2024:0002",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "UAE-AI-STRATEGY-2031:0013"
+    ],
+    "draft_reply_to_member": "Your recent move to Abu Dhabi has been noted. Please be aware that your current consent only covers sharing lab results from the last 12 months with your clinic; it does not include your mood and sleep notes. If you would like to share these additional notes or update your consent for your new location, please let us know.",
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "clinic",
+    "status": "ok",
+    "finding": "The DHA telehealth standards require explicit patient consent before any patient information is shared and before a telehealth consultation begins. The standards also mandate written consent for data transfers and compliance with UAE laws. However, the specific requirement for identity verification prior to a telehealth visit is not explicitly covered in the provided passages, and the applicable DOH rules for a patient in Abu Dhabi remain unclear.",
+    "provisions": [
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0032",
+     "DHA-HIS-2024:0016",
+     "DHA-TELEHEALTH-STD-V4:0019"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Inform the member that explicit consent is required before the clinic can request and share blood test results, and that identity verification procedures must be clarified."
+    },
+    "confidence": "medium",
+    "open_questions": [
+     "Do DHA/DOH data-sharing rules require identity verification before a telehealth consultation?",
+     "Which specific DOH policies govern telehealth services for patients located in Abu Dhabi?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DHA-TELEHEALTH-STD-V4:0032",
+     "DOH-HIE-2020:0010",
+     "DHA-MEDAD-2022:0015",
+     "DHA-HIS-2024:0016",
+     "DHA-TELEHEALTH-STD-V4:0019",
+     "DHA-TELEHEALTH-STD-V4:0021"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "authority",
+    "status": "ok",
+    "finding": "The ADHICS standard requires entities to implement network routing controls for secure information flow, but it does not provide specific provisions for handling requests from facilities outside Abu Dhabi, such as in Dubai. The absence of a routing rule for this cross-emirate request means it cannot be processed under the current framework, potentially leaving a gap in data exchange protocols.",
+    "provisions": [
+     "DOH-ADHICS-V2:0055",
+     "DOH-ADHICS-V2:0001"
+    ],
+    "proposed_action": {
+     "class": "escalate_to_human",
+     "text": "Escalate to a human policy adviser to review and establish a routing rule for cross-emirate requests, ensuring compliance with inter-emirate data sharing agreements."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "What are the applicable UAE-wide policies or agreements for health information exchange between emirates that should guide the routing of requests from Dubai facilities to Abu Dhabi residents?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DOH-ADHICS-V2:0055",
+     "DOH-ADHICS-V2:0082",
+     "DOH-ADHICS-V2:0081",
+     "DOH-ADHICS-V2:0011",
+     "DOH-ADHICS-V2:0006",
+     "DOH-ADHICS-V2:0001"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [
+     {
+      "chunk_id": "UAE-AI-CHARTER-2024:0002",
+      "exists": true,
+      "rank": null,
+      "support": "not-supported-by-finding-text",
+      "citation": "[UAE-AI-CHARTER-2024] §3 Algorithmic Bias:, PDF pp.3-5",
+      "locator": "§3 Algorithmic Bias:, PDF pp.3-5",
+      "url": "https://ai.gov.ae/wp-content/uploads/2024/07/UAEAI-Methaq-EN2-3.pdf",
+      "section": "§3 Algorithmic Bias:",
+      "jurisdiction": "federal",
+      "caveats": [
+       "non-binding"
+      ]
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "clinic",
+    "citations": [
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0021",
+      "exists": true,
+      "rank": 6,
+      "support": "supported",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27",
+      "locator": "§6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "section": "§6.6.3 Explicit patient consent must be secured before commencing telehealth",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "clinical-unreviewed"
+      ]
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0032",
+      "exists": true,
+      "rank": 15,
+      "support": "loosely-supported",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §9.6.6 Recognise and abide by DHA requirements for patient rights and, PDF pp.39-40",
+      "locator": "§9.6.6 Recognise and abide by DHA requirements for patient rights and, PDF pp.39-40",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "section": "§9.6.6 Recognise and abide by DHA requirements for patient rights and",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "clinical-unreviewed"
+      ]
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0016",
+      "exists": true,
+      "rank": 16,
+      "support": "loosely-supported",
+      "citation": "[DHA-HIS-2024] §3 In cases of Public safety emergencies to maintain the health and, PDF pp.17-18",
+      "locator": "§3 In cases of Public safety emergencies to maintain the health and, PDF pp.17-18",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "section": "§3 In cases of Public safety emergencies to maintain the health and",
+      "jurisdiction": "dubai",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0019",
+      "exists": true,
+      "rank": 7,
+      "support": "supported",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §6 STANDARD TWO: TELEHEALTH ACROSS BORDERS, PDF pp.24-25",
+      "locator": "§6 STANDARD TWO: TELEHEALTH ACROSS BORDERS, PDF pp.24-25",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "section": "§6 STANDARD TWO: TELEHEALTH ACROSS BORDERS",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "clinical-unreviewed"
+      ]
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "authority",
+    "citations": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0055",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §3 Restrict access for remote troubleshooting, diagnostic and, PDF pp.56-57",
+      "locator": "§3 Restrict access for remote troubleshooting, diagnostic and, PDF pp.56-57",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§3 Restrict access for remote troubleshooting, diagnostic and",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0001",
+      "exists": true,
+      "rank": 12,
+      "support": "loosely-supported",
+      "citation": "[DOH-ADHICS-V2] PDF pp.1-3",
+      "locator": "PDF pp.1-3",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "Preamble / front matter",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "abu-dhabi",
+     "dubai",
+     "federal"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "Abu Dhabi health information exchange rules for sharing patient data between facilities",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DOH-HIE-2020:0021",
+     "DOH-HIE-2020:0001",
+     "DOH-HIE-2020:0003",
+     "DOH-HIE-2020:0022",
+     "DOH-HIE-2020:0017"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says that healthcare facilities are generally required to obtain patient consent before sharing patient data via the ADHIE platform, though the DOH requires and authorizes the sharing and receiving of such data without consent for legacy data or under specific instructions in accordance with applicable laws. All systems and processes involved in the exchange must comply with the Abu Dhabi Health Information and Cyber Security Standard (ADHICS) and other relevant information security regulations. The policy aims to maximize the number of patients whose data is available through the ADHIE platform by encouraging universal participation and adherence to platform access requirements and interface standards. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DOH-HIE-2020:0022",
+     "DOH-HIE-2020:0021",
+     "DOH-HIE-2020:0003",
+     "DOH-HIE-2020:0017"
+    ],
+    "conditions": [
+     "The policy is effective as of April 16, 2020, but it is not confirmed whether it has been replaced or superseded by a newer version.",
+     "Healthcare facilities must obtain patient consent for sharing data unless the DOH specifically authorizes sharing without consent (e.g., for legacy data) under applicable laws and instructions.",
+     "All data exchange and systems must comply with the ADHICS and other relevant information security regulations, as well as platform access and interface standards."
+    ],
+    "binding": false,
+    "caveats": [
+     "currency-unconfirmed"
+    ],
+    "for_human": [],
+    "query_used": "Abu Dhabi health information exchange regulations patient data",
+    "queries_tried": [
+     {
+      "query": "Abu Dhabi health information exchange rules for sharing patient data between facilities",
+      "evidence": "weak",
+      "top_score": 18.814
+     },
+     {
+      "query": "Abu Dhabi health information exchange regulations patient data",
+      "evidence": "strong",
+      "top_score": 15.643
+     },
+     {
+      "query": "Sharing patient data between facilities rules consent",
+      "evidence": "weak",
+      "top_score": 16.047
+     },
+     {
+      "query": "Health data transfer policies Abu Dhabi facilities",
+      "evidence": "weak",
+      "top_score": 12.356
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "Dubai health information sharing policy for patient data between health entities",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DHA-HIS-2024:0013",
+     "DHA-HIS-2024:0010",
+     "DHA-HIS-2024:0003",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0035"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says that any sharing of protected health information between entities in Dubai must be based on patient consent or another legal condition. It also requires that within an entity, access to PHI be limited to staff with a legitimate professional reason. When care is transferred, a copy of the medical record may be sent directly or via request, but separate patient consent is required. Systematic sharing of the same data sets between the same entities is permitted only in accordance with applicable legislation and without written consent except in legally specified cases. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DHA-HIS-2024:0013",
+     "DHA-HIS-2024:0010",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0003"
+    ],
+    "conditions": [
+     "Patient consent must be obtained unless a legal exception applies",
+     "Sharing must be limited to staff with a legitimate professional reason",
+     "All transfers must comply with UAE laws and DHA regulations",
+     "Appropriate information sharing protocols and security measures must be in place"
+    ],
+    "binding": false,
+    "caveats": [],
+    "for_human": [],
+    "query_used": "Dubai health information sharing policy for patient data between health entities",
+    "queries_tried": [
+     {
+      "query": "Dubai health information sharing policy for patient data between health entities",
+      "evidence": "strong",
+      "top_score": 19.445
+     },
+     {
+      "query": "Dubai health information sharing policy patient data",
+      "evidence": "weak",
+      "top_score": 14.228
+     },
+     {
+      "query": "Patient data consent between health facilities Dubai",
+      "evidence": "weak",
+      "top_score": 14.563
+     },
+     {
+      "query": "Health data transfer regulation data controller approval Dubai",
+      "evidence": "weak",
+      "top_score": 13.575
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "Do the applicable data-sharing rules require re-consent or a specific update when a patient changes emirates or the receiving facility's location?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DOH-HIE-2020:0022",
+     "DOH-HIE-2020:0023",
+     "DOH-HIE-2020:0032",
+     "DHA-HIS-2024:0010",
+     "DHA-HIS-2024:0007"
+    ],
+    "query_used": "Do the applicable data-sharing rules require re-consent or a specific update when a patient changes emirates or the receiving facility's location?",
+    "queries_tried": [
+     {
+      "query": "Do the applicable data-sharing rules require re-consent or a specific update when a patient changes emirates or the receiving facility's location?",
+      "evidence": "weak",
+      "top_score": 20.611
+     },
+     {
+      "query": "patient data sharing consent emirates change",
+      "evidence": "weak",
+      "top_score": 13.848
+     },
+     {
+      "query": "facility location transfer consent requirement",
+      "evidence": "none",
+      "top_score": 9.207
+     },
+     {
+      "query": "data transfer update patient emirates",
+      "evidence": "none",
+      "top_score": 8.782
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DOH-HIE-2020:0022",
+      "citation": "[DOH-HIE-2020] §4.2.1 DOH shall:, PDF pp.20-21",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 20.611
+     },
+     {
+      "chunk_id": "DOH-HIE-2020:0023",
+      "citation": "[DOH-HIE-2020] §4.2.2.2 Seek patient consent for the sharing of Patient Data via the ADHIE in, PDF pp.21-22",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 19.433
+     },
+     {
+      "chunk_id": "DOH-HIE-2020:0032",
+      "citation": "[DOH-HIE-2020] §4.3.13 All Healthcare Facilities shall:, PDF pp.27-28",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 16.777
+     }
+    ]
+   },
+   {
+    "question": "Do DHA/DOH data-sharing rules require identity verification before a telehealth consultation?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DHA-HIS-2024:0007",
+     "DHA-TELEHEALTH-STD-V4:0035",
+     "DHA-HIS-2024:0022",
+     "DHA-TELEHEALTH-STD-V4:0020",
+     "DHA-TELEHEALTH-STD-V4:0021"
+    ],
+    "query_used": "Do DHA/DOH data-sharing rules require identity verification before a telehealth consultation?",
+    "queries_tried": [
+     {
+      "query": "Do DHA/DOH data-sharing rules require identity verification before a telehealth consultation?",
+      "evidence": "weak",
+      "top_score": 17.25
+     },
+     {
+      "query": "DHA telehealth patient identity verification",
+      "evidence": "weak",
+      "top_score": 11.978
+     },
+     {
+      "query": "DOH data sharing authentication requirement",
+      "evidence": "weak",
+      "top_score": 11.467
+     },
+     {
+      "query": "Telehealth consultation consent verification rule",
+      "evidence": "weak",
+      "top_score": 13.77
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DHA-HIS-2024:0007",
+      "citation": "[DHA-HIS-2024] §1 The HIPAA Privacy Rule, PDF pp.7-8",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 17.25
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0035",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §10.5 Consent is not required for:, PDF pp.42-44",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 16.486
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0022",
+      "citation": "[DHA-HIS-2024] §4.13 Sharing Protected Health Information through Mailing/Posting/Courier, PDF pp.24-25",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 15.694
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "escalate_to_human",
+   "text": "Escalate to a human policy adviser to review and establish a routing rule for cross-emirate requests, ensuring compliance with inter-emirate data sharing agreements.",
+   "from": "authority"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches data-transfer",
+   "action 'escalate_to_human' needs human approval",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): Do the applicable data-sharing rules require re-consent or a specific update whe",
+   "adviser abstained (evidence-weak): Do DHA/DOH data-sharing rules require identity verification before a telehealth "
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The member's move to Abu Dhabi does not automatically change the scope of the consent, which remains limited to lab results from the last 12 months and excludes the mood and sleep notes tab. The coordinator's ruling confirms that sharing requires explicit consent and must be limited to the needs of the health condition, but the provided passages do not specify how a change of residence affects the validity of a consent given to a specific clinic in a different emirate. Therefore, the system cannot assume the consent extends to the new location or that the mood notes are now included.",
+    "provisions": [
+     "UAE-AI-CHARTER-2024:0002"
+    ],
+    "confidence": "low"
+   },
+   "clinic": {
+    "finding": "The DHA telehealth standards require explicit patient consent before any patient information is shared and before a telehealth consultation begins. The standards also mandate written consent for data transfers and compliance with UAE laws. However, the specific requirement for identity verification prior to a telehealth visit is not explicitly covered in the provided passages, and the applicable DOH rules for a patient in Abu Dhabi remain unclear.",
+    "provisions": [
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0032",
+     "DHA-HIS-2024:0016",
+     "DHA-TELEHEALTH-STD-V4:0019"
+    ],
+    "confidence": "medium"
+   },
+   "authority": {
+    "finding": "The ADHICS standard requires entities to implement network routing controls for secure information flow, but it does not provide specific provisions for handling requests from facilities outside Abu Dhabi, such as in Dubai. The absence of a routing rule for this cross-emirate request means it cannot be processed under the current framework, potentially leaving a gap in data exchange protocols.",
+    "provisions": [
+     "DOH-ADHICS-V2:0055",
+     "DOH-ADHICS-V2:0001"
+    ],
+    "confidence": "low"
+   }
+  }
+ },
+ {
+  "decision_id": "S3-C3-D",
+  "scenario_id": "S3",
+  "round": 3,
+  "chunk_id": "S3-C3",
+  "trigger": {
+   "title": "After the visit the clinic asks for the whole coach chat",
+   "release_note": "The clinic asks for more than the member agreed to share.",
+   "incomplete": [
+    "Whether the member knows the clinic asked, and what the member wants."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The member's consent record only covers lab results from the last 12 months shared with the clinic, and explicitly does not list the mood and sleep notes tab. The coordinator rulings require explicit patient consent before sharing patient information with another facility or entity, and that sharing must be limited to what is required by the patient's health condition. The chat history and mood notes are not covered by the existing consent, so they cannot be shared without obtaining new explicit consent from the member.",
+    "provisions": [],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Inform the member that the coach chat history and mood notes are not covered by the existing consent and require separate explicit consent before they can be shared with the clinic."
+    },
+    "confidence": "low",
+    "open_questions": [],
+    "citation_violations": [
+     "S3-C1-D",
+     "S3-C2-D"
+    ],
+    "retrieved": [
+     "DUBAI-AI-ETHICS-2022:0022",
+     "DUBAI-AI-ETHICS-2022:0008",
+     "DUBAI-AI-ETHICS-2022:0007",
+     "DUBAI-AI-ETHICS-2022:0005",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "UAE-AI-STRATEGY-2031:0013"
+    ],
+    "draft_reply_to_member": "Your consent currently only covers lab results from the last 12 months. The coach chat history and your mood and sleep notes are not included in that consent. Before we can share those with the clinic, we need your separate explicit consent. Would you like to provide that consent now?",
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "clinic",
+    "status": "ok",
+    "finding": "The passages say explicit patient consent must be secured before commencing telehealth and that all telehealth encounters must be documented accurately and made accessible to the patient and authorized healthcare providers as needed. They also define medical records as a systematic collection of electronic health data and information, but they do not specifically address whether a clinic may request and retain a third-party coach chat history. The passages therefore do not settle whether the clinic may ask for and keep the full coach chat; at most, the general consent and documentation rules would require explicit consent and a clinical-need limitation.",
+    "provisions": [
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-HIS-2024:0005"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Inform the member that the clinic needs explicit consent before requesting or keeping the coach chat, and that any such request should be limited to what is clinically necessary for the patient's care."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Do the applicable DHA/DOH data-sharing rules require re-consent or a specific update when requesting a third-party coach chat history?",
+     "Does a DHA licence covering Dubai premises permit telehealth to a patient located in Abu Dhabi?",
+     "What identity verification is required before a telehealth consultation?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-HIS-2024:0005",
+     "DHA-TELEHEALTH-STD-V4:0005",
+     "DHA-TELEHEALTH-STD-V4:0019",
+     "DHA-TELEHEALTH-STD-V4:0020",
+     "DHA-TELEHEALTH-STD-V4:0011"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "authority",
+    "status": "ok",
+    "finding": "The text says ADHICS requires entities to define and implement network routing controls, use source/destination addresses and services/ports when applying routing rules, protect routing systems and tables from manipulation, review and update configured rules, and monitor external communications. It also says messages transmitted between systems must have authenticity and integrity, and information transmitted within or outside an entity must be encrypted. A Dubai-facility request about an Abu Dhabi resident with no routing rule therefore cannot be processed under those routing and transmission controls and should be escalated to a human rather than routed automatically.",
+    "provisions": [
+     "DOH-ADHICS-V2:0055",
+     "DOH-ADHICS-V2:0094",
+     "DOH-ADHICS-V2:0006",
+     "DOH-ADHICS-V2:0001"
+    ],
+    "proposed_action": {
+     "class": "escalate_to_human",
+     "text": "Do not route the request automatically; escalate to a human to determine the missing routing rule, legal basis, and required ADHICS controls before any exchange occurs."
+    },
+    "confidence": "medium",
+    "open_questions": [
+     "Do the applicable data-sharing rules require re-consent or a specific update when routing a Dubai facility request for an Abu Dhabi resident through ADHIE/Malaffi?",
+     "Is there a legal basis or patient consent for this cross-emirate exchange, and does ADHICS apply to the Dubai facility or only to Abu Dhabi entities?",
+     "Who is authorized to add or approve the missing routing rule and validate it against ADHICS routing-control requirements?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DOH-ADHICS-V2:0094",
+     "DOH-ADHICS-V2:0055",
+     "DOH-ADHICS-V2:0021",
+     "DOH-ADHICS-V2:0082",
+     "DOH-ADHICS-V2:0006",
+     "DOH-ADHICS-V2:0001"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [],
+    "citation_violations": [
+     "S3-C1-D",
+     "S3-C2-D"
+    ]
+   },
+   {
+    "agent": "clinic",
+    "citations": [
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0021",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27",
+      "locator": "§6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "section": "§6.6.3 Explicit patient consent must be secured before commencing telehealth",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "clinical-unreviewed"
+      ]
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0005",
+      "exists": true,
+      "rank": 13,
+      "support": "loosely-supported",
+      "citation": "[DHA-HIS-2024] §1 Definitions/Abbreviations:, PDF pp.4-5",
+      "locator": "§1 Definitions/Abbreviations:, PDF pp.4-5",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "section": "§1 Definitions/Abbreviations:",
+      "jurisdiction": "dubai",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "authority",
+    "citations": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0055",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §3 Restrict access for remote troubleshooting, diagnostic and, PDF pp.56-57",
+      "locator": "§3 Restrict access for remote troubleshooting, diagnostic and, PDF pp.56-57",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§3 Restrict access for remote troubleshooting, diagnostic and",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0094",
+      "exists": true,
+      "rank": 2,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §5 Define criteria, rules and validation parameters to validate, PDF pp.106-108",
+      "locator": "§5 Define criteria, rules and validation parameters to validate, PDF pp.106-108",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§5 Define criteria, rules and validation parameters to validate",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0006",
+      "exists": true,
+      "rank": 8,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §2 Definitions and Abbreviations, PDF pp.6-7",
+      "locator": "§2 Definitions and Abbreviations, PDF pp.6-7",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§2 Definitions and Abbreviations",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0001",
+      "exists": true,
+      "rank": null,
+      "support": "not-supported-by-finding-text",
+      "citation": "[DOH-ADHICS-V2] PDF pp.1-3",
+      "locator": "PDF pp.1-3",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "Preamble / front matter",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "abu-dhabi",
+     "dubai"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "disclosure of patient health information requires the patient's consent and is limited to what is necessary",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DHA-HIS-2024:0013",
+     "UAE-CR32-2020:0010",
+     "DHA-TELEHEALTH-STD-V4:0035",
+     "DHA-HIS-2024:0017",
+     "UAE-CR32-2020:0009"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "The text says that patient health information may not be disclosed without the patient's consent except where legislation allows, and any disclosure must be limited to what is necessary for the purpose. ... (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DHA-HIS-2024:0013",
+     "UAE-CR32-2020:0009",
+     "UAE-CR32-2020:0010"
+    ],
+    "conditions": [
+     "Patient consent must be obtained unless an exception applies",
+     "Disclosure must be limited to the minimum necessary for the intended purpose",
+     "The information must be shared only with authorized persons having a legitimate need",
+     "In emergencies or legal requests, consent may be waived as per law"
+    ],
+    "binding": false,
+    "caveats": [],
+    "for_human": [],
+    "query_used": "disclosure of patient health information requires the patient's consent and is limited to what is necessary",
+    "queries_tried": [
+     {
+      "query": "disclosure of patient health information requires the patient's consent and is limited to what is necessary",
+      "evidence": "strong",
+      "top_score": 18.496
+     },
+     {
+      "query": "patient consent disclosure health information necessary",
+      "evidence": "weak",
+      "top_score": 14.202
+     },
+     {
+      "query": "data subject consent health data transfer limitation",
+      "evidence": "strong",
+      "top_score": 16.29
+     },
+     {
+      "query": "health information disclosure requires consent necessary",
+      "evidence": "weak",
+      "top_score": 13.603
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "confidentiality of patient information and the duty of the health facility",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DHA-AI-2021:0003",
+     "DHA-TELEHEALTH-STD-V4:0007",
+     "DHA-TELEHEALTH-STD-V4:0052",
+     "DOH-HIE-2020:0027",
+     "DOH-HIE-2020:0043"
+    ],
+    "query_used": "health facility obligation patient data privacy",
+    "queries_tried": [
+     {
+      "query": "confidentiality of patient information and the duty of the health facility",
+      "evidence": "weak",
+      "top_score": 10.872
+     },
+     {
+      "query": "patient information confidentiality facility duty",
+      "evidence": "none",
+      "top_score": 9.284
+     },
+     {
+      "query": "health facility obligation patient data privacy",
+      "evidence": "weak",
+      "top_score": 11.412
+     },
+     {
+      "query": "confidentiality duty health facility patient",
+      "evidence": "none",
+      "top_score": 9.733
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DHA-AI-2021:0003",
+      "citation": "[DHA-AI-2021] §3 Definitions/Abbreviations:, PDF pp.3-4",
+      "url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "score": 11.412
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0007",
+      "citation": "[DHA-TELEHEALTH-STD-V4] Definitions, PDF pp.10-11",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 10.125
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0052",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §17.2 Telepharmacy platforms may operate between a pharmacy and a healthcare, PDF pp.63-64",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 9.909
+     }
+    ]
+   },
+   {
+    "question": "Do the applicable DHA/DOH data-sharing rules require re-consent or a specific update when requesting a third-party coach chat history?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DHA-HIS-2024:0007",
+     "DOH-HIE-2020:0023",
+     "DHA-HIS-2024:0030",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0010"
+    ],
+    "query_used": "Do the applicable DHA/DOH data-sharing rules require re-consent or a specific update when requesting a third-party coach chat history?",
+    "queries_tried": [
+     {
+      "query": "Do the applicable DHA/DOH data-sharing rules require re-consent or a specific update when requesting a third-party coach chat history?",
+      "evidence": "weak",
+      "top_score": 20.968
+     },
+     {
+      "query": "DHA data sharing consent third party",
+      "evidence": "weak",
+      "top_score": 14.648
+     },
+     {
+      "query": "DOH health data transfer re-consent",
+      "evidence": "weak",
+      "top_score": 10.577
+     },
+     {
+      "query": "UAE patient information update requirements",
+      "evidence": "none",
+      "top_score": 7.554
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DHA-HIS-2024:0007",
+      "citation": "[DHA-HIS-2024] §1 The HIPAA Privacy Rule, PDF pp.7-8",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 20.968
+     },
+     {
+      "chunk_id": "DOH-HIE-2020:0023",
+      "citation": "[DOH-HIE-2020] §4.2.2.2 Seek patient consent for the sharing of Patient Data via the ADHIE in, PDF pp.21-22",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 19.512
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0030",
+      "citation": "[DHA-HIS-2024] §4.21.3 The DSA must set out terms and conditions including details on:, PDF pp.32-34",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 18.661
+     }
+    ]
+   },
+   {
+    "question": "Do the applicable data-sharing rules require re-consent or a specific update when routing a Dubai facility request for an Abu Dhabi resident through ADHIE/Malaffi?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DOH-HIE-2020:0022",
+     "DOH-HIE-2020:0023",
+     "DOH-HIE-2020:0033",
+     "DOH-ADHICS-V2:0077",
+     "DOH-HIE-2020:0050"
+    ],
+    "query_used": "Do the applicable data-sharing rules require re-consent or a specific update when routing a Dubai facility request for an Abu Dhabi resident through ADHIE/Malaffi?",
+    "queries_tried": [
+     {
+      "query": "Do the applicable data-sharing rules require re-consent or a specific update when routing a Dubai facility request for an Abu Dhabi resident through ADHIE/Malaffi?",
+      "evidence": "weak",
+      "top_score": 29.933
+     },
+     {
+      "query": "ADHIE Malaffi inter-emirate consent routing requirements",
+      "evidence": "weak",
+      "top_score": 15.094
+     },
+     {
+      "query": "Abu Dhabi resident Dubai facility data sharing consent",
+      "evidence": "weak",
+      "top_score": 18.171
+     },
+     {
+      "query": "Malaffi patient consent update cross-emirate transfer",
+      "evidence": "weak",
+      "top_score": 14.213
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DOH-HIE-2020:0022",
+      "citation": "[DOH-HIE-2020] §4.2.1 DOH shall:, PDF pp.20-21",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 29.933
+     },
+     {
+      "chunk_id": "DOH-HIE-2020:0023",
+      "citation": "[DOH-HIE-2020] §4.2.2.2 Seek patient consent for the sharing of Patient Data via the ADHIE in, PDF pp.21-22",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 24.644
+     },
+     {
+      "chunk_id": "DOH-HIE-2020:0033",
+      "citation": "[DOH-HIE-2020] §4.3.13 All Healthcare Facilities shall:, PDF pp.28-29",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 24.617
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "escalate_to_human",
+   "text": "Do not route the request automatically; escalate to a human to determine the missing routing rule, legal basis, and required ADHICS controls before any exchange occurs.",
+   "from": "authority"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches data-transfer",
+   "touches clinical",
+   "action 'escalate_to_human' needs human approval",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): confidentiality of patient information and the duty of the health facility",
+   "adviser abstained (evidence-weak): Do the applicable DHA/DOH data-sharing rules require re-consent or a specific up",
+   "adviser abstained (evidence-weak): Do the applicable data-sharing rules require re-consent or a specific update whe",
+   "citation violations by coach: S3-C1-D, S3-C2-D"
+  ],
+  "approval": {
+   "status": "rejected",
+   "approver": "scripted reviewer (simulated)",
+   "note": "Operator: send nothing beyond the signed consent until the member decides (simulated reviewer).",
+   "simulated": true
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The member's consent record only covers lab results from the last 12 months shared with the clinic, and explicitly does not list the mood and sleep notes tab. The coordinator rulings require explicit patient consent before sharing patient information with another facility or entity, and that sharing must be limited to what is required by the patient's health condition. The chat history and mood notes are not covered by the existing consent, so they cannot be shared without obtaining new explicit consent from the member.",
+    "provisions": [],
+    "confidence": "low"
+   },
+   "clinic": {
+    "finding": "The passages say explicit patient consent must be secured before commencing telehealth and that all telehealth encounters must be documented accurately and made accessible to the patient and authorized healthcare providers as needed. They also define medical records as a systematic collection of electronic health data and information, but they do not specifically address whether a clinic may request and retain a third-party coach chat history. The passages therefore do not settle whether the clinic may ask for and keep the full coach chat; at most, the general consent and documentation rules would require explicit consent and a clinical-need limitation.",
+    "provisions": [
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-HIS-2024:0005"
+    ],
+    "confidence": "low"
+   },
+   "authority": {
+    "finding": "The text says ADHICS requires entities to define and implement network routing controls, use source/destination addresses and services/ports when applying routing rules, protect routing systems and tables from manipulation, review and update configured rules, and monitor external communications. It also says messages transmitted between systems must have authenticity and integrity, and information transmitted within or outside an entity must be encrypted. A Dubai-facility request about an Abu Dhabi resident with no routing rule therefore cannot be processed under those routing and transmission controls and should be escalated to a human rather than routed automatically.",
+    "provisions": [
+     "DOH-ADHICS-V2:0055",
+     "DOH-ADHICS-V2:0094",
+     "DOH-ADHICS-V2:0006",
+     "DOH-ADHICS-V2:0001"
+    ],
+    "confidence": "medium"
+   }
+  }
+ }
+]

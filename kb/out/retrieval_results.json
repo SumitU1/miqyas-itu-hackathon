@@ -1,0 +1,2533 @@
+{
+  "run": "2026-10-26 16:48 UTC",
+  "full": {
+    "summary": {
+      "positive": 48,
+      "hit@1": 40,
+      "hit@3": 44,
+      "hit@5": 45,
+      "mrr@5": 0.873,
+      "negative": 15,
+      "abstained": 15,
+      "none_on_negative": 11,
+      "weak_on_negative": 4,
+      "strong_on_negative": 0,
+      "positive_strong": 23,
+      "positive_weak": 25,
+      "positive_none": 0,
+      "known_gap": 3,
+      "known_gap_returned_expected_source": 0
+    },
+    "rows": [
+      {
+        "id": "S1-01",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Can an AI system tell a patient their diagnosis or must a licensed clinician review the output first?",
+        "expect": [
+          "DHA-AI-2021",
+          "DOH-AI-2018",
+          "UAE-AI-CHARTER-2024"
+        ],
+        "must_contain": null,
+        "rank": 3,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §10.5 Consent is not required for:, PDF pp.42-44 (14.357)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.29-30 (13.762)",
+          "[DOH-AI-2018] §1 Introduction, PDF pp.5-6 (11.764)"
+        ]
+      },
+      {
+        "id": "S1-02",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Who is accountable when an AI tool used in healthcare gives wrong or harmful advice?",
+        "expect": [
+          "DHA-AI-2021",
+          "DOH-AI-2018",
+          "DUBAI-AI-ETHICS-2022"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-AI-2021] §3 Definitions/Abbreviations:, PDF pp.6-7 (12.804)",
+          "[DUBAI-AI-ETHICS-2022] §3.1.1 Principle, PDF pp.10-11 (11.666)",
+          "[DUBAI-AI-ETHICS-2022] Ai Ethics, PDF pp.1-3 (11.299)"
+        ]
+      },
+      {
+        "id": "S1-03",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Does a person have the right to object to a decision made by automated processing and ask for human review?",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "human element",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 18 Right to Processing and Automated Processing (32.91)",
+          "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF pp.12-13 (16.359)",
+          "[UAE-PDPL-2021] Art. 13 Right to Receive Information (15.436)"
+        ]
+      },
+      {
+        "id": "S1-04",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "What must be reported to the regulator after an AI related patient safety incident?",
+        "expect": [
+          "DOH-AI-2018",
+          "DHA-AI-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DOH-AI-2018] §8 Enforcement, Compliance and Sanctions, PDF pp.10-11 (14.904)",
+          "[DOH-ADHICS-V2] §1 Establish an incident classification scheme which, PDF pp.115-118 (14.249)",
+          "[DHA-AI-2021] §4 Policy Statement:, PDF pp.11-13 (13.505)"
+        ]
+      },
+      {
+        "id": "S1-05",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Impact assessment required before profiling that uses health data",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "impact",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 21 Assessment of the Impact of Personal Data Protection (17.257)",
+          "[DOH-ADHICS-V2] §6 Access to health information, inclusive of personal health, PDF pp.88-89 (11.111)",
+          "[DOH-ADHICS-V2] §1 Implement information security policies, procedures, and, PDF pp.87-88 (9.573)"
+        ]
+      },
+      {
+        "id": "S2-01",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "May health data related to services provided in the UAE be stored or processed outside the country?",
+        "expect": [
+          "UAE-FL2-2019"
+        ],
+        "must_contain": "outside the State",
+        "rank": 2,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-MD51-2021] official MOHAP brief (summary, no article numbers) (20.643)",
+          "[UAE-FL2-2019] Art. 13, PDF p.21 (19.062)",
+          "[DHA-TELEHEALTH-POL-2021] §4 Policy Statement:, PDF pp.3-4 (18.031)"
+        ]
+      },
+      {
+        "id": "S2-02",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Is health data from simple medical devices allowed to be transferred abroad?",
+        "expect": [
+          "MOHAP-MD51-2021"
+        ],
+        "must_contain": "simple medical devices",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-MD51-2021] official MOHAP brief (summary, no article numbers) (21.608)",
+          "[DHA-HIS-2024] §4.4.2 Ad-hoc information sharing:, PDF pp.14-16 (11.853)",
+          "[DOH-ADHICS-V2] §1 Restrict from processing PII and PHI without the consent of, PDF pp.85-86 (11.668)"
+        ]
+      },
+      {
+        "id": "S2-03",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "What is the fine for storing or transferring health data outside the State without a permitted case?",
+        "expect": [
+          "UAE-FL2-2019"
+        ],
+        "must_contain": "500",
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-MD51-2021] official MOHAP brief (summary, no article numbers) (22.146)",
+          "[UAE-FL2-2019] Art. 23, PDF p.24 (19.109)",
+          "[UAE-FL2-2019] Art. 13, PDF p.21 (19.094)"
+        ]
+      },
+      {
+        "id": "S2-04",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Does a smartwatch or radio device need type approval before it is sold in the UAE?",
+        "expect": [
+          "TDRA-TAR-POLICY-V3",
+          "TDRA-TAR-REG-V3"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.2-4 (19.11)",
+          "[TDRA-TAR-POLICY-V3] §7 Essential Requirements, PDF pp.7-8 (18.754)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.12-13 (18.661)"
+        ]
+      },
+      {
+        "id": "S2-05",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Does the personal data protection law apply to health data that has its own legislation?",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "Health Data",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 2 Scope of Application of the Decree by Law (21.606)",
+          "[UAE-PDPL-2021] Art. 4 Cases of Processing Personal Data without the Consent of its Owner (15.909)",
+          "[UAE-CR32-2020] Art. 5, PDF p.30 (15.541)"
+        ]
+      },
+      {
+        "id": "S2-06",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Transfer of personal data outside the State with the explicit consent of the data subject",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "explicit consent",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (28.857)",
+          "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (20.928)",
+          "[UAE-PDPL-2021] Art. 2 Scope of Application of the Decree by Law (18.863)"
+        ]
+      },
+      {
+        "id": "S2-07",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Does Dubai allow protected health information to leave the UAE and who must approve it?",
+        "expect": [
+          "DHA-HIS-2024"
+        ],
+        "must_contain": null,
+        "rank": 2,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §17.12 Teleprescribing (Physician Only), PDF pp.67-69 (11.462)",
+          "[DHA-HIS-2024] §1 The HIPAA Privacy Rule, PDF pp.8-10 (9.532)",
+          "[UAE-FL2-2019] Art. 4, PDF p.18 (8.582)"
+        ]
+      },
+      {
+        "id": "S2-08",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Registration of an Internet of Things service provider with the telecom regulator",
+        "expect": [
+          "TDRA-IOT-PROC-V1"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[TDRA-IOT-PROC-V1] PDF pp.1-3 (23.285)",
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.3-5 (20.218)",
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.5-6 (14.942)"
+        ]
+      },
+      {
+        "id": "S3-01",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Can a clinic share a patient's health record with a third party without the patient's consent?",
+        "expect": [
+          "DHA-HIS-2024",
+          "DOH-HIE-2020",
+          "UAE-FL2-2019",
+          "UAE-CR32-2020"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DOH-HIE-2020] §4.3.13 All Healthcare Facilities shall:, PDF pp.27-28 (19.302)",
+          "[DOH-HIE-2020] §4.2.2.2 Seek patient consent for the sharing of Patient Data via the ADHIE in, PDF pp.21-22 (16.369)",
+          "[DHA-HIS-2024] §3 In cases of Public safety emergencies to maintain the health and, PDF pp.18-19 (15.993)"
+        ]
+      },
+      {
+        "id": "S3-02",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "What consent is required before patient information is shared through the Abu Dhabi health information exchange?",
+        "expect": [
+          "DOH-HIE-2020"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[DOH-HIE-2020] §4.2.1 DOH shall:, PDF pp.20-21 (22.033)",
+          "[DOH-HIE-2020] §2 Purpose of This Policy, PDF pp.15-16 (17.517)",
+          "[DHA-HIS-2024] §4.4.2 Ad-hoc information sharing:, PDF pp.14-16 (17.102)"
+        ]
+      },
+      {
+        "id": "S3-03",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "What approval does a telehealth platform need before offering services in Dubai?",
+        "expect": [
+          "DHA-TELEHEALTH-STD-V4",
+          "DHA-TELEHEALTH-POL-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27 (18.749)",
+          "[DHA-TELEHEALTH-STD-V4] §6.5 For Travelling UAE Citizens and Residents Holding Emirates ID (EID):, PDF pp.25-26 (16.794)",
+          "[DHA-TELEHEALTH-POL-2021] §4 Policy Statement:, PDF pp.3-4 (16.324)"
+        ]
+      },
+      {
+        "id": "S3-04",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Security controls required of healthcare technology providers that process health information in Abu Dhabi",
+        "expect": [
+          "DOH-ADHICS-V2"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[DOH-ADHICS-V2] PDF pp.1-3 (18.84)",
+          "[DOH-ADHICS-V2] §6 Control Adoption, Compliance and Audit, PDF pp.23-24 (17.619)",
+          "[DOH-ADHICS-V2] §2 Definitions and Abbreviations, PDF pp.6-7 (16.652)"
+        ]
+      },
+      {
+        "id": "S3-05",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Who may access the central health information system and how is access controlled and audited?",
+        "expect": [
+          "UAE-CR32-2020",
+          "UAE-FL2-2019"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-CR32-2020] Art. 4, PDF p.29 (14.677)",
+          "[UAE-CR32-2020] Art. 6, PDF pp.30-31 (13.749)",
+          "[UAE-CR32-2020] Art. 7, PDF p.32 (12.401)"
+        ]
+      },
+      {
+        "id": "S3-06",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Anonymisation of health data before sharing it for secondary use or research",
+        "expect": [
+          "DHA-HIS-2024",
+          "DOH-HIE-2020",
+          "MOHAP-MD51-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-HIS-2024] §4.4.2 Ad-hoc information sharing:, PDF pp.16-17 (18.974)",
+          "[DHA-HIS-2024] §4.16.3 Researchers and Clinical Auditors, PDF pp.27-28 (15.129)",
+          "[DHA-HIS-2024] §1 The HIPAA Privacy Rule, PDF pp.7-8 (14.413)"
+        ]
+      },
+      {
+        "id": "S4-01",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Are words like guaranteed, miraculous or immediate results allowed in a health advertisement?",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "guaranteed",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-3 (27.983)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF p.3 (26.905)",
+          "[DHA-MEDAD-2022] Not Acceptable, PDF pp.26-28 (16.174)"
+        ]
+      },
+      {
+        "id": "S4-02",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Does a medical advertisement on social media need approval from the health authority before it is published?",
+        "expect": [
+          "DHA-MEDAD-2022",
+          "NMC-AD-GUIDE",
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.8-10 (22.018)",
+          "[DHA-MEDAD-2022] §1 BACKGROUND, PDF pp.10-11 (19.919)",
+          "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.7-8 (19.678)"
+        ]
+      },
+      {
+        "id": "S4-03",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Must an influencer disclose financial gain when promoting a product or service?",
+        "expect": [
+          "NMC-AD-GUIDE"
+        ],
+        "must_contain": "financial",
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.8-10 (16.172)",
+          "[DHA-MEDAD-2022] §6 STANDARD TWO: GENERAL CONSIDERATIONS, PDF pp.13-14 (14.604)",
+          "[MOHAP-PROMO-CODE-2017] PDF pp.3-4 (12.137)"
+        ]
+      },
+      {
+        "id": "S4-04",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Can a medical product be promoted outside its approved indications or before marketing authorisation?",
+        "expect": [
+          "MOHAP-PROMO-CODE-2017"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-PROMO-CODE-2017] PDF pp.3-4 (32.615)",
+          "[MOHAP-PROMO-CODE-2017] PDF pp.1-3 (14.677)",
+          "[MOHAP-PROMO-CODE-2017] PDF p.3 (13.275)"
+        ]
+      },
+      {
+        "id": "S4-05",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Health educational statement required in advertisements for diet supplements",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "supplement",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.3-4 (25.892)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF p.3 (13.975)",
+          "[DHA-MEDAD-2022] Not Acceptable, PDF p.26 (10.104)"
+        ]
+      },
+      {
+        "id": "S4-06",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Right to object to direct marketing and profiling for marketing purposes",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "direct marketing",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 17 Right to Stop Processing (29.343)",
+          "[UAE-PDPL-2021] Art. 18 Right to Processing and Automated Processing (16.168)",
+          "[UAE-PDPL-2021] Art. 13 Right to Receive Information (14.277)"
+        ]
+      },
+      {
+        "id": "STD-01",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What are the principles of the UAE Charter for the Development and Use of AI?",
+        "expect": [
+          "UAE-AI-CHARTER-2024"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-AI-CHARTER-2024] PDF pp.1-3 (20.47)",
+          "[UAE-AI-CHARTER-2024] §10 Peaceful Coexistence with AI:, PDF pp.5-6 (16.175)",
+          "[UAE-AI-CHARTER-2024] §3 Algorithmic Bias:, PDF pp.3-5 (14.362)"
+        ]
+      },
+      {
+        "id": "STD-02",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Which node of the ML pipeline applies policies to the output of the model before it reaches the target?",
+        "expect": [
+          "ITU-Y3172"
+        ],
+        "must_contain": "policies",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.25 (32.068)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.20-21 (27.989)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.24-25 (26.196)"
+        ]
+      },
+      {
+        "id": "STD-03",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What is an ML sandbox and why is it used before deploying a model?",
+        "expect": [
+          "ITU-Y3172"
+        ],
+        "must_contain": "sandbox",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.24-25 (22.363)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.21-22 (20.725)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.21 (20.572)"
+        ]
+      },
+      {
+        "id": "STD-04",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Which AI Readiness dimension covers policies for the AI lifecycle and a sandbox for policy extrapolation?",
+        "expect": [
+          "ITU-AIREADY-2"
+        ],
+        "must_contain": "AI & Policies",
+        "rank": null,
+        "ok": false,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.30-31 (26.335)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF p.30 (24.983)",
+          "[ITU-AIREADY-2] §6 Future work, PDF p.49 (23.379)"
+        ]
+      },
+      {
+        "id": "STD-05",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Fairness, accountability, transparency and explainability principles for AI systems in Dubai",
+        "expect": [
+          "DUBAI-AI-ETHICS-2022"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF p.13 (22.448)",
+          "[DHA-AI-2021] §3 Definitions/Abbreviations:, PDF pp.4-5 (19.67)",
+          "[DUBAI-AI-ETHICS-2022] §2.11 Significant decision, PDF pp.8-9 (17.423)"
+        ]
+      },
+      {
+        "id": "B-01",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Cyber security requirements for connected medical devices and IoMT in Abu Dhabi",
+        "expect": [
+          "DOH-ADHICS-V2"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DOH-ADHICS-V2] §2 Definitions and Abbreviations, PDF pp.8-10 (19.989)",
+          "[DOH-ADHICS-V2] §2 Establish framework to effectively manage the entity’s, PDF pp.36-37 (17.134)",
+          "[DOH-ADHICS-V2] §6 Decommissioning and/or secure disposal of medical, PDF pp.37-38 (16.214)"
+        ]
+      },
+      {
+        "id": "B-02",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Conditions for providing remote patient monitoring through telehealth in Dubai",
+        "expect": [
+          "DHA-TELEHEALTH-STD-V4",
+          "DHA-TELEHEALTH-POL-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] Introduction, PDF pp.5-8 (18.151)",
+          "[DHA-TELEHEALTH-STD-V4] Definitions, PDF pp.13-14 (15.814)",
+          "[DHA-TELEHEALTH-POL-2021] §3 Definitions/Abbreviations:, PDF pp.1-3 (15.69)"
+        ]
+      },
+      {
+        "id": "B-03",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What does the national AI strategy say about healthcare as a priority sector?",
+        "expect": [
+          "UAE-AI-STRATEGY-2031"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] Objectives, PDF pp.11-12 (16.832)",
+          "[UAE-AI-STRATEGY-2031] PDF pp.2-4 (16.697)",
+          "[UAE-AI-STRATEGY-2031] §1 Industry Assets &, PDF p.6 (15.585)"
+        ]
+      },
+      {
+        "id": "B-04",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Transfer of personal data to a country that has adequate data protection legislation",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "legislations addressing Personal Data Protection",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (19.719)",
+          "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (17.087)",
+          "[UAE-PDPL-2021] Art. 2 Scope of Application of the Decree by Law (16.453)"
+        ]
+      },
+      {
+        "id": "B-05",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Duty of the controller to notify the regulator and the data subject after a personal data breach",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "breach",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-PDPL-2021] Art. 9 Reporting Personal Data Breach (26.523)",
+          "[UAE-PDPL-2021] Art. 9 Reporting Personal Data Breach (25.448)",
+          "[UAE-PDPL-2021] Art. 13 Right to Receive Information (18.223)"
+        ]
+      },
+      {
+        "id": "B-06",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Which equipment risk levels require technical inspection for type approval?",
+        "expect": [
+          "TDRA-TAR-REG-V3",
+          "TDRA-TAR-POLICY-V3"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.9-10 (20.992)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.8-9 (20.691)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF p.14 (20.475)"
+        ]
+      },
+      {
+        "id": "B-07",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Patient consent requirements for a telehealth consultation",
+        "expect": [
+          "DHA-TELEHEALTH-POL-2021",
+          "DHA-TELEHEALTH-STD-V4"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §6.5 For Travelling UAE Citizens and Residents Holding Emirates ID (EID):, PDF pp.25-26 (15.683)",
+          "[DHA-TELEHEALTH-STD-V4] Pathways, PDF pp.82-84 (14.458)",
+          "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27 (13.707)"
+        ]
+      },
+      {
+        "id": "B-08",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Obligations of AI developers who use Dubai patient data",
+        "expect": [
+          "DHA-AI-2021"
+        ],
+        "must_contain": null,
+        "rank": 3,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3.1.1 Principle, PDF p.10 (12.494)",
+          "[DUBAI-AI-ETHICS-2022] §2.2 AI operator organization, PDF pp.5-7 (12.233)",
+          "[DHA-AI-2021] §3 Definitions/Abbreviations:, PDF pp.6-7 (12.06)"
+        ]
+      },
+      {
+        "id": "B-09",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "How should AI decisions be explained to the people affected by them?",
+        "expect": [
+          "DUBAI-AI-ETHICS-2022",
+          "UAE-AI-CHARTER-2024",
+          "DHA-AI-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §9 See IBM WatsonPaths, PDF p.15 (18.652)",
+          "[DUBAI-AI-ETHICS-2022] §3.3.2 Guidelines, PDF pp.14-15 (17.608)",
+          "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF p.12 (17.15)"
+        ]
+      },
+      {
+        "id": "NEG-04",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How do I renew a driving licence in Sharjah?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DOH-HIE-2020] §5.2.2 ADHIE Shall:, PDF pp.35-36 (6.553)",
+          "[DUBAI-AI-ETHICS-2022] §9 See IBM WatsonPaths, PDF p.15 (4.432)",
+          "[DOH-AI-2018] About Department Of Health (Doh), PDF pp.3-5 (4.339)"
+        ]
+      },
+      {
+        "id": "NEG-05",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Best exercises for building leg muscle at the gym",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] Industries, PDF p.20 (6.849)",
+          "[UAE-PDPL-2021] Art. 4 Cases of Processing Personal Data without the Consent of its Owner (6.29)",
+          "[UAE-AI-STRATEGY-2031] Executive Summary, PDF pp.5-6 (5.69)"
+        ]
+      },
+      {
+        "id": "NEG-06",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Explain how to bake sourdough bread at home",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-HIS-2024] §4.15 Remote Working (Home, Off-Site, Community etc.), PDF pp.26-27 (6.483)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.31-32 (6.076)",
+          "[DOH-AI-2018] §5 Vision, Goal and Guiding Principles, PDF pp.7-8 (5.84)"
+        ]
+      },
+      {
+        "id": "NEG-07",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Symptoms of vitamin D deficiency and the recommended daily dose",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §4 Telehealth Triage and Advisory Services:, PDF pp.88-90 (16.724)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.3-4 (13.457)",
+          "[DHA-TELEHEALTH-STD-V4] §4 Telehealth Triage and Advisory Services:, PDF pp.86-88 (9.504)"
+        ]
+      },
+      {
+        "id": "NEG-08",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Which team won the football world cup in 2018?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] References, PDF pp.23-24 (10.968)",
+          "[UAE-AI-STRATEGY-2031] Effective Regulation, PDF p.22 (8.751)",
+          "[UAE-AI-STRATEGY-2031] Jobs Enabled By Ai, PDF p.17 (8.081)"
+        ]
+      },
+      {
+        "id": "NEG-09",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How is bitcoin mined and what hardware is needed?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §14.5.1 Ensure equipment and tools, software and hardware are appropriate for, PDF pp.53-55 (5.293)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.32-33 (4.945)",
+          "[ITU-Y3172] Req-Ml-Spec-002, PDF p.17 (4.879)"
+        ]
+      },
+      {
+        "id": "H-01",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Which node of the ML pipeline is the source of the data used as input?",
+        "expect": [
+          "ITU-Y3172"
+        ],
+        "must_contain": "source of data",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "held-out",
+        "top": [
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.20-21 (26.227)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.24 (25.921)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.19-20 (25.756)"
+        ]
+      },
+      {
+        "id": "H-02",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "How many working days does the telecom regulator take to decide on an IoT service registration request?",
+        "expect": [
+          "TDRA-IOT-PROC-V1"
+        ],
+        "must_contain": "35",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.3-5 (31.969)",
+          "[TDRA-IOT-PROC-V1] PDF pp.1-3 (23.029)",
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.5-6 (17.528)"
+        ]
+      },
+      {
+        "id": "H-03",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "What does the Abu Dhabi AI policy require about certification of AI systems by recognised international bodies?",
+        "expect": [
+          "DOH-AI-2018"
+        ],
+        "must_contain": "certif",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[DOH-AI-2018] §6 Policy Statement, PDF pp.8-9 (20.868)",
+          "[DOH-AI-2018] §7.1.2.1 Robust and responsive as evidenced by:, PDF p.9 (19.239)",
+          "[DOH-AI-2018] §7.2 Healthcare End-Users other than Patients shall:, PDF pp.9-10 (18.074)"
+        ]
+      },
+      {
+        "id": "H-04",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "For how many years must health information and data be kept after the last health procedure?",
+        "expect": [
+          "UAE-FL2-2019"
+        ],
+        "must_contain": "years",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[UAE-FL2-2019] Art. 20, PDF p.23 (17.55)",
+          "[DHA-HIS-2024] §4.18 Using Protected Health Information for System Testing, PDF pp.29-30 (12.904)",
+          "[UAE-PDPL-2021] Art. 5 Personal Data Processing Controls (11.397)"
+        ]
+      },
+      {
+        "id": "H-05",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Can a medical advertisement claim that a product has no side effects?",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "side effects",
+        "rank": 4,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "held-out",
+        "top": [
+          "[MOHAP-PROMO-CODE-2017] PDF pp.3-4 (21.002)",
+          "[MOHAP-PROMO-CODE-2017] §2 PROMOTIONAL MATERIALS - INFORMATION TO BE MADE AVAILABLE:, PDF pp.4-5 (20.174)",
+          "[DHA-MEDAD-2022] §6 STANDARD TWO: GENERAL CONSIDERATIONS, PDF pp.14-15 (18.277)"
+        ]
+      },
+      {
+        "id": "H-06",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Rules for before and after pictures in health advertisements",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "before and after",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "held-out",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-3 (19.766)",
+          "[DHA-MEDAD-2022] §9 STANDARD FIVE: USE OF PICTURES, IMAGES AND VIDEOS, PDF pp.19-21 (15.967)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-2 (14.57)"
+        ]
+      },
+      {
+        "id": "H-07",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "What does the UAE AI charter say about human oversight of AI?",
+        "expect": [
+          "UAE-AI-CHARTER-2024"
+        ],
+        "must_contain": "oversight",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[UAE-AI-CHARTER-2024] PDF pp.1-3 (19.734)",
+          "[UAE-AI-CHARTER-2024] §3 Algorithmic Bias:, PDF pp.3-5 (19.628)",
+          "[UAE-AI-CHARTER-2024] §10 Peaceful Coexistence with AI:, PDF pp.5-6 (14.893)"
+        ]
+      },
+      {
+        "id": "H-08",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What does the AI readiness report say about AI for inclusion?",
+        "expect": [
+          "ITU-AIREADY-2"
+        ],
+        "must_contain": "Inclusion",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.22-23 (14.195)",
+          "[ITU-AIREADY-2] §19 What are the differences between the framework and the toolkit?, PDF pp.50-51 (14.078)",
+          "[ITU-AIREADY-2] PDF pp.2-4 (13.036)"
+        ]
+      },
+      {
+        "id": "H-09",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "In which cases can personal data be processed without consent to protect public health?",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "public health",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "held-out",
+        "top": [
+          "[UAE-PDPL-2021] Art. 4 Cases of Processing Personal Data without the Consent of its Owner (26.364)",
+          "[UAE-PDPL-2021] Art. 4 Cases of Processing Personal Data without the Consent of its Owner (18.579)",
+          "[DOH-ADHICS-V2] §1 Restrict from processing PII and PHI without the consent of, PDF pp.85-86 (17.862)"
+        ]
+      },
+      {
+        "id": "HN-01",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How do I apply for a golden visa for investors?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] Ecosystem For Ai, PDF pp.15-16 (7.434)",
+          "[UAE-AI-STRATEGY-2031] Lives And Government, PDF p.17 (5.99)",
+          "[UAE-AI-STRATEGY-2031] Ecosystem For Ai, PDF pp.14-15 (5.573)"
+        ]
+      },
+      {
+        "id": "HN-02",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What is the best treatment for a broken ankle?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.26-27 (6.017)",
+          "[DHA-TELEHEALTH-STD-V4] Definitions, PDF pp.14-15 (4.997)",
+          "[UAE-AI-STRATEGY-2031] Effective Regulation, PDF pp.22-23 (4.881)"
+        ]
+      },
+      {
+        "id": "HN-03",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Explain quantum entanglement in simple terms",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[UAE-PDPL-2021] Art. 6 Terms of Consent to Data Processing (10.447)",
+          "[MOHAP-MD51-2021] official MOHAP brief (summary, no article numbers) (8.121)",
+          "[UAE-AI-STRATEGY-2031] Through Deployment Of Ai, PDF p.13 (6.159)"
+        ]
+      },
+      {
+        "id": "HN-04",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How much does a flight from Dubai to London cost in December?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] Objectives, PDF pp.10-11 (8.56)",
+          "[ITU-AIREADY-2] §4 AI Readiness Gap Analysis, PDF pp.37-38 (8.495)",
+          "[DUBAI-AI-ETHICS-2022] §3.7.2 Guidelines, PDF p.20 (7.535)"
+        ]
+      },
+      {
+        "id": "HN-05",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Compare iPhone and Android battery life",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3 From ISO/IEC 2382:2015, PDF p.7 (10.077)",
+          "[ITU-AIREADY-2] §19 What are the differences between the framework and the toolkit?, PDF p.51 (4.879)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.22-23 (4.803)"
+        ]
+      },
+      {
+        "id": "HN-06",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What are the side effects of ibuprofen?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF p.3 (8.309)",
+          "[MOHAP-PROMO-CODE-2017] §2 PROMOTIONAL MATERIALS - INFORMATION TO BE MADE AVAILABLE:, PDF pp.4-5 (7.3)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-3 (7.14)"
+        ]
+      },
+      {
+        "id": "NEG-01",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What is the recipe for traditional Arabic coffee with cardamom?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "initial",
+        "top": [
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.27-28 (7.772)",
+          "[UAE-CR32-2020] Art. 1, PDF p.27 (7.392)",
+          "[UAE-FL2-2019] PDF pp.15-16 (6.562)"
+        ]
+      },
+      {
+        "id": "NEG-02",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What dose of metformin should an adult with type 2 diabetes take?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "initial",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] Jobs Enabled By Ai, PDF pp.17-18 (7.831)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.8-9 (7.163)",
+          "[DUBAI-AI-ETHICS-2022] §3.6.2 Guidelines, PDF pp.18-19 (7.119)"
+        ]
+      },
+      {
+        "id": "NEG-03",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What is the corporate tax rate for cryptocurrency exchanges?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "initial",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] Ecosystem For Ai, PDF pp.16-17 (6.224)",
+          "[UAE-AI-STRATEGY-2031] Ecosystem For Ai, PDF pp.15-16 (6.176)",
+          "[DOH-ADHICS-V2] §7 Ensure that employees of the entity and third-party, PDF pp.75-76 (5.952)"
+        ]
+      },
+      {
+        "id": "GAP-01",
+        "scenario": "S4",
+        "kind": "known_gap",
+        "query": "Which authority grants marketing approval for medical devices under the medical products law and how are food supplements treated?",
+        "expect": [
+          "UAE-FDL38-2024"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.3-4 (24.738)",
+          "[MOHAP-PROMO-CODE-2017] §11 CONSULTANCY SERVICES:, PDF pp.11-12 (17.081)",
+          "[TDRA-TAR-POLICY-V3] Art. 42 of the Telecommunications Law grants TDRA the exclusive competence, PDF pp.5-6 (16.428)"
+        ]
+      },
+      {
+        "id": "GAP-02",
+        "scenario": "S4",
+        "kind": "known_gap",
+        "query": "Penalty for misleading advertising by an advertiser under the consumer protection law",
+        "expect": [
+          "UAE-FL15-2020"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-FL2-2019] Art. 24, PDF p.24 (17.314)",
+          "[UAE-FL2-2019] Art. 23, PDF p.24 (16.408)",
+          "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.5-7 (15.993)"
+        ]
+      },
+      {
+        "id": "GAP-03",
+        "scenario": "S1",
+        "kind": "known_gap",
+        "query": "What is a medical error and when is a practitioner liable under the medical liability law?",
+        "expect": [
+          "UAE-FDL4-2016"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-CR32-2020] PDF p.27 (11.83)",
+          "[UAE-FL2-2019] PDF pp.15-16 (9.38)",
+          "[DHA-HIS-2024] §5 References, PDF pp.37-38 (8.974)"
+        ]
+      }
+    ]
+  },
+  "public": {
+    "summary": {
+      "positive": 48,
+      "hit@1": 41,
+      "hit@3": 44,
+      "hit@5": 45,
+      "mrr@5": 0.886,
+      "negative": 15,
+      "abstained": 15,
+      "none_on_negative": 12,
+      "weak_on_negative": 3,
+      "strong_on_negative": 0,
+      "positive_strong": 11,
+      "positive_weak": 37,
+      "positive_none": 0,
+      "known_gap": 3,
+      "known_gap_returned_expected_source": 0
+    },
+    "rows": [
+      {
+        "id": "S1-01",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Can an AI system tell a patient their diagnosis or must a licensed clinician review the output first?",
+        "expect": [
+          "DHA-AI-2021",
+          "DOH-AI-2018",
+          "UAE-AI-CHARTER-2024"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] Definitions, PDF pp.15-17 (11.752)",
+          "[DHA-TELEHEALTH-STD-V4] Definitions, PDF pp.9-10 (11.467)",
+          "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27 (10.513)"
+        ]
+      },
+      {
+        "id": "S1-02",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Who is accountable when an AI tool used in healthcare gives wrong or harmful advice?",
+        "expect": [
+          "DHA-AI-2021",
+          "DOH-AI-2018",
+          "DUBAI-AI-ETHICS-2022"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-AI-2021] §3 Definitions/Abbreviations:, PDF pp.6-7 (10.353)",
+          "[DUBAI-AI-ETHICS-2022] Ai Ethics, PDF pp.1-3 (10.194)",
+          "[DHA-MEDAD-2022] Not Acceptable, PDF p.28 (10.024)"
+        ]
+      },
+      {
+        "id": "S1-03",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Does a person have the right to object to a decision made by automated processing and ask for human review?",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "human element",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 18 Right to Processing and Automated Processing (30.423)",
+          "[UAE-PDPL-2021] Art. 13 Right to Receive Information (20.228)",
+          "[UAE-PDPL-2021] Art. 17 Right to Stop Processing (16.294)"
+        ]
+      },
+      {
+        "id": "S1-04",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "What must be reported to the regulator after an AI related patient safety incident?",
+        "expect": [
+          "DOH-AI-2018",
+          "DHA-AI-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DOH-AI-2018] §9 Included but not limited to ADSEC Information Security Standards:, PDF p.11 (12.896)",
+          "[DOH-AI-2018] §7.2 Healthcare End-Users other than Patients shall:, PDF pp.9-10 (10.661)",
+          "[DOH-AI-2018] §8 Enforcement, Compliance and Sanctions, PDF pp.10-11 (9.59)"
+        ]
+      },
+      {
+        "id": "S1-05",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Impact assessment required before profiling that uses health data",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "impact",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 21 Assessment of the Impact of Personal Data Protection (16.487)",
+          "[DOH-ADHICS-V2] §6 Access to health information, inclusive of personal health, PDF pp.88-89 (14.584)",
+          "[DOH-ADHICS-V2] §2 Definitions and Abbreviations, PDF pp.5-6 (11.157)"
+        ]
+      },
+      {
+        "id": "S2-01",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "May health data related to services provided in the UAE be stored or processed outside the country?",
+        "expect": [
+          "UAE-FL2-2019"
+        ],
+        "must_contain": "outside the State",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-FL2-2019] Art. 13, PDF p.21 (23.608)",
+          "[MOHAP-MD51-2021] official MOHAP brief (summary, no article numbers) (23.036)",
+          "[DHA-TELEHEALTH-POL-2021] §4 Policy Statement:, PDF pp.4-5 (18.087)"
+        ]
+      },
+      {
+        "id": "S2-02",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Is health data from simple medical devices allowed to be transferred abroad?",
+        "expect": [
+          "MOHAP-MD51-2021"
+        ],
+        "must_contain": "simple medical devices",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-MD51-2021] official MOHAP brief (summary, no article numbers) (14.673)",
+          "[DHA-HIS-2024] §4.4.2 Ad-hoc information sharing:, PDF pp.14-16 (11.683)",
+          "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (9.96)"
+        ]
+      },
+      {
+        "id": "S2-03",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "What is the fine for storing or transferring health data outside the State without a permitted case?",
+        "expect": [
+          "UAE-FL2-2019"
+        ],
+        "must_contain": "500",
+        "rank": 2,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-MD51-2021] official MOHAP brief (summary, no article numbers) (27.422)",
+          "[UAE-FL2-2019] Art. 13, PDF p.21 (22.989)",
+          "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (18.128)"
+        ]
+      },
+      {
+        "id": "S2-04",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Does a smartwatch or radio device need type approval before it is sold in the UAE?",
+        "expect": [
+          "TDRA-TAR-POLICY-V3",
+          "TDRA-TAR-REG-V3"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[TDRA-TAR-POLICY-V3] §7 Essential Requirements, PDF pp.7-8 (19.577)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.4-5 (16.608)",
+          "[TDRA-TAR-POLICY-V3] §1 Definitions, PDF pp.3-4 (16.475)"
+        ]
+      },
+      {
+        "id": "S2-05",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Does the personal data protection law apply to health data that has its own legislation?",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "Health Data",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (17.247)",
+          "[UAE-PDPL-2021] Art. 2 Scope of Application of the Decree by Law (16.025)",
+          "[UAE-PDPL-2021] front matter (14.616)"
+        ]
+      },
+      {
+        "id": "S2-06",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Transfer of personal data outside the State with the explicit consent of the data subject",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "explicit consent",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (21.014)",
+          "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (19.813)",
+          "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (19.602)"
+        ]
+      },
+      {
+        "id": "S2-07",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Does Dubai allow protected health information to leave the UAE and who must approve it?",
+        "expect": [
+          "DHA-HIS-2024"
+        ],
+        "must_contain": null,
+        "rank": 2,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-FL2-2019] Art. 4, PDF p.18 (10.393)",
+          "[DHA-HIS-2024] §4.10 Sharing Protected Health Information through Emails, PDF pp.20-22 (8.257)",
+          "[DOH-HIE-2020] §1 Introduction, PDF pp.13-16 (8.215)"
+        ]
+      },
+      {
+        "id": "S2-08",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Registration of an Internet of Things service provider with the telecom regulator",
+        "expect": [
+          "TDRA-IOT-PROC-V1"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.5-6 (18.912)",
+          "[TDRA-IOT-PROC-V1] PDF pp.1-3 (18.49)",
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.3-5 (15.953)"
+        ]
+      },
+      {
+        "id": "S3-01",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Can a clinic share a patient's health record with a third party without the patient's consent?",
+        "expect": [
+          "DHA-HIS-2024",
+          "DOH-HIE-2020",
+          "UAE-FL2-2019",
+          "UAE-CR32-2020"
+        ],
+        "must_contain": null,
+        "rank": 5,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DOH-ADHICS-V2] §7 Ensure that employees of the entity and third-party, PDF pp.75-76 (16.309)",
+          "[DHA-TELEHEALTH-STD-V4] §10 STANDARD SIX: PATIENT CONSENT, PDF pp.40-41 (14.039)",
+          "[MOHAP-PROMO-CODE-2017] §13 GRANTS AND DONATIONS:, PDF pp.12-13 (13.86)"
+        ]
+      },
+      {
+        "id": "S3-02",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "What consent is required before patient information is shared through the Abu Dhabi health information exchange?",
+        "expect": [
+          "DOH-HIE-2020"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DOH-HIE-2020] §4.2.2.2 Seek patient consent for the sharing of Patient Data via the ADHIE in, PDF pp.21-22 (20.485)",
+          "[DOH-HIE-2020] §4.2.1 DOH shall:, PDF pp.20-21 (17.544)",
+          "[DHA-TELEHEALTH-POL-2021] §4 Policy Statement:, PDF pp.3-4 (17.39)"
+        ]
+      },
+      {
+        "id": "S3-03",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "What approval does a telehealth platform need before offering services in Dubai?",
+        "expect": [
+          "DHA-TELEHEALTH-STD-V4",
+          "DHA-TELEHEALTH-POL-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27 (15.707)",
+          "[DHA-TELEHEALTH-STD-V4] §4 Telehealth Triage and Advisory Services:, PDF pp.83-85 (12.624)",
+          "[DHA-TELEHEALTH-POL-2021] §4 Policy Statement:, PDF pp.3-4 (11.227)"
+        ]
+      },
+      {
+        "id": "S3-04",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Security controls required of healthcare technology providers that process health information in Abu Dhabi",
+        "expect": [
+          "DOH-ADHICS-V2"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DOH-ADHICS-V2] §8 Appendices, PDF pp.132-133 (16.066)",
+          "[DOH-ADHICS-V2] §8 Appendices, PDF pp.131-132 (15.828)",
+          "[DOH-ADHICS-V2] §8 Appendices, PDF pp.129-131 (14.642)"
+        ]
+      },
+      {
+        "id": "S3-05",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Who may access the central health information system and how is access controlled and audited?",
+        "expect": [
+          "UAE-CR32-2020",
+          "UAE-FL2-2019"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-FL2-2019] Art. 8, PDF p.19 (13.988)",
+          "[UAE-CR32-2020] Art. 6, PDF pp.30-31 (13.885)",
+          "[UAE-CR32-2020] Art. 5, PDF p.30 (13.851)"
+        ]
+      },
+      {
+        "id": "S3-06",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Anonymisation of health data before sharing it for secondary use or research",
+        "expect": [
+          "DHA-HIS-2024",
+          "DOH-HIE-2020",
+          "MOHAP-MD51-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-HIS-2024] §4.4.2 Ad-hoc information sharing:, PDF pp.16-17 (19.556)",
+          "[DHA-HIS-2024] §4.7.5 Below table elaborates more in details the secondary use of PHI:, PDF pp.17-18 (15.209)",
+          "[DHA-HIS-2024] PDF p.1 (12.959)"
+        ]
+      },
+      {
+        "id": "S4-01",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Are words like guaranteed, miraculous or immediate results allowed in a health advertisement?",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "guaranteed",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF p.3 (28.373)",
+          "[DHA-MEDAD-2022] Not Acceptable, PDF pp.26-28 (14.023)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-3 (8.669)"
+        ]
+      },
+      {
+        "id": "S4-02",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Does a medical advertisement on social media need approval from the health authority before it is published?",
+        "expect": [
+          "DHA-MEDAD-2022",
+          "NMC-AD-GUIDE",
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-MEDAD-2022] §2 PURPOSE, PDF pp.11-12 (20.434)",
+          "[DHA-MEDAD-2022] Introduction, PDF pp.2-4 (18.021)",
+          "[DHA-MEDAD-2022] Not Acceptable, PDF p.28 (17.176)"
+        ]
+      },
+      {
+        "id": "S4-03",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Must an influencer disclose financial gain when promoting a product or service?",
+        "expect": [
+          "NMC-AD-GUIDE"
+        ],
+        "must_contain": "financial",
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DOH-AI-2018] §6 Policy Statement, PDF pp.8-9 (11.933)",
+          "[MOHAP-PROMO-CODE-2017] Programs, PDF p.13 (11.238)",
+          "[DHA-MEDAD-2022] §6 STANDARD TWO: GENERAL CONSIDERATIONS, PDF pp.14-15 (10.232)"
+        ]
+      },
+      {
+        "id": "S4-04",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Can a medical product be promoted outside its approved indications or before marketing authorisation?",
+        "expect": [
+          "MOHAP-PROMO-CODE-2017"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-PROMO-CODE-2017] PDF pp.1-3 (17.01)",
+          "[MOHAP-PROMO-CODE-2017] PDF p.3 (16.146)",
+          "[MOHAP-PROMO-CODE-2017] §2 PROMOTIONAL MATERIALS - INFORMATION TO BE MADE AVAILABLE:, PDF pp.4-5 (14.57)"
+        ]
+      },
+      {
+        "id": "S4-05",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Health educational statement required in advertisements for diet supplements",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "supplement",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.3-4 (23.948)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF p.3 (9.993)",
+          "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.8-10 (9.74)"
+        ]
+      },
+      {
+        "id": "S4-06",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Right to object to direct marketing and profiling for marketing purposes",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "direct marketing",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-PDPL-2021] Art. 17 Right to Stop Processing (31.484)",
+          "[UAE-PDPL-2021] Art. 18 Right to Processing and Automated Processing (17.532)",
+          "[UAE-PDPL-2021] Art. 13 Right to Receive Information (14.051)"
+        ]
+      },
+      {
+        "id": "STD-01",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What are the principles of the UAE Charter for the Development and Use of AI?",
+        "expect": [
+          "UAE-AI-CHARTER-2024"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[UAE-AI-CHARTER-2024] PDF pp.1-3 (20.155)",
+          "[UAE-AI-CHARTER-2024] §3 Algorithmic Bias:, PDF pp.3-5 (14.58)",
+          "[UAE-AI-CHARTER-2024] §10 Peaceful Coexistence with AI:, PDF pp.5-6 (12.395)"
+        ]
+      },
+      {
+        "id": "STD-02",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Which node of the ML pipeline applies policies to the output of the model before it reaches the target?",
+        "expect": [
+          "ITU-Y3172"
+        ],
+        "must_contain": "policies",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.25 (28.992)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.24 (19.078)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.27 (18.108)"
+        ]
+      },
+      {
+        "id": "STD-03",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What is an ML sandbox and why is it used before deploying a model?",
+        "expect": [
+          "ITU-Y3172"
+        ],
+        "must_contain": "sandbox",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "initial",
+        "top": [
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.21-22 (22.036)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.24-25 (19.684)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.25-27 (17.166)"
+        ]
+      },
+      {
+        "id": "STD-04",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Which AI Readiness dimension covers policies for the AI lifecycle and a sandbox for policy extrapolation?",
+        "expect": [
+          "ITU-AIREADY-2"
+        ],
+        "must_contain": "AI & Policies",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.30-31 (16.484)",
+          "[ITU-AIREADY-2] §6 Future work, PDF p.49 (15.218)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.29-30 (14.884)"
+        ]
+      },
+      {
+        "id": "STD-05",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Fairness, accountability, transparency and explainability principles for AI systems in Dubai",
+        "expect": [
+          "DUBAI-AI-ETHICS-2022"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF p.11 (17.421)",
+          "[DUBAI-AI-ETHICS-2022] Ai Ethics, PDF pp.1-3 (16.996)",
+          "[DUBAI-AI-ETHICS-2022] §3.1.2 Guidelines, PDF pp.9-10 (16.82)"
+        ]
+      },
+      {
+        "id": "B-01",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Cyber security requirements for connected medical devices and IoMT in Abu Dhabi",
+        "expect": [
+          "DOH-ADHICS-V2"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DOH-ADHICS-V2] §6 Decommissioning and/or secure disposal of medical, PDF pp.37-38 (19.549)",
+          "[DOH-ADHICS-V2] §2 Establish processes to conduct security testing and, PDF pp.71-73 (15.354)",
+          "[DOH-ADHICS-V2] §1 Restrict, PDF pp.73-74 (13.626)"
+        ]
+      },
+      {
+        "id": "B-02",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Conditions for providing remote patient monitoring through telehealth in Dubai",
+        "expect": [
+          "DHA-TELEHEALTH-STD-V4",
+          "DHA-TELEHEALTH-POL-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §17.14.2 The pharmacist should monitor the patient’s medication therapy on an, PDF pp.71-72 (12.889)",
+          "[DHA-TELEHEALTH-STD-V4] §8.2.8 Develop and implement Standard Operating Procedures (SOPs) governing, PDF pp.37-38 (12.208)",
+          "[DHA-TELEHEALTH-STD-V4] §15.10.9 PRM devices should be frequently checked and assessed to ensure data, PDF pp.59-61 (12.136)"
+        ]
+      },
+      {
+        "id": "B-03",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What does the national AI strategy say about healthcare as a priority sector?",
+        "expect": [
+          "UAE-AI-STRATEGY-2031"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] An Ai Destination, PDF p.12 (18.403)",
+          "[UAE-AI-STRATEGY-2031] Executive Summary, PDF pp.5-6 (16.067)",
+          "[UAE-AI-STRATEGY-2031] §1 Industry Assets &, PDF p.6 (15.354)"
+        ]
+      },
+      {
+        "id": "B-04",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Transfer of personal data to a country that has adequate data protection legislation",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "legislations addressing Personal Data Protection",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (20.717)",
+          "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (20.413)",
+          "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr (15.072)"
+        ]
+      },
+      {
+        "id": "B-05",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Duty of the controller to notify the regulator and the data subject after a personal data breach",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "breach",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-PDPL-2021] Art. 9 Reporting Personal Data Breach (27.73)",
+          "[UAE-PDPL-2021] Art. 9 Reporting Personal Data Breach (27.517)",
+          "[DOH-HIE-2020] §4.3.17.6 Notify the DOH of any breach as soon as reasonably practicable after, PDF pp.30-31 (18.994)"
+        ]
+      },
+      {
+        "id": "B-06",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "Which equipment risk levels require technical inspection for type approval?",
+        "expect": [
+          "TDRA-TAR-REG-V3",
+          "TDRA-TAR-POLICY-V3"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.10-11 (20.171)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.9-10 (20.096)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.5-6 (17.44)"
+        ]
+      },
+      {
+        "id": "B-07",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "Patient consent requirements for a telehealth consultation",
+        "expect": [
+          "DHA-TELEHEALTH-POL-2021",
+          "DHA-TELEHEALTH-STD-V4"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27 (15.22)",
+          "[DHA-TELEHEALTH-STD-V4] §10 STANDARD SIX: PATIENT CONSENT, PDF pp.40-41 (15.087)",
+          "[DHA-TELEHEALTH-STD-V4] §7.9 Technology, Equipment, and Infrastructure Requirements, PDF pp.32-33 (12.558)"
+        ]
+      },
+      {
+        "id": "B-08",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "Obligations of AI developers who use Dubai patient data",
+        "expect": [
+          "DHA-AI-2021"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF p.11 (13.205)",
+          "[DUBAI-AI-ETHICS-2022] §3.1.1 Principle, PDF p.10 (13.204)",
+          "[DUBAI-AI-ETHICS-2022] §3.1.1 Principle, PDF pp.10-11 (12.427)"
+        ]
+      },
+      {
+        "id": "B-09",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "How should AI decisions be explained to the people affected by them?",
+        "expect": [
+          "DUBAI-AI-ETHICS-2022",
+          "UAE-AI-CHARTER-2024",
+          "DHA-AI-2021"
+        ],
+        "must_contain": null,
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF p.12 (15.907)",
+          "[DUBAI-AI-ETHICS-2022] §9 See IBM WatsonPaths, PDF p.15 (13.089)",
+          "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF pp.12-13 (9.888)"
+        ]
+      },
+      {
+        "id": "NEG-04",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How do I renew a driving licence in Sharjah?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DOH-HIE-2020] §5.2.2 ADHIE Shall:, PDF pp.35-36 (6.642)",
+          "[DOH-AI-2018] About Department Of Health (Doh), PDF pp.3-5 (5.552)",
+          "[DOH-ADHICS-V2] §3 Ensure, PDF pp.66-67 (5.257)"
+        ]
+      },
+      {
+        "id": "NEG-05",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Best exercises for building leg muscle at the gym",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.24-25 (6.299)",
+          "[UAE-PDPL-2021] Art. 4 Cases of Processing Personal Data without the Consent of its Owner (5.869)",
+          "[UAE-FL2-2019] Art. 19, PDF p.23 (5.075)"
+        ]
+      },
+      {
+        "id": "NEG-06",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Explain how to bake sourdough bread at home",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-HIS-2024] §4.15 Remote Working (Home, Off-Site, Community etc.), PDF pp.26-27 (9.061)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.31-32 (6.611)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.16-17 (5.328)"
+        ]
+      },
+      {
+        "id": "NEG-07",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Symptoms of vitamin D deficiency and the recommended daily dose",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.3-4 (11.609)",
+          "[DOH-AI-2018] §9 Included but not limited to ADSEC Information Security Standards:, PDF p.11 (5.984)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.31 (5.842)"
+        ]
+      },
+      {
+        "id": "NEG-08",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Which team won the football world cup in 2018?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "added blind after run 1",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] References, PDF pp.23-24 (13.116)",
+          "[UAE-AI-STRATEGY-2031] Effective Regulation, PDF p.22 (7.7)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.31 (6.027)"
+        ]
+      },
+      {
+        "id": "NEG-09",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How is bitcoin mined and what hardware is needed?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "added blind after run 1",
+        "top": [
+          "[DHA-TELEHEALTH-STD-V4] §14.5.1 Ensure equipment and tools, software and hardware are appropriate for, PDF pp.53-55 (6.907)",
+          "[DOH-HIE-2020] §4.4.1.2 Develop and implement an Interoperability Policy that is line with the, PDF p.32 (6.335)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF p.33 (4.641)"
+        ]
+      },
+      {
+        "id": "H-01",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "Which node of the ML pipeline is the source of the data used as input?",
+        "expect": [
+          "ITU-Y3172"
+        ],
+        "must_contain": "source of data",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "held-out",
+        "top": [
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF pp.20-21 (27.75)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.25 (22.779)",
+          "[ITU-Y3172] Req-Ml-Mng-005, PDF p.27 (21.626)"
+        ]
+      },
+      {
+        "id": "H-02",
+        "scenario": "S2",
+        "kind": "positive",
+        "query": "How many working days does the telecom regulator take to decide on an IoT service registration request?",
+        "expect": [
+          "TDRA-IOT-PROC-V1"
+        ],
+        "must_contain": "35",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.3-5 (22.06)",
+          "[TDRA-IOT-PROC-V1] Contents, PDF pp.5-6 (21.38)",
+          "[TDRA-IOT-PROC-V1] PDF pp.1-3 (14.057)"
+        ]
+      },
+      {
+        "id": "H-03",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "What does the Abu Dhabi AI policy require about certification of AI systems by recognised international bodies?",
+        "expect": [
+          "DOH-AI-2018"
+        ],
+        "must_contain": "certif",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[DOH-AI-2018] §7.1.2.1 Robust and responsive as evidenced by:, PDF p.9 (22.089)",
+          "[DOH-AI-2018] About Department Of Health (Doh), PDF pp.3-5 (15.658)",
+          "[DOH-HIE-2020] About Department Of Health Abu Dhabi (Doh), PDF pp.11-12 (13.925)"
+        ]
+      },
+      {
+        "id": "H-04",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "For how many years must health information and data be kept after the last health procedure?",
+        "expect": [
+          "UAE-FL2-2019"
+        ],
+        "must_contain": "years",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[UAE-FL2-2019] Art. 20, PDF p.23 (20.047)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.8-9 (13.062)",
+          "[UAE-CR32-2020] Art. 7, PDF p.32 (11.484)"
+        ]
+      },
+      {
+        "id": "H-05",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Can a medical advertisement claim that a product has no side effects?",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "side effects",
+        "rank": 3,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "held-out",
+        "top": [
+          "[MOHAP-PROMO-CODE-2017] §2 PROMOTIONAL MATERIALS - INFORMATION TO BE MADE AVAILABLE:, PDF pp.4-5 (24.568)",
+          "[DHA-AI-2021] §4 Policy Statement:, PDF pp.11-13 (14.161)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF p.3 (12.327)"
+        ]
+      },
+      {
+        "id": "H-06",
+        "scenario": "S4",
+        "kind": "positive",
+        "query": "Rules for before and after pictures in health advertisements",
+        "expect": [
+          "MOHAP-HEALTHAD-GUIDE"
+        ],
+        "must_contain": "before and after",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-3 (14.294)",
+          "[DHA-MEDAD-2022] §8 STANDARD FOUR: HEALTHCARE PROFESSIONALS RESPONSIBILITIES, PDF pp.18-19 (12.808)",
+          "[DHA-MEDAD-2022] §9 STANDARD FIVE: USE OF PICTURES, IMAGES AND VIDEOS, PDF pp.19-21 (10.898)"
+        ]
+      },
+      {
+        "id": "H-07",
+        "scenario": "S1",
+        "kind": "positive",
+        "query": "What does the UAE AI charter say about human oversight of AI?",
+        "expect": [
+          "UAE-AI-CHARTER-2024"
+        ],
+        "must_contain": "oversight",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[UAE-AI-CHARTER-2024] PDF pp.1-3 (16.424)",
+          "[UAE-AI-CHARTER-2024] §10 Peaceful Coexistence with AI:, PDF pp.5-6 (12.879)",
+          "[DOH-HIE-2020] About Department Of Health Abu Dhabi (Doh), PDF pp.7-8 (9.392)"
+        ]
+      },
+      {
+        "id": "H-08",
+        "scenario": "STD",
+        "kind": "positive",
+        "query": "What does the AI readiness report say about AI for inclusion?",
+        "expect": [
+          "ITU-AIREADY-2"
+        ],
+        "must_contain": "Inclusion",
+        "rank": 1,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[ITU-AIREADY-2] §19 What are the differences between the framework and the toolkit?, PDF pp.50-51 (14.55)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.31-32 (11.792)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF p.34 (11.772)"
+        ]
+      },
+      {
+        "id": "H-09",
+        "scenario": "S3",
+        "kind": "positive",
+        "query": "In which cases can personal data be processed without consent to protect public health?",
+        "expect": [
+          "UAE-PDPL-2021"
+        ],
+        "must_contain": "public health",
+        "rank": 1,
+        "ok": true,
+        "evidence": "strong",
+        "batch": "held-out",
+        "top": [
+          "[UAE-PDPL-2021] Art. 4 Cases of Processing Personal Data without the Consent of its Owner (33.022)",
+          "[UAE-PDPL-2021] Art. 4 Cases of Processing Personal Data without the Consent of its Owner (23.39)",
+          "[DOH-ADHICS-V2] §1 Restrict from processing PII and PHI without the consent of, PDF pp.85-86 (19.728)"
+        ]
+      },
+      {
+        "id": "HN-01",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How do I apply for a golden visa for investors?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[UAE-AI-STRATEGY-2031] Ecosystem For Ai, PDF pp.14-15 (6.31)",
+          "[ITU-AIREADY-2] §5 AI Readiness Framework, PDF p.40 (4.752)",
+          "[DUBAI-AI-ETHICS-2022] §14 IEEE. https://sagroups.ieee.org/7010/, PDF pp.19-20 (4.365)"
+        ]
+      },
+      {
+        "id": "HN-02",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What is the best treatment for a broken ankle?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.24-25 (6.299)",
+          "[DHA-TELEHEALTH-STD-V4] §14.1 Teleconsultation services shall:, PDF pp.51-52 (5.358)",
+          "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27 (5.08)"
+        ]
+      },
+      {
+        "id": "HN-03",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Explain quantum entanglement in simple terms",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[DHA-MEDAD-2022] §13 National Media Council (2019). Electronic Media System. Available on :, PDF pp.24-25 (6.946)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.31-32 (6.611)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.16-17 (5.328)"
+        ]
+      },
+      {
+        "id": "HN-04",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "How much does a flight from Dubai to London cost in December?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3.7.2 Guidelines, PDF p.20 (9.716)",
+          "[DUBAI-AI-ETHICS-2022] §3.8.2 Guidelines, PDF pp.23-24 (6.818)",
+          "[UAE-AI-STRATEGY-2031] Lives And Government, PDF p.17 (6.701)"
+        ]
+      },
+      {
+        "id": "HN-05",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "Compare iPhone and Android battery life",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "held-out",
+        "top": [
+          "[DUBAI-AI-ETHICS-2022] §3 From ISO/IEC 2382:2015, PDF p.7 (7.614)",
+          "[DOH-ADHICS-V2] §2 Address requirements of secure storage of hazardous, PDF pp.44-45 (5.058)",
+          "[DOH-ADHICS-V2] §6 Control Adoption, Compliance and Audit, PDF p.22 (4.943)"
+        ]
+      },
+      {
+        "id": "HN-06",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What are the side effects of ibuprofen?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "weak",
+        "batch": "held-out",
+        "top": [
+          "[DHA-AI-2021] §4 Policy Statement:, PDF pp.11-13 (10.184)",
+          "[MOHAP-PROMO-CODE-2017] §2 PROMOTIONAL MATERIALS - INFORMATION TO BE MADE AVAILABLE:, PDF pp.4-5 (9.51)",
+          "[MOHAP-HEALTHAD-GUIDE] PDF p.3 (9.432)"
+        ]
+      },
+      {
+        "id": "NEG-01",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What is the recipe for traditional Arabic coffee with cardamom?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "initial",
+        "top": [
+          "[UAE-FL2-2019] PDF pp.15-16 (8.037)",
+          "[ITU-AIREADY-2] §3 Structural Approach, PDF pp.27-28 (5.932)",
+          "[TDRA-TAR-POLICY-V3] §1 Definitions, PDF p.4 (5.879)"
+        ]
+      },
+      {
+        "id": "NEG-02",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What dose of metformin should an adult with type 2 diabetes take?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "initial",
+        "top": [
+          "[TDRA-TAR-POLICY-V3] §12 Market Surveillance, PDF pp.8-9 (7.341)",
+          "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.17-20 (7.207)",
+          "[UAE-AI-STRATEGY-2031] Jobs Enabled By Ai, PDF pp.18-19 (6.009)"
+        ]
+      },
+      {
+        "id": "NEG-03",
+        "scenario": "STD",
+        "kind": "negative",
+        "query": "What is the corporate tax rate for cryptocurrency exchanges?",
+        "expect": null,
+        "must_contain": null,
+        "rank": null,
+        "ok": true,
+        "evidence": "none",
+        "batch": "initial",
+        "top": [
+          "[DOH-AI-2018] About Department Of Health (Doh), PDF pp.3-5 (6.057)",
+          "[UAE-AI-STRATEGY-2031] A Test Bed For Ai, PDF pp.21-22 (5.879)",
+          "[ITU-AIREADY-2] §1 Introduction, PDF pp.11-12 (5.393)"
+        ]
+      },
+      {
+        "id": "GAP-01",
+        "scenario": "S4",
+        "kind": "known_gap",
+        "query": "Which authority grants marketing approval for medical devices under the medical products law and how are food supplements treated?",
+        "expect": [
+          "UAE-FDL38-2024"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[MOHAP-HEALTHAD-GUIDE] PDF pp.3-4 (21.316)",
+          "[TDRA-TAR-POLICY-V3] Art. 42 of the Telecommunications Law grants TDRA the exclusive competence, PDF pp.5-6 (15.126)",
+          "[MOHAP-PROMO-CODE-2017] PDF p.3 (14.97)"
+        ]
+      },
+      {
+        "id": "GAP-02",
+        "scenario": "S4",
+        "kind": "known_gap",
+        "query": "Penalty for misleading advertising by an advertiser under the consumer protection law",
+        "expect": [
+          "UAE-FL15-2020"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[UAE-FL2-2019] Art. 24, PDF p.24 (14.875)",
+          "[UAE-FL2-2019] Art. 23, PDF p.24 (13.503)",
+          "[NMC-AD-GUIDE] PDF pp.1-4 (13.339)"
+        ]
+      },
+      {
+        "id": "GAP-03",
+        "scenario": "S1",
+        "kind": "known_gap",
+        "query": "What is a medical error and when is a practitioner liable under the medical liability law?",
+        "expect": [
+          "UAE-FDL4-2016"
+        ],
+        "must_contain": null,
+        "rank": null,
+        "ok": false,
+        "evidence": "weak",
+        "batch": "initial",
+        "top": [
+          "[DHA-AI-2021] §5 References, PDF pp.16-17 (11.792)",
+          "[DHA-HIS-2024] §4.13 Sharing Protected Health Information through Mailing/Posting/Courier, PDF pp.23-24 (8.347)",
+          "[DHA-MEDAD-2022] §5 STANDARD ONE: SOCIAL MEDIA ACCOUNTS, PDF pp.12-13 (7.941)"
+        ]
+      }
+    ]
+  }
+}

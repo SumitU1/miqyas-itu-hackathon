@@ -1,0 +1,6 @@
+# Needed for steps 1-3 (fetch, build, search, tests, coverage)
+pymupdf>=1.24
+
+# Only for kb/export_itu_chroma.py (not run yet)
+# chromadb>=0.5
+# ollama>=0.4

@@ -1,0 +1,39 @@
+{
+ "scenario_id": "S3",
+ "title": "A partner clinic asks for a member's records, then for more, across emirates",
+ "synthetic": true,
+ "decisions": 3,
+ "needs_human": 3,
+ "approvals_simulated": 1,
+ "adviser_questions": 12,
+ "adviser_rulings": 5,
+ "adviser_abstentions": {
+  "evidence-weak": 7
+ },
+ "adviser_evidence": {
+  "strong": 5,
+  "weak": 7
+ },
+ "conflicts": {
+  "jurisdiction-spread": 2
+ },
+ "citation_violations": 2,
+ "assessment_failures": 0,
+ "emergency_shortcuts": 0,
+ "guard_events": 0,
+ "kb_queries": 64,
+ "model_calls": 27,
+ "model_calls_failed": 0,
+ "served_models": [
+  "IFM/K2-Horizon-375B-A23B",
+  "dots-studio/dots-3-note-preview:free",
+  "poolside/laguna-s-2.1:free",
+  "qwen/qwen3.8-27b"
+ ],
+ "model_alias": "auto",
+ "kb_build_id": "20261026T1648Z",
+ "audit_records": 139,
+ "head_hash": "7f8eae7496a672ad2da0aab79f3b1980e5b22f317cdf195148d809f9d51c4dbb",
+ "chain_verified": true,
+ "run_finished_utc": "2026-10-28T06:19:01Z"
+}

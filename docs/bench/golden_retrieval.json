@@ -1,0 +1,1982 @@
+{
+ "Can an AI system tell a patient their diagnosis or must a licensed clinician review the output first?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DHA-TELEHEALTH-STD-V4:0035",
+    14.357,
+    0.477
+   ],
+   [
+    "ITU-AIREADY-2:0038",
+    13.762,
+    0.451
+   ],
+   [
+    "DOH-AI-2018:0003",
+    11.764,
+    0.359
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0069",
+    11.461,
+    0.404
+   ],
+   [
+    "ITU-AIREADY-2:0036",
+    11.298,
+    0.294
+   ]
+  ]
+ },
+ "Who is accountable when an AI tool used in healthcare gives wrong or harmful advice?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DHA-AI-2021:0006",
+    12.804,
+    0.29
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0012",
+    11.666,
+    0.263
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0001",
+    11.299,
+    0.254
+   ],
+   [
+    "DOH-AI-2018:0006",
+    11.167,
+    0.276
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0032",
+    11.127,
+    0.262
+   ]
+  ]
+ },
+ "Does a person have the right to object to a decision made by automated processing and ask for human review?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-PDPL-2021:0013",
+    32.91,
+    0.735
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0017",
+    16.359,
+    0.417
+   ],
+   [
+    "UAE-PDPL-2021:0011",
+    15.436,
+    0.411
+   ],
+   [
+    "UAE-PDPL-2021:0012",
+    14.273,
+    0.313
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0016",
+    14.155,
+    0.398
+   ]
+  ]
+ },
+ "What must be reported to the regulator after an AI related patient safety incident?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DOH-AI-2018:0010",
+    14.904,
+    0.712
+   ],
+   [
+    "DOH-ADHICS-V2:0101",
+    14.249,
+    0.554
+   ],
+   [
+    "DHA-AI-2021:0010",
+    13.505,
+    0.636
+   ],
+   [
+    "DHA-HIS-2024:0015",
+    12.191,
+    0.592
+   ],
+   [
+    "DOH-AI-2018:0011",
+    11.958,
+    0.457
+   ]
+  ]
+ },
+ "Impact assessment required before profiling that uses health data": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-PDPL-2021:0015",
+    17.257,
+    0.772
+   ],
+   [
+    "DOH-ADHICS-V2:0080",
+    11.111,
+    0.478
+   ],
+   [
+    "DOH-ADHICS-V2:0079",
+    9.573,
+    0.478
+   ],
+   [
+    "UAE-PDPL-2021:0013",
+    9.47,
+    0.494
+   ],
+   [
+    "DOH-ADHICS-V2:0082",
+    9.398,
+    0.575
+   ]
+  ]
+ },
+ "May health data related to services provided in the UAE be stored or processed outside the country?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "MOHAP-MD51-2021:0001",
+    20.643,
+    0.811
+   ],
+   [
+    "UAE-FL2-2019:0016",
+    19.062,
+    0.847
+   ],
+   [
+    "DHA-TELEHEALTH-POL-2021:0003",
+    18.031,
+    1.0
+   ],
+   [
+    "DOH-ADHICS-V2:0085",
+    16.651,
+    0.898
+   ],
+   [
+    "DHA-HIS-2024:0004",
+    14.24,
+    0.804
+   ]
+  ]
+ },
+ "Is health data from simple medical devices allowed to be transferred abroad?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "MOHAP-MD51-2021:0001",
+    21.608,
+    0.654
+   ],
+   [
+    "DHA-HIS-2024:0013",
+    11.853,
+    0.333
+   ],
+   [
+    "DOH-ADHICS-V2:0077",
+    11.668,
+    0.433
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0020",
+    11.548,
+    0.352
+   ],
+   [
+    "DHA-HIS-2024:0034",
+    11.258,
+    0.439
+   ]
+  ]
+ },
+ "What is the fine for storing or transferring health data outside the State without a permitted case?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "MOHAP-MD51-2021:0001",
+    22.146,
+    0.397
+   ],
+   [
+    "UAE-FL2-2019:0026",
+    19.109,
+    0.428
+   ],
+   [
+    "UAE-FL2-2019:0016",
+    19.094,
+    0.375
+   ],
+   [
+    "DHA-TELEHEALTH-POL-2021:0003",
+    17.579,
+    0.504
+   ],
+   [
+    "UAE-PDPL-2021:0016",
+    17.147,
+    0.376
+   ]
+  ]
+ },
+ "Does a smartwatch or radio device need type approval before it is sold in the UAE?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "TDRA-TAR-REG-V3:0002",
+    19.11,
+    0.604
+   ],
+   [
+    "TDRA-TAR-POLICY-V3:0007",
+    18.754,
+    0.558
+   ],
+   [
+    "TDRA-TAR-REG-V3:0014",
+    18.661,
+    0.517
+   ],
+   [
+    "TDRA-TAR-REG-V3:0008",
+    17.625,
+    0.517
+   ],
+   [
+    "TDRA-TAR-REG-V3:0016",
+    16.862,
+    0.52
+   ]
+  ]
+ },
+ "Does the personal data protection law apply to health data that has its own legislation?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-PDPL-2021:0004",
+    21.606,
+    0.804
+   ],
+   [
+    "UAE-PDPL-2021:0005",
+    15.909,
+    0.665
+   ],
+   [
+    "UAE-CR32-2020:0008",
+    15.541,
+    0.707
+   ],
+   [
+    "UAE-PDPL-2021:0016",
+    14.835,
+    0.616
+   ],
+   [
+    "UAE-PDPL-2021:0007",
+    13.64,
+    0.616
+   ]
+  ]
+ },
+ "Transfer of personal data outside the State with the explicit consent of the data subject": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-PDPL-2021:0017",
+    28.857,
+    1.0
+   ],
+   [
+    "UAE-PDPL-2021:0016",
+    20.928,
+    0.65
+   ],
+   [
+    "UAE-PDPL-2021:0004",
+    18.863,
+    0.52
+   ],
+   [
+    "UAE-PDPL-2021:0003",
+    18.331,
+    0.639
+   ],
+   [
+    "UAE-PDPL-2021:0018",
+    17.865,
+    0.547
+   ]
+  ]
+ },
+ "Does Dubai allow protected health information to leave the UAE and who must approve it?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DHA-TELEHEALTH-STD-V4:0056",
+    11.462,
+    0.428
+   ],
+   [
+    "DHA-HIS-2024:0008",
+    9.532,
+    0.288
+   ],
+   [
+    "UAE-FL2-2019:0007",
+    8.582,
+    0.31
+   ],
+   [
+    "DOH-ADHICS-V2:0015",
+    8.386,
+    0.324
+   ],
+   [
+    "DHA-AI-2021:0003",
+    8.071,
+    0.31
+   ]
+  ]
+ },
+ "Registration of an Internet of Things service provider with the telecom regulator": {
+  "evidence": "weak",
+  "top": [
+   [
+    "TDRA-IOT-PROC-V1:0001",
+    23.285,
+    0.611
+   ],
+   [
+    "TDRA-IOT-PROC-V1:0002",
+    20.218,
+    0.611
+   ],
+   [
+    "TDRA-IOT-PROC-V1:0003",
+    14.942,
+    0.522
+   ],
+   [
+    "ITU-Y3172:0001",
+    14.07,
+    0.374
+   ],
+   [
+    "ITU-Y3172:0008",
+    13.568,
+    0.463
+   ]
+  ]
+ },
+ "Can a clinic share a patient's health record with a third party without the patient's consent?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DOH-HIE-2020:0032",
+    19.302,
+    0.579
+   ],
+   [
+    "DOH-HIE-2020:0023",
+    16.369,
+    0.437
+   ],
+   [
+    "DHA-HIS-2024:0017",
+    15.993,
+    0.452
+   ],
+   [
+    "DHA-HIS-2024:0013",
+    15.443,
+    0.398
+   ],
+   [
+    "DOH-HIE-2020:0007",
+    15.216,
+    0.545
+   ]
+  ]
+ },
+ "What consent is required before patient information is shared through the Abu Dhabi health information exchange?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "DOH-HIE-2020:0022",
+    22.033,
+    0.846
+   ],
+   [
+    "DOH-HIE-2020:0017",
+    17.517,
+    0.593
+   ],
+   [
+    "DHA-HIS-2024:0013",
+    17.102,
+    0.597
+   ],
+   [
+    "DOH-HIE-2020:0023",
+    16.94,
+    0.673
+   ],
+   [
+    "DHA-HIS-2024:0017",
+    16.903,
+    0.635
+   ]
+  ]
+ },
+ "What approval does a telehealth platform need before offering services in Dubai?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DHA-TELEHEALTH-STD-V4:0021",
+    18.749,
+    0.646
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0020",
+    16.794,
+    0.615
+   ],
+   [
+    "DHA-TELEHEALTH-POL-2021:0003",
+    16.324,
+    0.679
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0067",
+    14.542,
+    0.487
+   ],
+   [
+    "TDRA-TAR-REG-V3:0013",
+    12.949,
+    0.471
+   ]
+  ]
+ },
+ "Security controls required of healthcare technology providers that process health information in Abu Dhabi": {
+  "evidence": "strong",
+  "top": [
+   [
+    "DOH-ADHICS-V2:0001",
+    18.84,
+    0.9
+   ],
+   [
+    "DOH-ADHICS-V2:0028",
+    17.619,
+    0.9
+   ],
+   [
+    "DOH-ADHICS-V2:0006",
+    16.652,
+    0.791
+   ],
+   [
+    "DOH-ADHICS-V2:0109",
+    15.062,
+    0.811
+   ],
+   [
+    "DOH-ADHICS-V2:0115",
+    14.898,
+    0.757
+   ]
+  ]
+ },
+ "Who may access the central health information system and how is access controlled and audited?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-CR32-2020:0006",
+    14.677,
+    0.726
+   ],
+   [
+    "UAE-CR32-2020:0009",
+    13.749,
+    0.77
+   ],
+   [
+    "UAE-CR32-2020:0011",
+    12.401,
+    0.665
+   ],
+   [
+    "UAE-FL2-2019:0011",
+    12.242,
+    0.568
+   ],
+   [
+    "UAE-CR32-2020:0008",
+    12.186,
+    0.568
+   ]
+  ]
+ },
+ "Anonymisation of health data before sharing it for secondary use or research": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DHA-HIS-2024:0014",
+    18.974,
+    0.603
+   ],
+   [
+    "DHA-HIS-2024:0025",
+    15.129,
+    0.445
+   ],
+   [
+    "DHA-HIS-2024:0007",
+    14.413,
+    0.521
+   ],
+   [
+    "DHA-HIS-2024:0001",
+    13.246,
+    0.377
+   ],
+   [
+    "DHA-HIS-2024:0026",
+    12.904,
+    0.501
+   ]
+  ]
+ },
+ "Are words like guaranteed, miraculous or immediate results allowed in a health advertisement?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "MOHAP-HEALTHAD-GUIDE:0002",
+    27.983,
+    0.752
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0003",
+    26.905,
+    0.784
+   ],
+   [
+    "DHA-MEDAD-2022:0022",
+    16.174,
+    0.521
+   ],
+   [
+    "DHA-MEDAD-2022:0011",
+    15.474,
+    0.525
+   ],
+   [
+    "DHA-MEDAD-2022:0021",
+    13.614,
+    0.433
+   ]
+  ]
+ },
+ "Does a medical advertisement on social media need approval from the health authority before it is published?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "NMC-AD-GUIDE:0005",
+    22.018,
+    0.596
+   ],
+   [
+    "DHA-MEDAD-2022:0007",
+    19.919,
+    0.47
+   ],
+   [
+    "NMC-AD-GUIDE:0004",
+    19.678,
+    0.523
+   ],
+   [
+    "DHA-MEDAD-2022:0013",
+    19.527,
+    0.565
+   ],
+   [
+    "NMC-AD-GUIDE:0006",
+    19.433,
+    0.501
+   ]
+  ]
+ },
+ "Must an influencer disclose financial gain when promoting a product or service?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "NMC-AD-GUIDE:0005",
+    16.172,
+    0.44
+   ],
+   [
+    "DHA-MEDAD-2022:0010",
+    14.604,
+    0.37
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0003",
+    12.137,
+    0.275
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0020",
+    11.195,
+    0.31
+   ],
+   [
+    "DHA-MEDAD-2022:0008",
+    10.557,
+    0.377
+   ]
+  ]
+ },
+ "Can a medical product be promoted outside its approved indications or before marketing authorisation?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "MOHAP-PROMO-CODE-2017:0003",
+    32.615,
+    0.888
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0001",
+    14.677,
+    0.446
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0002",
+    13.275,
+    0.335
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0013",
+    12.594,
+    0.335
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0014",
+    12.252,
+    0.335
+   ]
+  ]
+ },
+ "Health educational statement required in advertisements for diet supplements": {
+  "evidence": "weak",
+  "top": [
+   [
+    "MOHAP-HEALTHAD-GUIDE:0004",
+    25.892,
+    0.637
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0003",
+    13.975,
+    0.455
+   ],
+   [
+    "DHA-MEDAD-2022:0021",
+    10.104,
+    0.28
+   ],
+   [
+    "NMC-AD-GUIDE:0005",
+    9.865,
+    0.295
+   ],
+   [
+    "DHA-AI-2021:0008",
+    9.494,
+    0.34
+   ]
+  ]
+ },
+ "Right to object to direct marketing and profiling for marketing purposes": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-PDPL-2021:0012",
+    29.343,
+    1.0
+   ],
+   [
+    "UAE-PDPL-2021:0013",
+    16.168,
+    0.59
+   ],
+   [
+    "UAE-PDPL-2021:0011",
+    14.277,
+    0.617
+   ],
+   [
+    "TDRA-TAR-REG-V3:0020",
+    9.336,
+    0.366
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0017",
+    8.535,
+    0.335
+   ]
+  ]
+ },
+ "What are the principles of the UAE Charter for the Development and Use of AI?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-AI-CHARTER-2024:0001",
+    20.47,
+    1.0
+   ],
+   [
+    "UAE-AI-CHARTER-2024:0003",
+    16.175,
+    0.798
+   ],
+   [
+    "UAE-AI-CHARTER-2024:0002",
+    14.362,
+    0.798
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0003",
+    11.133,
+    0.555
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0004",
+    10.488,
+    0.555
+   ]
+  ]
+ },
+ "Which node of the ML pipeline applies policies to the output of the model before it reaches the target?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "ITU-Y3172:0038",
+    32.068,
+    0.73
+   ],
+   [
+    "ITU-Y3172:0029",
+    27.989,
+    0.635
+   ],
+   [
+    "ITU-Y3172:0037",
+    26.196,
+    0.618
+   ],
+   [
+    "ITU-Y3172:0040",
+    25.232,
+    0.6
+   ],
+   [
+    "ITU-Y3172:0030",
+    25.146,
+    0.586
+   ]
+  ]
+ },
+ "What is an ML sandbox and why is it used before deploying a model?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "ITU-Y3172:0037",
+    22.363,
+    1.0
+   ],
+   [
+    "ITU-Y3172:0032",
+    20.725,
+    1.0
+   ],
+   [
+    "ITU-Y3172:0031",
+    20.572,
+    1.0
+   ],
+   [
+    "ITU-Y3172:0042",
+    19.222,
+    0.903
+   ],
+   [
+    "ITU-Y3172:0038",
+    16.287,
+    0.785
+   ]
+  ]
+ },
+ "Which AI Readiness dimension covers policies for the AI lifecycle and a sandbox for policy extrapolation?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "ITU-AIREADY-2:0040",
+    26.335,
+    0.852
+   ],
+   [
+    "ITU-AIREADY-2:0039",
+    24.983,
+    0.852
+   ],
+   [
+    "ITU-AIREADY-2:0067",
+    23.379,
+    0.684
+   ],
+   [
+    "ITU-AIREADY-2:0057",
+    16.514,
+    0.568
+   ],
+   [
+    "ITU-AIREADY-2:0041",
+    16.408,
+    0.61
+   ]
+  ]
+ },
+ "Fairness, accountability, transparency and explainability principles for AI systems in Dubai": {
+  "evidence": "strong",
+  "top": [
+   [
+    "DUBAI-AI-ETHICS-2022:0018",
+    22.448,
+    0.778
+   ],
+   [
+    "DHA-AI-2021:0004",
+    19.67,
+    0.805
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0009",
+    17.423,
+    0.469
+   ],
+   [
+    "ITU-AIREADY-2:0017",
+    16.365,
+    0.582
+   ],
+   [
+    "ITU-AIREADY-2:0041",
+    16.258,
+    0.591
+   ]
+  ]
+ },
+ "Cyber security requirements for connected medical devices and IoMT in Abu Dhabi": {
+  "evidence": "strong",
+  "top": [
+   [
+    "DOH-ADHICS-V2:0010",
+    19.989,
+    0.726
+   ],
+   [
+    "DOH-ADHICS-V2:0038",
+    17.134,
+    0.675
+   ],
+   [
+    "DOH-ADHICS-V2:0039",
+    16.214,
+    0.675
+   ],
+   [
+    "DOH-ADHICS-V2:0065",
+    15.828,
+    0.624
+   ],
+   [
+    "DOH-HIE-2020:0020",
+    14.914,
+    0.566
+   ]
+  ]
+ },
+ "Conditions for providing remote patient monitoring through telehealth in Dubai": {
+  "evidence": "strong",
+  "top": [
+   [
+    "DHA-TELEHEALTH-STD-V4:0004",
+    18.151,
+    0.901
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0011",
+    15.814,
+    0.647
+   ],
+   [
+    "DHA-TELEHEALTH-POL-2021:0002",
+    15.69,
+    0.901
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0039",
+    15.639,
+    0.867
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0010",
+    15.016,
+    0.789
+   ]
+  ]
+ },
+ "What does the national AI strategy say about healthcare as a priority sector?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-AI-STRATEGY-2031:0017",
+    16.832,
+    0.502
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0001",
+    16.697,
+    0.502
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0007",
+    15.585,
+    0.547
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0015",
+    15.517,
+    0.502
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0005",
+    15.414,
+    0.502
+   ]
+  ]
+ },
+ "Transfer of personal data to a country that has adequate data protection legislation": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-PDPL-2021:0016",
+    19.719,
+    0.793
+   ],
+   [
+    "UAE-PDPL-2021:0017",
+    17.087,
+    0.599
+   ],
+   [
+    "UAE-PDPL-2021:0004",
+    16.453,
+    0.627
+   ],
+   [
+    "DHA-HIS-2024:0028",
+    13.004,
+    0.602
+   ],
+   [
+    "UAE-PDPL-2021:0005",
+    12.789,
+    0.487
+   ]
+  ]
+ },
+ "Duty of the controller to notify the regulator and the data subject after a personal data breach": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-PDPL-2021:0009",
+    26.523,
+    0.555
+   ],
+   [
+    "UAE-PDPL-2021:0010",
+    25.448,
+    0.575
+   ],
+   [
+    "UAE-PDPL-2021:0011",
+    18.223,
+    0.426
+   ],
+   [
+    "DOH-ADHICS-V2:0082",
+    16.668,
+    0.44
+   ],
+   [
+    "DOH-HIE-2020:0045",
+    16.665,
+    0.497
+   ]
+  ]
+ },
+ "Which equipment risk levels require technical inspection for type approval?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "TDRA-TAR-REG-V3:0010",
+    20.992,
+    0.509
+   ],
+   [
+    "TDRA-TAR-REG-V3:0009",
+    20.691,
+    0.611
+   ],
+   [
+    "TDRA-TAR-REG-V3:0016",
+    20.475,
+    0.685
+   ],
+   [
+    "TDRA-TAR-REG-V3:0011",
+    20.204,
+    0.509
+   ],
+   [
+    "TDRA-TAR-POLICY-V3:0007",
+    18.639,
+    0.509
+   ]
+  ]
+ },
+ "Patient consent requirements for a telehealth consultation": {
+  "evidence": "strong",
+  "top": [
+   [
+    "DHA-TELEHEALTH-STD-V4:0020",
+    15.683,
+    0.896
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0067",
+    14.458,
+    1.0
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0021",
+    13.707,
+    1.0
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0037",
+    12.785,
+    1.0
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0033",
+    12.614,
+    0.695
+   ]
+  ]
+ },
+ "Obligations of AI developers who use Dubai patient data": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DUBAI-AI-ETHICS-2022:0011",
+    12.494,
+    0.586
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0005",
+    12.233,
+    0.648
+   ],
+   [
+    "DHA-AI-2021:0006",
+    12.06,
+    0.697
+   ],
+   [
+    "DHA-AI-2021:0010",
+    11.832,
+    0.741
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0013",
+    11.364,
+    0.648
+   ]
+  ]
+ },
+ "How should AI decisions be explained to the people affected by them?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DUBAI-AI-ETHICS-2022:0021",
+    18.652,
+    0.557
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0020",
+    17.608,
+    0.557
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0016",
+    17.15,
+    0.515
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0023",
+    16.14,
+    0.592
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0018",
+    14.73,
+    0.516
+   ]
+  ]
+ },
+ "How do I renew a driving licence in Sharjah?": {
+  "evidence": "none",
+  "top": [
+   [
+    "DOH-HIE-2020:0043",
+    6.553,
+    0.589
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0021",
+    4.432,
+    0.411
+   ],
+   [
+    "DOH-AI-2018:0002",
+    4.339,
+    0.411
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0017",
+    4.152,
+    0.411
+   ],
+   [
+    "DOH-HIE-2020:0018",
+    4.132,
+    0.411
+   ]
+  ]
+ },
+ "Best exercises for building leg muscle at the gym": {
+  "evidence": "none",
+  "top": [
+   [
+    "UAE-AI-STRATEGY-2031:0035",
+    6.849,
+    0.516
+   ],
+   [
+    "UAE-PDPL-2021:0006",
+    6.29,
+    0.484
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0005",
+    5.69,
+    0.516
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0004",
+    5.597,
+    0.516
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0017",
+    5.522,
+    0.516
+   ]
+  ]
+ },
+ "Explain how to bake sourdough bread at home": {
+  "evidence": "none",
+  "top": [
+   [
+    "DHA-HIS-2024:0024",
+    6.483,
+    0.318
+   ],
+   [
+    "ITU-AIREADY-2:0041",
+    6.076,
+    0.382
+   ],
+   [
+    "DOH-AI-2018:0006",
+    5.84,
+    0.457
+   ],
+   [
+    "DOH-AI-2018:0007",
+    5.766,
+    0.457
+   ],
+   [
+    "DHA-AI-2021:0004",
+    4.786,
+    0.382
+   ]
+  ]
+ },
+ "Symptoms of vitamin D deficiency and the recommended daily dose": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DHA-TELEHEALTH-STD-V4:0072",
+    16.724,
+    0.45
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0004",
+    13.457,
+    0.332
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0071",
+    9.504,
+    0.297
+   ],
+   [
+    "ITU-AIREADY-2:0058",
+    7.476,
+    0.231
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0037",
+    7.223,
+    0.245
+   ]
+  ]
+ },
+ "Which team won the football world cup in 2018?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-AI-STRATEGY-2031:0044",
+    10.968,
+    1.0
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0041",
+    8.751,
+    0.621
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0031",
+    8.081,
+    0.621
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0003",
+    7.502,
+    0.621
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0021",
+    6.88,
+    0.621
+   ]
+  ]
+ },
+ "How is bitcoin mined and what hardware is needed?": {
+  "evidence": "none",
+  "top": [
+   [
+    "DHA-TELEHEALTH-STD-V4:0044",
+    5.293,
+    0.701
+   ],
+   [
+    "ITU-AIREADY-2:0043",
+    4.945,
+    1.0
+   ],
+   [
+    "ITU-Y3172:0023",
+    4.879,
+    1.0
+   ],
+   [
+    "ITU-Y3172:0006",
+    4.799,
+    0.701
+   ],
+   [
+    "ITU-AIREADY-2:0022",
+    4.766,
+    1.0
+   ]
+  ]
+ },
+ "Which node of the ML pipeline is the source of the data used as input?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "ITU-Y3172:0029",
+    26.227,
+    1.0
+   ],
+   [
+    "ITU-Y3172:0035",
+    25.921,
+    0.835
+   ],
+   [
+    "ITU-Y3172:0028",
+    25.756,
+    1.0
+   ],
+   [
+    "ITU-Y3172:0036",
+    23.857,
+    0.803
+   ],
+   [
+    "ITU-Y3172:0038",
+    23.759,
+    0.848
+   ]
+  ]
+ },
+ "How many working days does the telecom regulator take to decide on an IoT service registration request?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "TDRA-IOT-PROC-V1:0002",
+    31.969,
+    0.524
+   ],
+   [
+    "TDRA-IOT-PROC-V1:0001",
+    23.029,
+    0.292
+   ],
+   [
+    "TDRA-IOT-PROC-V1:0003",
+    17.528,
+    0.292
+   ],
+   [
+    "TDRA-IOT-PROC-V1:0004",
+    14.031,
+    0.292
+   ],
+   [
+    "DOH-ADHICS-V2:0051",
+    12.432,
+    0.193
+   ]
+  ]
+ },
+ "What does the Abu Dhabi AI policy require about certification of AI systems by recognised international bodies?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DOH-AI-2018:0007",
+    20.868,
+    0.617
+   ],
+   [
+    "DOH-AI-2018:0008",
+    19.239,
+    0.617
+   ],
+   [
+    "DOH-AI-2018:0009",
+    18.074,
+    0.58
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0014",
+    16.138,
+    0.504
+   ],
+   [
+    "DOH-AI-2018:0001",
+    15.459,
+    0.423
+   ]
+  ]
+ },
+ "For how many years must health information and data be kept after the last health procedure?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-FL2-2019:0023",
+    17.55,
+    0.517
+   ],
+   [
+    "DHA-HIS-2024:0027",
+    12.904,
+    0.506
+   ],
+   [
+    "UAE-PDPL-2021:0007",
+    11.397,
+    0.326
+   ],
+   [
+    "UAE-CR32-2020:0011",
+    10.255,
+    0.271
+   ],
+   [
+    "TDRA-TAR-REG-V3:0009",
+    10.097,
+    0.448
+   ]
+  ]
+ },
+ "Can a medical advertisement claim that a product has no side effects?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "MOHAP-PROMO-CODE-2017:0003",
+    21.002,
+    1.0
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0004",
+    20.174,
+    1.0
+   ],
+   [
+    "DHA-MEDAD-2022:0011",
+    18.277,
+    1.0
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0003",
+    17.425,
+    0.923
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0002",
+    16.567,
+    0.811
+   ]
+  ]
+ },
+ "Rules for before and after pictures in health advertisements": {
+  "evidence": "strong",
+  "top": [
+   [
+    "MOHAP-HEALTHAD-GUIDE:0002",
+    19.766,
+    0.821
+   ],
+   [
+    "DHA-MEDAD-2022:0016",
+    15.967,
+    0.821
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0001",
+    14.57,
+    0.498
+   ],
+   [
+    "DHA-MEDAD-2022:0015",
+    13.189,
+    0.66
+   ],
+   [
+    "DHA-MEDAD-2022:0023",
+    10.821,
+    0.547
+   ]
+  ]
+ },
+ "What does the UAE AI charter say about human oversight of AI?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-AI-CHARTER-2024:0001",
+    19.734,
+    0.589
+   ],
+   [
+    "UAE-AI-CHARTER-2024:0002",
+    19.628,
+    0.589
+   ],
+   [
+    "UAE-AI-CHARTER-2024:0003",
+    14.893,
+    0.405
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0033",
+    11.916,
+    0.459
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0027",
+    9.606,
+    0.275
+   ]
+  ]
+ },
+ "What does the AI readiness report say about AI for inclusion?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "ITU-AIREADY-2:0026",
+    14.195,
+    0.64
+   ],
+   [
+    "ITU-AIREADY-2:0071",
+    14.078,
+    0.502
+   ],
+   [
+    "ITU-AIREADY-2:0002",
+    13.036,
+    0.502
+   ],
+   [
+    "ITU-AIREADY-2:0061",
+    12.148,
+    0.502
+   ],
+   [
+    "ITU-AIREADY-2:0042",
+    11.802,
+    0.502
+   ]
+  ]
+ },
+ "In which cases can personal data be processed without consent to protect public health?": {
+  "evidence": "strong",
+  "top": [
+   [
+    "UAE-PDPL-2021:0005",
+    26.364,
+    1.0
+   ],
+   [
+    "UAE-PDPL-2021:0006",
+    18.579,
+    0.715
+   ],
+   [
+    "DOH-ADHICS-V2:0077",
+    17.862,
+    0.741
+   ],
+   [
+    "DHA-HIS-2024:0017",
+    16.598,
+    0.739
+   ],
+   [
+    "UAE-PDPL-2021:0003",
+    16.558,
+    0.657
+   ]
+  ]
+ },
+ "How do I apply for a golden visa for investors?": {
+  "evidence": "none",
+  "top": [
+   [
+    "UAE-AI-STRATEGY-2031:0026",
+    7.434,
+    0.409
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0029",
+    5.99,
+    0.435
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0025",
+    5.573,
+    0.435
+   ],
+   [
+    "DOH-AI-2018:0002",
+    5.35,
+    0.409
+   ],
+   [
+    "DOH-HIE-2020:0002",
+    5.044,
+    0.409
+   ]
+  ]
+ },
+ "What is the best treatment for a broken ankle?": {
+  "evidence": "none",
+  "top": [
+   [
+    "ITU-AIREADY-2:0033",
+    6.017,
+    0.536
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0012",
+    4.997,
+    0.464
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0042",
+    4.881,
+    0.246
+   ],
+   [
+    "DHA-MEDAD-2022:0014",
+    4.866,
+    0.464
+   ],
+   [
+    "DHA-MEDAD-2022:0023",
+    4.763,
+    0.219
+   ]
+  ]
+ },
+ "Explain quantum entanglement in simple terms": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-PDPL-2021:0008",
+    10.447,
+    0.323
+   ],
+   [
+    "MOHAP-MD51-2021:0001",
+    8.121,
+    0.323
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0022",
+    6.159,
+    0.278
+   ],
+   [
+    "ITU-AIREADY-2:0041",
+    6.076,
+    0.223
+   ],
+   [
+    "DOH-AI-2018:0006",
+    5.84,
+    0.267
+   ]
+  ]
+ },
+ "How much does a flight from Dubai to London cost in December?": {
+  "evidence": "none",
+  "top": [
+   [
+    "UAE-AI-STRATEGY-2031:0016",
+    8.56,
+    0.299
+   ],
+   [
+    "ITU-AIREADY-2:0051",
+    8.495,
+    0.314
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0031",
+    7.535,
+    0.201
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0020",
+    7.154,
+    0.251
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0014",
+    6.27,
+    0.201
+   ]
+  ]
+ },
+ "Compare iPhone and Android battery life": {
+  "evidence": "weak",
+  "top": [
+   [
+    "DUBAI-AI-ETHICS-2022:0007",
+    10.077,
+    1.0
+   ],
+   [
+    "ITU-AIREADY-2:0072",
+    4.879,
+    0.575
+   ],
+   [
+    "ITU-AIREADY-2:0026",
+    4.803,
+    0.575
+   ],
+   [
+    "DOH-ADHICS-V2:0101",
+    4.647,
+    0.575
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0024",
+    4.373,
+    0.575
+   ]
+  ]
+ },
+ "What are the side effects of ibuprofen?": {
+  "evidence": "none",
+  "top": [
+   [
+    "MOHAP-HEALTHAD-GUIDE:0003",
+    8.309,
+    1.0
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0004",
+    7.3,
+    1.0
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0002",
+    7.14,
+    1.0
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0003",
+    7.081,
+    1.0
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0005",
+    7.024,
+    1.0
+   ]
+  ]
+ },
+ "What is the recipe for traditional Arabic coffee with cardamom?": {
+  "evidence": "none",
+  "top": [
+   [
+    "ITU-AIREADY-2:0035",
+    7.772,
+    0.527
+   ],
+   [
+    "UAE-CR32-2020:0002",
+    7.392,
+    0.473
+   ],
+   [
+    "UAE-FL2-2019:0002",
+    6.562,
+    0.473
+   ],
+   [
+    "MOHAP-HEALTHAD-GUIDE:0001",
+    6.243,
+    0.473
+   ],
+   [
+    "ITU-AIREADY-2:0029",
+    4.748,
+    0.527
+   ]
+  ]
+ },
+ "What dose of metformin should an adult with type 2 diabetes take?": {
+  "evidence": "none",
+  "top": [
+   [
+    "UAE-AI-STRATEGY-2031:0032",
+    7.831,
+    0.368
+   ],
+   [
+    "TDRA-TAR-REG-V3:0009",
+    7.163,
+    0.208
+   ],
+   [
+    "DUBAI-AI-ETHICS-2022:0028",
+    7.119,
+    0.331
+   ],
+   [
+    "DHA-TELEHEALTH-STD-V4:0071",
+    6.89,
+    0.371
+   ],
+   [
+    "TDRA-TAR-POLICY-V3:0009",
+    6.841,
+    0.208
+   ]
+  ]
+ },
+ "What is the corporate tax rate for cryptocurrency exchanges?": {
+  "evidence": "none",
+  "top": [
+   [
+    "UAE-AI-STRATEGY-2031:0028",
+    6.224,
+    0.336
+   ],
+   [
+    "UAE-AI-STRATEGY-2031:0027",
+    6.176,
+    0.235
+   ],
+   [
+    "DOH-ADHICS-V2:0069",
+    5.952,
+    0.199
+   ],
+   [
+    "DOH-ADHICS-V2:0014",
+    5.793,
+    0.23
+   ],
+   [
+    "UAE-FL2-2019:0004",
+    5.279,
+    0.199
+   ]
+  ]
+ },
+ "Which authority grants marketing approval for medical devices under the medical products law and how are food supplements treated?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "MOHAP-HEALTHAD-GUIDE:0004",
+    24.738,
+    0.446
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0017",
+    17.081,
+    0.332
+   ],
+   [
+    "TDRA-TAR-POLICY-V3:0005",
+    16.428,
+    0.301
+   ],
+   [
+    "MOHAP-PROMO-CODE-2017:0003",
+    16.177,
+    0.28
+   ],
+   [
+    "TDRA-TAR-REG-V3:0021",
+    15.49,
+    0.328
+   ]
+  ]
+ },
+ "Penalty for misleading advertising by an advertiser under the consumer protection law": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-FL2-2019:0027",
+    17.314,
+    0.39
+   ],
+   [
+    "UAE-FL2-2019:0026",
+    16.408,
+    0.39
+   ],
+   [
+    "NMC-AD-GUIDE:0003",
+    15.993,
+    0.439
+   ],
+   [
+    "NMC-AD-GUIDE:0002",
+    14.926,
+    0.345
+   ],
+   [
+    "NMC-AD-GUIDE:0001",
+    14.19,
+    0.284
+   ]
+  ]
+ },
+ "What is a medical error and when is a practitioner liable under the medical liability law?": {
+  "evidence": "weak",
+  "top": [
+   [
+    "UAE-CR32-2020:0001",
+    11.83,
+    0.333
+   ],
+   [
+    "UAE-FL2-2019:0002",
+    9.38,
+    0.333
+   ],
+   [
+    "DHA-HIS-2024:0034",
+    8.974,
+    0.333
+   ],
+   [
+    "DHA-TELEHEALTH-POL-2021:0004",
+    8.919,
+    0.333
+   ],
+   [
+    "DHA-AI-2021:0013",
+    8.568,
+    0.333
+   ]
+  ]
+ }
+}

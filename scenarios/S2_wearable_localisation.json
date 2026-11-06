@@ -1,0 +1,74 @@
+{
+  "scenario_id": "S2",
+  "title": "A wearable import crosses the health-data localisation question",
+  "synthetic": true,
+  "member": {"alias": "Member A (synthetic)", "note": "invented person; no real data"},
+  "chunks": [
+    {
+      "id": "S2-C1",
+      "title": "Member links a wearable whose cloud location is unknown",
+      "release_note": "Member A links a wearable made by BandCo (a fictional vendor).",
+      "question": {
+        "coach": "Can the coach import the wearable data, and what must be checked first?",
+        "authority": "What do the rules say about where health data may be stored or processed, and does this data flow raise a localisation question?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": [
+          "Member A linked a wearable made by BandCo. The app asks BandCo's cloud for 90 days of heart-rate and sleep data and stores it in the member's Miqyas record.",
+          "Member A tapped 'I agree' on an in-app notice that reads: 'We import your wearable data to coach you. Your data may be processed by service providers.'"
+        ],
+        "clinic": [],
+        "authority": ["Data-flow description from the platform team: BandCo cloud, then Miqyas collector, then Miqyas database. The vendor does not state the country of the BandCo cloud, and the country of the Miqyas hosting provider has not been confirmed in writing."]
+      },
+      "incomplete": ["Where BandCo's cloud processes the data.", "Where the Miqyas hosting provider stores the database."],
+      "policy_questions": [
+        "may health data be stored or processed outside the UAE",
+        "approval needed for a wearable device or radio equipment used in the UAE"
+      ],
+      "touches": ["data-transfer"]
+    },
+    {
+      "id": "S2-C2",
+      "title": "The vendor answers: processing happens in Europe; consent text is silent on transfer",
+      "release_note": "BandCo support replies; the coach checks what the member actually agreed to.",
+      "question": {
+        "coach": "Does the member's existing consent cover this transfer?",
+        "authority": "Is the member's consent enough for this transfer?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["The in-app consent text did not mention transfer to another country. Member A has not been asked a separate question about it."],
+        "clinic": [],
+        "authority": ["BandCo support answered: data for accounts created in the Gulf region is processed in a European data centre and backed up in a second European country."]
+      },
+      "incomplete": ["Which European countries, and under what contract between BandCo and Miqyas."],
+      "policy_questions": [
+        "is explicit consent enough to transfer personal data outside the country",
+        "transfer of health data outside the State under the law on information and communication technology in health fields"
+      ],
+      "touches": ["data-transfer"]
+    },
+    {
+      "id": "S2-C3",
+      "title": "A partner clinic asks for all the wearable data",
+      "release_note": "The partner clinic's intake form asks for everything the member's wearable has recorded.",
+      "question": {
+        "coach": "Can the coach pass the wearable history to the clinic?",
+        "clinic": "May the clinic receive wearable data it asked for, given the consent it holds?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["Member A told the coach: 'send the clinic whatever helps, I trust them'. No written consent for wearable data exists."],
+        "clinic": ["The clinic's intake form asks for 'all wearable data' ahead of a telehealth visit. The clinic holds only the consent form Member A signed, which lists lab results."],
+        "authority": []
+      },
+      "incomplete": ["Whether a spoken instruction to a chatbot counts as consent for the clinic."],
+      "policy_questions": [
+        "patient consent required before sharing health information with another healthcare facility",
+        "what must a telehealth provider do before sharing patient information with another facility"
+      ],
+      "touches": ["data-transfer", "clinical"]
+    }
+  ]
+}

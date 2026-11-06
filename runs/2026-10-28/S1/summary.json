@@ -1,0 +1,38 @@
+{
+ "scenario_id": "S1",
+ "title": "Red-flag lab result, an emergency message, then a late-import incident",
+ "synthetic": true,
+ "decisions": 3,
+ "needs_human": 3,
+ "approvals_simulated": 1,
+ "adviser_questions": 6,
+ "adviser_rulings": 3,
+ "adviser_abstentions": {
+  "evidence-weak": 3
+ },
+ "adviser_evidence": {
+  "weak": 3,
+  "strong": 3
+ },
+ "conflicts": {
+  "jurisdiction-spread": 1
+ },
+ "citation_violations": 0,
+ "assessment_failures": 0,
+ "emergency_shortcuts": 1,
+ "guard_events": 1,
+ "kb_queries": 30,
+ "model_calls": 12,
+ "model_calls_failed": 0,
+ "served_models": [
+  "IFM/K2-Horizon-375B-A23B",
+  "dots-studio/dots-3-note-preview:free",
+  "qwen/qwen3.8-27b"
+ ],
+ "model_alias": "auto",
+ "kb_build_id": "20261026T1648Z",
+ "audit_records": 73,
+ "head_hash": "5e18ac065a2bf7b2bfee1aaf07233c5026ce945a1be619a02cc291a064d8867a",
+ "chain_verified": true,
+ "run_finished_utc": "2026-10-28T06:12:05Z"
+}

@@ -1,0 +1,24 @@
+# stray logs written by an MCP server into the working folder
+combined.log
+error.log
+
+# downloaded source documents: licence position unclear, re-created by scripts/fetch_sources.py
+kb/raw/*
+!kb/raw/MANIFEST.json
+
+# build outputs: full-text chunks stay local; the shareable export and reports are kept
+kb/out/*
+!kb/out/public/
+!kb/out/build_report.json
+!kb/out/coverage.json
+!kb/out/retrieval_results.json
+
+__pycache__/
+*.pyc
+.env
+*.key
+
+# scratch runs
+runs/scratch/
+runs/scratch*.log
+.autoloop/

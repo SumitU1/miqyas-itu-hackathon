@@ -1,0 +1,38 @@
+{
+ "scenario_id": "S4",
+ "title": "An AI health claim meets the advertising rules",
+ "synthetic": true,
+ "decisions": 3,
+ "needs_human": 3,
+ "approvals_simulated": 0,
+ "adviser_questions": 12,
+ "adviser_rulings": 3,
+ "adviser_abstentions": {
+  "evidence-weak": 9
+ },
+ "adviser_evidence": {
+  "weak": 9,
+  "strong": 3
+ },
+ "conflicts": {
+  "jurisdiction-spread": 3
+ },
+ "citation_violations": 0,
+ "assessment_failures": 0,
+ "emergency_shortcuts": 0,
+ "guard_events": 1,
+ "kb_queries": 64,
+ "model_calls": 23,
+ "model_calls_failed": 0,
+ "served_models": [
+  "IFM/K2-Horizon-375B-A23B",
+  "dots-studio/dots-3-note-preview:free",
+  "qwen/qwen3.8-27b"
+ ],
+ "model_alias": "auto",
+ "kb_build_id": "20261026T1648Z",
+ "audit_records": 135,
+ "head_hash": "4467f1f2d9e3f816a12a5323b5aee11a831539c9be48e7d9f29bae9d0ebe8cf8",
+ "chain_verified": true,
+ "run_finished_utc": "2026-10-28T06:15:53Z"
+}

@@ -1,0 +1,156 @@
+{
+  "ITU-Y3172.pdf": {
+    "sha256": "e42f9a3be3f951d3e19b9007f876f0b389c81b4693f0d8576e18185a1acfe67b",
+    "bytes": 1145173,
+    "source_id": "ITU-Y3172",
+    "url": "https://raw.githubusercontent.com/CrashingGuru/ITUAIReadiness/main/simulation/server/knowledge/InputDocs/AI_Use_Cases/T-REC-Y.3172-201906-I!!PDF-E.pdf",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "ITU-AIREADY-2.pdf": {
+    "sha256": "71191768d46b60778c15f8d62b162aff73a319785cfc31ebf76bb944b0c68273",
+    "bytes": 1109667,
+    "source_id": "ITU-AIREADY-2",
+    "url": "https://www.itu.int/dms_pub/itu-t/opb/ai4g/T-AI4G-AI4GOOD-2025-6-PDF-E.pdf",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "DOH-ENC-BOOK10.pdf": {
+    "sha256": "cc2aa296385bda40053846dbd5da0101ab62e396563c1c61ccf07bf56f66e0f2",
+    "bytes": 11474665,
+    "source_id": "UAE-FL2-2019",
+    "url": "https://www.doh.gov.ae/-/media/4EC4514926E74700927E000A09A1AF36.ashx",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "MOHAP-MD51-2021.txt": {
+    "sha256": "1ba830e3b9baa1ba4d496c20a2418023c8d42b978ba14a2bc45116c3b33e8118",
+    "bytes": 1535,
+    "source_id": "MOHAP-MD51-2021",
+    "url": "https://uaephl.mohap.gov.ae/en/health-policies-and-legislations-advocacy/health-legislations?itemId=726efdef-580e-4817-bf5a-fbf8e53fddfc",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "UAE-PDPL-2021.txt": {
+    "sha256": "cb898ff01c70c5e6f2d585c6feb08eb77e010ed03ae4a966fc61f357615167af",
+    "bytes": 19701,
+    "source_id": "UAE-PDPL-2021",
+    "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "DHA-AI-2021.pdf": {
+    "sha256": "8cae3f61d58523f7f41bc85ea9531ba5dd0a78b3a084d90dd94025f30cef1ffd",
+    "bytes": 276863,
+    "source_id": "DHA-AI-2021",
+    "url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "DOH-AI-2018.pdf": {
+    "sha256": "3d567f05e6bf05bc102d4fd7424e556e9cafcc975a9785c2071d01134bc2d7c2",
+    "bytes": 276924,
+    "source_id": "DOH-AI-2018",
+    "url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "DHA-TELEHEALTH-POL-2021.pdf": {
+    "sha256": "6cd7e0653599b05e566211afed01572ad4d19708eba7175a1d56dd6ebf250e73",
+    "bytes": 158527,
+    "source_id": "DHA-TELEHEALTH-POL-2021",
+    "url": "https://www.dha.gov.ae/uploads/012023/Telehealth%20Policy2023157244.pdf",
+    "checked_at": "2026-10-26T16:35Z"
+  },
+  "DHA-TELEHEALTH-STD-V4.pdf": {
+    "sha256": "183d2dad8092b46f06ceb6e1fdcdb4d3e289d59dbe1108bbca4d045983a8ce84",
+    "bytes": 795411,
+    "source_id": "DHA-TELEHEALTH-STD-V4",
+    "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "DHA-HIS-2024.pdf": {
+    "sha256": "af0b1ee0cd4df01ae6ca3c2a8e47d07ffc885fc8747cb819b0dc5ed9ac324664",
+    "bytes": 725221,
+    "source_id": "DHA-HIS-2024",
+    "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "DOH-HIE-2020.pdf": {
+    "sha256": "e26217fa66a84ec53b0593735c0df779b100dc58202685264b1aefb96737bc1d",
+    "bytes": 1022559,
+    "source_id": "DOH-HIE-2020",
+    "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "DOH-ADHICS-V2.pdf": {
+    "sha256": "1593e14f05cb9741200ead46787d1887cdba2f7443f193598d65c985b72f0661",
+    "bytes": 3834582,
+    "source_id": "DOH-ADHICS-V2",
+    "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "DHA-MEDAD-2022.pdf": {
+    "sha256": "158b3e501eecbfd4b07530e44a5822d40d11bceac03af40b265ad18f246d0fad",
+    "bytes": 631327,
+    "source_id": "DHA-MEDAD-2022",
+    "url": "https://dha.gov.ae/uploads/042022/Standards%20for%20Medical%20Advertisement%20Content%20in%20Social%20Media2022433965.pdf",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "MOHAP-HEALTHAD-GUIDE.pdf": {
+    "sha256": "cbbaf45a8a7c190ae94abbfe22e22adee3de713f416e2dab3a5132dfeeed8373",
+    "bytes": 359297,
+    "source_id": "MOHAP-HEALTHAD-GUIDE",
+    "url": "https://mohap.gov.ae/documents/20117/1212145/Guidelines+for+Health+Advertisement+Approval+Requestion-196.pdf/86cc173a-5981-33be-c0b0-18c9ceafd5d1?t=1739114133634",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "MOHAP-PROMO-CODE-2017.pdf": {
+    "sha256": "e79a497342d6dbf53acbe3643fa86799cf17bd8befdf8a3cc2817a4fe22aea17",
+    "bytes": 990686,
+    "source_id": "MOHAP-PROMO-CODE-2017",
+    "url": "https://mohap.gov.ae/documents/20117/1212145/code%2Bof%2Bethical%2Bpractices%2Bfor%2Bthe%2Bpromotion%2Band%2Bdistribution%2Bof%2Bmedical%2Bproducts%2Benglish-410.pdf/421e3579-bae1-7214-2878-d604d92e7af5?t=1739157553757",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "NMC-AD-GUIDE.pdf": {
+    "sha256": "e80338c55fa7c113a0ba1130a083d0d69baff6f179e0d761ab4c3a458826f894",
+    "bytes": 2719445,
+    "source_id": "NMC-AD-GUIDE",
+    "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "TDRA-TAR-POLICY-V3.pdf": {
+    "sha256": "7c9de3057ed44016463b2b8c19aea3a47f61d8f1a6280c30366ccd7205f3c398",
+    "bytes": 851165,
+    "source_id": "TDRA-TAR-POLICY-V3",
+    "url": "https://tdra.gov.ae/-/media/About/Type-approval-PDF/ITem-72-Type-approval-policy-21-clear-version-EN1-1.ashx",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "TDRA-TAR-REG-V3.pdf": {
+    "sha256": "b4a4d4b52e704b6cc2bfcf956eb2b34de19e4dfb158a7acbe37098eac4dab8e4",
+    "bytes": 1181899,
+    "source_id": "TDRA-TAR-REG-V3",
+    "url": "https://tdra.gov.ae/-/media/About/Type-approval-PDF/Item-73--Type-approval-regulation-21-clear-version-EN-2.ashx",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "TDRA-IOT-PROC-V1.pdf": {
+    "sha256": "83b1ddb779a1c0e9293b6a62b192cfa45821baa97fd56296905cfe8985ecd925",
+    "bytes": 776516,
+    "source_id": "TDRA-IOT-PROC-V1",
+    "url": "https://tdra.gov.ae/-/media/21270CA833EF4D2EA0389096D5727037.ashx",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "UAE-AI-CHARTER-2024.pdf": {
+    "sha256": "2f1de5776449748a91964cd5b061f88b36265ba0be8a5d7a91120e27a6908c1c",
+    "bytes": 9457883,
+    "source_id": "UAE-AI-CHARTER-2024",
+    "url": "https://ai.gov.ae/wp-content/uploads/2024/07/UAEAI-Methaq-EN2-3.pdf",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "UAE-AI-STRATEGY-2031.pdf": {
+    "sha256": "79e05c502d1fc1247165fc744205984675d6422a490a70201dc4c05bf9aed693",
+    "bytes": 13543206,
+    "source_id": "UAE-AI-STRATEGY-2031",
+    "url": "https://assets.u.ae/api/public/content/deed2bf9d68244ab8119c27f2c52813f?v=87559d49",
+    "checked_at": "2026-10-26T16:36Z"
+  },
+  "DUBAI-AI-ETHICS-2022.pdf": {
+    "sha256": "f761ec3b18915038f65265ae60a365164ee5674fee73041e973163895723f56d",
+    "bytes": 8710163,
+    "source_id": "DUBAI-AI-ETHICS-2022",
+    "url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+    "checked_at": "2026-10-26T16:36Z"
+  }
+}

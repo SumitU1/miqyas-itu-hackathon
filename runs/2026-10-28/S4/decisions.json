@@ -1,0 +1,1456 @@
+[
+ {
+  "decision_id": "S4-C1-D",
+  "scenario_id": "S4",
+  "round": 1,
+  "chunk_id": "S4-C1",
+  "trigger": {
+   "title": "Draft app-store text promises results",
+   "release_note": "Marketing wants to publish a claim next week and to name the partner clinic.",
+   "incomplete": [
+    "Whether the text has gone through any advertising approval."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The draft marketing text asserts that the AI coach reverses prediabetes in 30 days with guaranteed results and no side effects. The DHA policy requires listing all side effects, hazards, and documented risk‑benefit analysis for AI solutions in healthcare. The Dubai AI Ethics guidelines also demand transparency, fairness, and evidence‑based claims, so publishing the text as is would conflict with these provisions.",
+    "provisions": [
+     "DHA-AI-2021:0010",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DUBAI-AI-ETHICS-2022:0010"
+    ],
+    "proposed_action": {
+     "class": "revise_claim",
+     "text": "Revise the marketing copy to remove absolute guarantees, add evidence of efficacy, and include any known side effects or risks."
+    },
+    "confidence": "medium",
+    "open_questions": [
+     "Is there clinical evidence supporting the 30‑day reversal claim?",
+     "Have side effects and risks been documented as required by DHA policy?",
+     "Has a fairness impact assessment been conducted for the AI coach?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DUBAI-AI-ETHICS-2022:0010",
+     "DUBAI-AI-ETHICS-2022:0009",
+     "UAE-AI-STRATEGY-2031:0040",
+     "DUBAI-AI-ETHICS-2022:0036",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DHA-AI-2021:0010"
+    ],
+    "draft_reply_to_member": "I can't give a diagnosis or a dose. I can explain what a result means in general terms and help you prepare questions for your clinician.",
+    "guard": {
+     "violations": [
+      "guarantee"
+     ]
+    }
+   },
+   {
+    "agent": "clinic",
+    "status": "ok",
+    "finding": "The MOHAP advertisement guide says a single advertisement may include more than one establishment by name or logo, and in that case no objection letter from the concerned establishment should be submitted. It also says additional documents may be needed depending on the advertisement text, and any Arabic translation must be accompanied by the establishment's declaration that it matches the original. The clinic has not seen the final wording, so it cannot yet verify the 'clinically supervised by our doctors' claim or make any required declaration. Therefore, before agreeing to be named, the clinic should obtain and review the final wording.",
+    "provisions": [
+     "MOHAP-HEALTHAD-GUIDE:0001"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Tell the member that the clinic may be named in a multi-establishment advertisement without an objection letter, but the clinic must first receive and review the final wording before consenting to be named."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Does the clinic have a regulatory or contractual duty to review and approve the final advertisement wording before being named, or is the absence of an objection letter sufficient under MOHAP rules?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "MOHAP-HEALTHAD-GUIDE:0001",
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-HIS-2024:0020",
+     "DOH-HIE-2020:0007",
+     "MOHAP-PROMO-CODE-2017:0021",
+     "DHA-HIS-2024:0023"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [
+     {
+      "chunk_id": "DHA-AI-2021:0010",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DHA-AI-2021] §4 Policy Statement:, PDF pp.11-13",
+      "locator": "§4 Policy Statement:, PDF pp.11-13",
+      "url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "section": "§4 Policy Statement:",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "revision-date-passed",
+       "currency-unconfirmed",
+       "clinical-unreviewed"
+      ]
+     },
+     {
+      "chunk_id": "DUBAI-AI-ETHICS-2022:0019",
+      "exists": true,
+      "rank": null,
+      "support": "not-supported-by-finding-text",
+      "citation": "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF pp.13-14",
+      "locator": "§3.2.2 Guidelines, PDF pp.13-14",
+      "url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "section": "§3.2.2 Guidelines",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "non-binding"
+      ]
+     },
+     {
+      "chunk_id": "DUBAI-AI-ETHICS-2022:0010",
+      "exists": true,
+      "rank": 2,
+      "support": "supported",
+      "citation": "[DUBAI-AI-ETHICS-2022] §3.1.2 Guidelines, PDF pp.9-10",
+      "locator": "§3.1.2 Guidelines, PDF pp.9-10",
+      "url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "section": "§3.1.2 Guidelines",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "non-binding"
+      ]
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "clinic",
+    "citations": [
+     {
+      "chunk_id": "MOHAP-HEALTHAD-GUIDE:0001",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-2",
+      "locator": "PDF pp.1-2",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/Guidelines+for+Health+Advertisement+Approval+Requestion-196.pdf/86cc173a-5981-33be-c0b0-18c9ceafd5d1?t=1739114133634",
+      "section": "Preamble / front matter",
+      "jurisdiction": "federal",
+      "caveats": [
+       "currency-unconfirmed"
+      ]
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "dubai",
+     "federal"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "prior approval is required before publishing a health advertisement",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "NMC-AD-GUIDE:0004",
+     "NMC-AD-GUIDE:0005",
+     "MOHAP-HEALTHAD-GUIDE:0002",
+     "DHA-MEDAD-2022:0016",
+     "MOHAP-HEALTHAD-GUIDE:0004"
+    ],
+    "query_used": "prior approval is required before publishing a health advertisement",
+    "queries_tried": [
+     {
+      "query": "prior approval is required before publishing a health advertisement",
+      "evidence": "weak",
+      "top_score": 19.612
+     },
+     {
+      "query": "prior approval health advertisement publication",
+      "evidence": "weak",
+      "top_score": 15.485
+     },
+     {
+      "query": "health advertisement approval before publishing",
+      "evidence": "weak",
+      "top_score": 13.742
+     },
+     {
+      "query": "advertisement prior approval requirement UAE health",
+      "evidence": "weak",
+      "top_score": 15.485
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "NMC-AD-GUIDE:0004",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.7-8",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 19.612
+     },
+     {
+      "chunk_id": "NMC-AD-GUIDE:0005",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.8-10",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 14.759
+     },
+     {
+      "chunk_id": "MOHAP-HEALTHAD-GUIDE:0002",
+      "citation": "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-3",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/Guidelines+for+Health+Advertisement+Approval+Requestion-196.pdf/86cc173a-5981-33be-c0b0-18c9ceafd5d1?t=1739114133634",
+      "score": 14.12
+     }
+    ]
+   },
+   {
+    "question": "prohibited expressions in health advertisements such as guaranteed results and no side effects",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "MOHAP-HEALTHAD-GUIDE:0003",
+     "MOHAP-HEALTHAD-GUIDE:0002",
+     "DHA-MEDAD-2022:0011",
+     "DHA-MEDAD-2022:0022",
+     "MOHAP-PROMO-CODE-2017:0004"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says ... (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "MOHAP-HEALTHAD-GUIDE:0003",
+     "DHA-MEDAD-2022:0011",
+     "DHA-MEDAD-2022:0022"
+    ],
+    "conditions": [
+     "Check currency of MOHAP guidelines as date not stated",
+     "Verify DHA version 1.1 effective date and applicability",
+     "Consider possible superseding by Federal Decree-Law 38/2024 for MOHAP code"
+    ],
+    "binding": false,
+    "caveats": [
+     "currency-unconfirmed"
+    ],
+    "for_human": [],
+    "query_used": "prohibited expressions in health advertisements such as guaranteed results and no side effects",
+    "queries_tried": [
+     {
+      "query": "prohibited expressions in health advertisements such as guaranteed results and no side effects",
+      "evidence": "strong",
+      "top_score": 28.226
+     },
+     {
+      "query": "prohibited expressions health advertisements guaranteed results",
+      "evidence": "strong",
+      "top_score": 19.917
+     },
+     {
+      "query": "health advertisement misleading claims side effects",
+      "evidence": "strong",
+      "top_score": 22.231
+     },
+     {
+      "query": "advertising health services prohibited guarantees",
+      "evidence": "weak",
+      "top_score": 12.035
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "Is there clinical evidence supporting the 30‑day reversal claim?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "MOHAP-PROMO-CODE-2017:0004",
+     "DHA-MEDAD-2022:0011",
+     "DHA-AI-2021:0008",
+     "DHA-TELEHEALTH-STD-V4:0047",
+     "NMC-AD-GUIDE:0004"
+    ],
+    "query_used": "clinical evidence supporting claim advertisement regulation",
+    "queries_tried": [
+     {
+      "query": "Is there clinical evidence supporting the 30‑day reversal claim?",
+      "evidence": "weak",
+      "top_score": 10.507
+     },
+     {
+      "query": "clinical evidence supporting claim advertisement regulation",
+      "evidence": "weak",
+      "top_score": 14.547
+     },
+     {
+      "query": "health claim clinical evidence approval policy",
+      "evidence": "weak",
+      "top_score": 11.144
+     },
+     {
+      "query": "reversal claim clinical evidence regulation requirement",
+      "evidence": "weak",
+      "top_score": 10.492
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "MOHAP-PROMO-CODE-2017:0004",
+      "citation": "[MOHAP-PROMO-CODE-2017] §2 PROMOTIONAL MATERIALS - INFORMATION TO BE MADE AVAILABLE:, PDF pp.4-5",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/code%2Bof%2Bethical%2Bpractices%2Bfor%2Bthe%2Bpromotion%2Band%2Bdistribution%2Bof%2Bmedical%2Bproducts%2Benglish-410.pdf/421e3579-bae1-7214-2878-d604d92e7af5?t=1739157553757",
+      "score": 14.547
+     },
+     {
+      "chunk_id": "DHA-MEDAD-2022:0011",
+      "citation": "[DHA-MEDAD-2022] §6 STANDARD TWO: GENERAL CONSIDERATIONS, PDF pp.14-15",
+      "url": "https://dha.gov.ae/uploads/042022/Standards%20for%20Medical%20Advertisement%20Content%20in%20Social%20Media2022433965.pdf",
+      "score": 13.613
+     },
+     {
+      "chunk_id": "DHA-AI-2021:0008",
+      "citation": "[DHA-AI-2021] §4 Policy Statement:, PDF pp.8-10",
+      "url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "score": 10.519
+     }
+    ]
+   },
+   {
+    "question": "Does the clinic have a regulatory or contractual duty to review and approve the final advertisement wording before being named, or is the absence of an objection letter sufficient under MOHAP rules?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "MOHAP-HEALTHAD-GUIDE:0001",
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "NMC-AD-GUIDE:0006",
+     "DHA-MEDAD-2022:0023",
+     "DHA-TELEHEALTH-STD-V4:0022"
+    ],
+    "query_used": "Does the clinic have a regulatory or contractual duty to review and approve the final advertisement wording before being named, or is the absence of an objection letter sufficient under MOHAP rules?",
+    "queries_tried": [
+     {
+      "query": "Does the clinic have a regulatory or contractual duty to review and approve the final advertisement wording before being named, or is the absence of an objection letter sufficient under MOHAP rules?",
+      "evidence": "weak",
+      "top_score": 27.111
+     },
+     {
+      "query": "clinic advertisement approval MOHAP rules",
+      "evidence": "weak",
+      "top_score": 18.472
+     },
+     {
+      "query": "objection letter advertisement naming clinic",
+      "evidence": "weak",
+      "top_score": 23.518
+     },
+     {
+      "query": "regulatory duty review advertisement wording",
+      "evidence": "weak",
+      "top_score": 10.107
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "MOHAP-HEALTHAD-GUIDE:0001",
+      "citation": "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-2",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/Guidelines+for+Health+Advertisement+Approval+Requestion-196.pdf/86cc173a-5981-33be-c0b0-18c9ceafd5d1?t=1739114133634",
+      "score": 27.111
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0021",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §6.6.3 Explicit patient consent must be secured before commencing telehealth, PDF pp.26-27",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 19.686
+     },
+     {
+      "chunk_id": "NMC-AD-GUIDE:0006",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.10-11",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 16.111
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "revise_claim",
+   "text": "Revise the marketing copy to remove absolute guarantees, add evidence of efficacy, and include any known side effects or risks.",
+   "from": "coach"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches public-claim",
+   "action 'revise_claim' needs human approval",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): prior approval is required before publishing a health advertisement",
+   "adviser abstained (evidence-weak): Is there clinical evidence supporting the 30‑day reversal claim?",
+   "adviser abstained (evidence-weak): Does the clinic have a regulatory or contractual duty to review and approve the "
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The draft marketing text asserts that the AI coach reverses prediabetes in 30 days with guaranteed results and no side effects. The DHA policy requires listing all side effects, hazards, and documented risk‑benefit analysis for AI solutions in healthcare. The Dubai AI Ethics guidelines also demand transparency, fairness, and evidence‑based claims, so publishing the text as is would conflict with these provisions.",
+    "provisions": [
+     "DHA-AI-2021:0010",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DUBAI-AI-ETHICS-2022:0010"
+    ],
+    "confidence": "medium"
+   },
+   "clinic": {
+    "finding": "The MOHAP advertisement guide says a single advertisement may include more than one establishment by name or logo, and in that case no objection letter from the concerned establishment should be submitted. It also says additional documents may be needed depending on the advertisement text, and any Arabic translation must be accompanied by the establishment's declaration that it matches the original. The clinic has not seen the final wording, so it cannot yet verify the 'clinically supervised by our doctors' claim or make any required declaration. Therefore, before agreeing to be named, the clinic should obtain and review the final wording.",
+    "provisions": [
+     "MOHAP-HEALTHAD-GUIDE:0001"
+    ],
+    "confidence": "low"
+   }
+  }
+ },
+ {
+  "decision_id": "S4-C2-D",
+  "scenario_id": "S4",
+  "round": 2,
+  "chunk_id": "S4-C2",
+  "trigger": {
+   "title": "A paid influencer posts a before-and-after story",
+   "release_note": "An influencer shared a user's blood-sugar story; the media desk got a complaint.",
+   "incomplete": [
+    "Whether the numbers were truly anonymised, and whether the user can be recognised from the post."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The draft advertisement asserts a guaranteed reversal of prediabetes with no side effects, which contradicts DHA policy requiring disclosure of side effects and risks. The influencer post uses a user's blood‑sugar numbers without documented consent, raising transparency and accountability concerns under Dubai AI Ethics.",
+    "provisions": [
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DHA-AI-2021:0010"
+    ],
+    "proposed_action": {
+     "class": "withhold",
+     "text": "Miqyas should not publish the influencer post and should retrieve the shared numbers until user consent is confirmed."
+    },
+    "confidence": "medium",
+    "open_questions": [
+     "Does UAE law require explicit consent before sharing even anonymised health data?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "UAE-AI-STRATEGY-2031:0030",
+     "UAE-AI-STRATEGY-2031:0031",
+     "UAE-AI-STRATEGY-2031:0020",
+     "UAE-AI-STRATEGY-2031:0034",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DHA-AI-2021:0010"
+    ],
+    "draft_reply_to_member": "We are reviewing the advertisement and the influencer post. Please do not publish them until we confirm compliance.",
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "clinic",
+    "status": "ok",
+    "finding": "The provided passages do not contain specific rules regarding the approval of health advertisements or the requirement for a clinic to review and approve promotional text before publication. The MOHAP Code of Ethical Practices (2017) states that companies must have a scientific service approve promotional material before release, but this applies to medical product companies, not necessarily partner clinics, and the document is noted as potentially outdated. The DHA and DOH policies focus on data sharing and insolvency, not advertising content approval.",
+    "provisions": [
+     "MOHAP-PROMO-CODE-2017:0021",
+     "MOHAP-PROMO-CODE-2017:0019"
+    ],
+    "proposed_action": {
+     "class": "escalate_to_human",
+     "text": "Escalate to a human policy adviser to determine if the clinic has a contractual or regulatory duty to approve the specific wording 'clinically supervised by our doctors' given the lack of direct evidence in the provided passages."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Does the MOHAP Code of Ethical Practices apply to partner clinics in the context of co-branded or joint promotional materials, or only to medical product companies?",
+     "Are there specific UAE health authority regulations (not in the provided passages) that require prior approval for health service advertisements?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DOH-HIE-2020:0008",
+     "DHA-HIS-2024:0036",
+     "MOHAP-PROMO-CODE-2017:0020",
+     "MOHAP-PROMO-CODE-2017:0019",
+     "MOHAP-PROMO-CODE-2017:0021",
+     "DHA-HIS-2024:0023"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "authority",
+    "status": "ok",
+    "finding": "The TDRA regulation (TDRA-TAR-REG-V3:0020) provides that market surveillance may arise from a complaint, but it applies to telecommunications equipment; the complaint concerns an influencer post, does not name Miqyas, and no other passage authorizes action against him.",
+    "provisions": [
+     "TDRA-TAR-REG-V3:0020"
+    ],
+    "proposed_action": {
+     "class": "no_action",
+     "text": "No action is required regarding Miqyas."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Is the influencer post related to any telecommunications equipment or otherwise within the scope of the cited regulations?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "TDRA-TAR-REG-V3:0020",
+     "TDRA-TAR-REG-V3:0009",
+     "UAE-PDPL-2021:0011",
+     "DOH-ADHICS-V2:0108",
+     "TDRA-IOT-PROC-V1:0004",
+     "TDRA-IOT-PROC-V1:0006"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [
+     {
+      "chunk_id": "DUBAI-AI-ETHICS-2022:0019",
+      "exists": true,
+      "rank": 24,
+      "support": "loosely-supported",
+      "citation": "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF pp.13-14",
+      "locator": "§3.2.2 Guidelines, PDF pp.13-14",
+      "url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "section": "§3.2.2 Guidelines",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "non-binding"
+      ]
+     },
+     {
+      "chunk_id": "DHA-AI-2021:0010",
+      "exists": true,
+      "rank": 8,
+      "support": "supported",
+      "citation": "[DHA-AI-2021] §4 Policy Statement:, PDF pp.11-13",
+      "locator": "§4 Policy Statement:, PDF pp.11-13",
+      "url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "section": "§4 Policy Statement:",
+      "jurisdiction": "dubai",
+      "caveats": [
+       "revision-date-passed",
+       "currency-unconfirmed",
+       "clinical-unreviewed"
+      ]
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "clinic",
+    "citations": [
+     {
+      "chunk_id": "MOHAP-PROMO-CODE-2017:0021",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[MOHAP-PROMO-CODE-2017] §15 COMPANY STAFF:, PDF p.14",
+      "locator": "§15 COMPANY STAFF:, PDF p.14",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/code%2Bof%2Bethical%2Bpractices%2Bfor%2Bthe%2Bpromotion%2Band%2Bdistribution%2Bof%2Bmedical%2Bproducts%2Benglish-410.pdf/421e3579-bae1-7214-2878-d604d92e7af5?t=1739157553757",
+      "section": "§15 COMPANY STAFF:",
+      "jurisdiction": "federal",
+      "caveats": [
+       "may-be-superseded"
+      ]
+     },
+     {
+      "chunk_id": "MOHAP-PROMO-CODE-2017:0019",
+      "exists": true,
+      "rank": 15,
+      "support": "loosely-supported",
+      "citation": "[MOHAP-PROMO-CODE-2017] Programs, PDF p.13",
+      "locator": "Programs, PDF p.13",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/code%2Bof%2Bethical%2Bpractices%2Bfor%2Bthe%2Bpromotion%2Band%2Bdistribution%2Bof%2Bmedical%2Bproducts%2Benglish-410.pdf/421e3579-bae1-7214-2878-d604d92e7af5?t=1739157553757",
+      "section": "Programs",
+      "jurisdiction": "federal",
+      "caveats": [
+       "may-be-superseded"
+      ]
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "authority",
+    "citations": [
+     {
+      "chunk_id": "TDRA-TAR-REG-V3:0020",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[TDRA-TAR-REG-V3] Table Of Contents, PDF p.17",
+      "locator": "Table Of Contents, PDF p.17",
+      "url": "https://tdra.gov.ae/-/media/About/Type-approval-PDF/Item-73--Type-approval-regulation-21-clear-version-EN-2.ashx",
+      "section": "Table Of Contents",
+      "jurisdiction": "federal",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "dubai",
+     "federal"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "health advertisements by influencers and endorsement of health products and services",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "NMC-AD-GUIDE:0005",
+     "DHA-MEDAD-2022:0017",
+     "NMC-AD-GUIDE:0004",
+     "DHA-MEDAD-2022:0008",
+     "MOHAP-HEALTHAD-GUIDE:0001"
+    ],
+    "query_used": "health product advertisement influencer endorsement",
+    "queries_tried": [
+     {
+      "query": "health advertisements by influencers and endorsement of health products and services",
+      "evidence": "weak",
+      "top_score": 14.693
+     },
+     {
+      "query": "health product advertisement influencer endorsement",
+      "evidence": "weak",
+      "top_score": 17.797
+     },
+     {
+      "query": "promoting health services social media endorsement",
+      "evidence": "weak",
+      "top_score": 15.526
+     },
+     {
+      "query": "advertising medical products influencer approval",
+      "evidence": "weak",
+      "top_score": 15.695
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "NMC-AD-GUIDE:0005",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.8-10",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 17.797
+     },
+     {
+      "chunk_id": "DHA-MEDAD-2022:0017",
+      "citation": "[DHA-MEDAD-2022] §9 STANDARD FIVE: USE OF PICTURES, IMAGES AND VIDEOS, PDF pp.20-22",
+      "url": "https://dha.gov.ae/uploads/042022/Standards%20for%20Medical%20Advertisement%20Content%20in%20Social%20Media2022433965.pdf",
+      "score": 12.797
+     },
+     {
+      "chunk_id": "NMC-AD-GUIDE:0004",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.7-8",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 12.024
+     }
+    ]
+   },
+   {
+    "question": "use of patient testimonials and before and after results in health advertising",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DHA-MEDAD-2022:0023",
+     "DHA-MEDAD-2022:0020",
+     "DOH-HIE-2020:0036",
+     "DHA-MEDAD-2022:0016",
+     "MOHAP-HEALTHAD-GUIDE:0002"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says that patient testimonials are prohibited unless written consent is obtained from the patient (DHA-MEDAD-2022:0023, DHA-MEDAD-2022:0016). the text says that before‑and‑after visual images are allowed only if they include a disclaimer that results may vary from one patient to another and must depict only patients who have received the treatment (DHA-MEDAD-2022:0023, MOHAP-HEALTHAD-GUIDE:0002). the text says that testimonials must not be used to compare different regulated health professions or to imply that one profession is better or safer than another (DHA-MEDAD-2022:0020). the text says that any advertising content must avoid creating unwarranted or unrealistic expectations about effectiveness, and must not contain false or absolute statements (DHA-MEDAD-2022:0023, DHA-MEDAD-2022:0020). (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DHA-MEDAD-2022:0023",
+     "DHA-MEDAD-2022:0016",
+     "DHA-MEDAD-2022:0020",
+     "MOHAP-HEALTHAD-GUIDE:0002"
+    ],
+    "conditions": [
+     "Written consent must be obtained from any patient whose testimonial or image is used.",
+     "Before‑and‑after images must include a disclaimer that outcomes may vary between individuals.",
+     "Visual images must only represent patients who have received the advertised treatment.",
+     "Testimonials must not compare different regulated health professions or imply superiority."
+    ],
+    "binding": false,
+    "caveats": [
+     "currency-unconfirmed"
+    ],
+    "for_human": [],
+    "query_used": "use of patient testimonials and before and after results in health advertising",
+    "queries_tried": [
+     {
+      "query": "use of patient testimonials and before and after results in health advertising",
+      "evidence": "strong",
+      "top_score": 19.724
+     },
+     {
+      "query": "patient testimonials consent advertisement",
+      "evidence": "weak",
+      "top_score": 14.377
+     },
+     {
+      "query": "before after results health advertising",
+      "evidence": "weak",
+      "top_score": 11.984
+     },
+     {
+      "query": "health advertising regulations patient",
+      "evidence": "none",
+      "top_score": 9.236
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "Does UAE law require explicit consent before sharing even anonymised health data?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DOH-HIE-2020:0022",
+     "UAE-PDPL-2021:0017",
+     "DHA-HIS-2024:0014",
+     "UAE-PDPL-2021:0008",
+     "DHA-HIS-2024:0017"
+    ],
+    "query_used": "Does UAE law require explicit consent before sharing even anonymised health data?",
+    "queries_tried": [
+     {
+      "query": "Does UAE law require explicit consent before sharing even anonymised health data?",
+      "evidence": "weak",
+      "top_score": 16.801
+     },
+     {
+      "query": "explicit consent sharing anonymised health data",
+      "evidence": "weak",
+      "top_score": 15.114
+     },
+     {
+      "query": "consent required for health data transfer",
+      "evidence": "weak",
+      "top_score": 11.947
+     },
+     {
+      "query": "UAE law patient data consent disclosure",
+      "evidence": "weak",
+      "top_score": 12.354
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DOH-HIE-2020:0022",
+      "citation": "[DOH-HIE-2020] §4.2.1 DOH shall:, PDF pp.20-21",
+      "url": "https://doh.gov.ae/-/media/A78104416DF2440E89AC90FB75F11055.ashx",
+      "score": 16.801
+     },
+     {
+      "chunk_id": "UAE-PDPL-2021:0017",
+      "citation": "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "score": 16.477
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0014",
+      "citation": "[DHA-HIS-2024] §4.4.2 Ad-hoc information sharing:, PDF pp.16-17",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "score": 16.25
+     }
+    ]
+   },
+   {
+    "question": "Does the MOHAP Code of Ethical Practices apply to partner clinics in the context of co-branded or joint promotional materials, or only to medical product companies?",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "MOHAP-PROMO-CODE-2017:0001",
+     "MOHAP-PROMO-CODE-2017:0002",
+     "MOHAP-PROMO-CODE-2017:0010",
+     "MOHAP-PROMO-CODE-2017:0011",
+     "MOHAP-PROMO-CODE-2017:0020"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says the Code is binding on all entities involved in the promotion of medical products, including marketing authorization holders, distributors, and marketing consultants, and also on all individuals and entities involved in prescription, dispensing, purchase, enlisting and reimbursement of medical products. It does not explicitly mention partner clinics, but they could be considered either as entities involved in promotion or as healthcare professionals. The passages do not specifically address co-branded or joint promotional materials. Therefore, the text does not definitively settle whether the Code applies to partner clinics in that context. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "MOHAP-PROMO-CODE-2017:0002",
+     "MOHAP-PROMO-CODE-2017:0001"
+    ],
+    "conditions": [
+     "Determine whether partner clinics fall within the defined categories of 'medical product companies' or 'healthcare professionals' as per the Code.",
+     "Assess whether co-branded or joint promotional materials constitute promotion under the Code.",
+     "Consider any subsequent legislative changes (e.g., Federal Decree-Law 38/2024) that may affect interpretation.",
+     "Verify if any additional guidance or later amendments address partner clinics."
+    ],
+    "binding": false,
+    "caveats": [
+     "may-be-superseded"
+    ],
+    "for_human": [],
+    "query_used": "medical product companies ethical code scope",
+    "queries_tried": [
+     {
+      "query": "Does the MOHAP Code of Ethical Practices apply to partner clinics in the context of co-branded or joint promotional materials, or only to medical product companies?",
+      "evidence": "weak",
+      "top_score": 38.115
+     },
+     {
+      "query": "MOHAP Code of Ethical Practices partner clinics",
+      "evidence": "weak",
+      "top_score": 15.464
+     },
+     {
+      "query": "co-branded joint promotional materials advertisement",
+      "evidence": "weak",
+      "top_score": 21.281
+     },
+     {
+      "query": "medical product companies ethical code scope",
+      "evidence": "strong",
+      "top_score": 20.593
+     }
+    ],
+    "rejected_citations": []
+   }
+  ],
+  "action": {
+   "class": "escalate_to_human",
+   "text": "Escalate to a human policy adviser to determine if the clinic has a contractual or regulatory duty to approve the specific wording 'clinically supervised by our doctors' given the lack of direct evidence in the provided passages.",
+   "from": "clinic"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches public-claim",
+   "touches data-transfer",
+   "action 'escalate_to_human' needs human approval",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): health advertisements by influencers and endorsement of health products and serv",
+   "adviser abstained (evidence-weak): Does UAE law require explicit consent before sharing even anonymised health data"
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The draft advertisement asserts a guaranteed reversal of prediabetes with no side effects, which contradicts DHA policy requiring disclosure of side effects and risks. The influencer post uses a user's blood‑sugar numbers without documented consent, raising transparency and accountability concerns under Dubai AI Ethics.",
+    "provisions": [
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DHA-AI-2021:0010"
+    ],
+    "confidence": "medium"
+   },
+   "clinic": {
+    "finding": "The provided passages do not contain specific rules regarding the approval of health advertisements or the requirement for a clinic to review and approve promotional text before publication. The MOHAP Code of Ethical Practices (2017) states that companies must have a scientific service approve promotional material before release, but this applies to medical product companies, not necessarily partner clinics, and the document is noted as potentially outdated. The DHA and DOH policies focus on data sharing and insolvency, not advertising content approval.",
+    "provisions": [
+     "MOHAP-PROMO-CODE-2017:0021",
+     "MOHAP-PROMO-CODE-2017:0019"
+    ],
+    "confidence": "low"
+   },
+   "authority": {
+    "finding": "The TDRA regulation (TDRA-TAR-REG-V3:0020) provides that market surveillance may arise from a complaint, but it applies to telecommunications equipment; the complaint concerns an influencer post, does not name Miqyas, and no other passage authorizes action against him.",
+    "provisions": [
+     "TDRA-TAR-REG-V3:0020"
+    ],
+    "confidence": "low"
+   }
+  }
+ },
+ {
+  "decision_id": "S4-C3-D",
+  "scenario_id": "S4",
+  "round": 3,
+  "chunk_id": "S4-C3",
+  "trigger": {
+   "title": "The app starts showing AI-written personalised outcome messages",
+   "release_note": "Nobody has decided whether in-app AI messages count as advertising.",
+   "incomplete": [
+    "Whether any text in the knowledge base addresses AI-generated or personalised health messages."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The provided passages do not explicitly address whether in-app AI messages that name a medical outcome constitute advertising. The available evidence is therefore insufficient to resolve the question.",
+    "provisions": [],
+    "proposed_action": {
+     "class": "escalate_to_human",
+     "text": "The question requires legal interpretation beyond the scope of the provided passages; escalate to a human policy adviser for a ruling."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Does UAE law consider in-app AI messages that name a medical outcome as advertising?",
+     "If such messages are considered advertising, what regulatory approvals are required before they are shown to users?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DUBAI-AI-ETHICS-2022:0007",
+     "DUBAI-AI-ETHICS-2022:0018",
+     "DUBAI-AI-ETHICS-2022:0020",
+     "DHA-AI-2021:0010",
+     "UAE-AI-STRATEGY-2031:0026"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "clinic",
+    "status": "ok",
+    "finding": "The clinic is named in a text with 'clinically supervised by our doctors', and the compliance officer asks whether in‑app AI messages that name a medical outcome require the clinic's advertising approvals. The passages indicate that health advertisements generally require prior MOHAP approval and that an advertisement may include multiple establishments without separate objection letters, but they do not explicitly address co‑branded partner‑clinic scenarios or in‑app AI messages. Therefore, it is uncertain whether these specific messages fall under the clinic's advertising approvals.",
+    "provisions": [
+     "MOHAP-HEALTHAD-GUIDE:0001",
+     "NMC-AD-GUIDE:0004",
+     "NMC-AD-GUIDE:0005",
+     "MOHAP-PROMO-CODE-2017:0021"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Inform the compliance officer that the passages do not definitively settle whether the in‑app AI messages require the clinic's advertising approvals, and recommend seeking further legal guidance."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Does UAE law consider in‑app AI messages that name a medical outcome as health advertisements requiring prior approval?",
+     "Does the clinic's advertising approval process extend to co‑branded materials where the clinic is named but the message is not directly from the clinic?",
+     "Does the MOHAP guideline about multiple establishments imply that the clinic does not need to separately approve the advertisement?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "MOHAP-HEALTHAD-GUIDE:0001",
+     "NMC-AD-GUIDE:0004",
+     "NMC-AD-GUIDE:0005",
+     "DHA-HIS-2024:0022",
+     "MOHAP-PROMO-CODE-2017:0021",
+     "DHA-HIS-2024:0023"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "authority",
+    "status": "ok",
+    "finding": "The available passages do not directly address automatically generated personalised health messages. They impose general obligations for electronic messaging and health data protection, including need‑to‑know, authorised recipients, and restrictions on transfer outside the State. Consequently, the specific regulatory treatment of such messages is not settled by the current text.",
+    "provisions": [
+     "DOH-ADHICS-V2:0071",
+     "DOH-ADHICS-V2:0070",
+     "UAE-FL2-2019:0016"
+    ],
+    "proposed_action": {
+     "class": "escalate_to_human",
+     "text": "Refer to a human policy adviser to determine whether automatically generated personalised health messages require specific consent or other controls."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Does UAE law require explicit consent before sending automatically generated personalised health messages?",
+     "What security and privacy controls apply to automated personalization of health messages?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DOH-ADHICS-V2:0071",
+     "UAE-FL2-2019:0016",
+     "DOH-ADHICS-V2:0004",
+     "DOH-ADHICS-V2:0070",
+     "TDRA-IOT-PROC-V1:0004",
+     "TDRA-IOT-PROC-V1:0006"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [],
+    "citation_violations": []
+   },
+   {
+    "agent": "clinic",
+    "citations": [
+     {
+      "chunk_id": "MOHAP-HEALTHAD-GUIDE:0001",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[MOHAP-HEALTHAD-GUIDE] PDF pp.1-2",
+      "locator": "PDF pp.1-2",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/Guidelines+for+Health+Advertisement+Approval+Requestion-196.pdf/86cc173a-5981-33be-c0b0-18c9ceafd5d1?t=1739114133634",
+      "section": "Preamble / front matter",
+      "jurisdiction": "federal",
+      "caveats": [
+       "currency-unconfirmed"
+      ]
+     },
+     {
+      "chunk_id": "NMC-AD-GUIDE:0004",
+      "exists": true,
+      "rank": 2,
+      "support": "supported",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.7-8",
+      "locator": "§4 Any person trading advertising content, including from the one that is, PDF pp.7-8",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "section": "§4 Any person trading advertising content, including from the one that is",
+      "jurisdiction": "federal",
+      "caveats": [
+       "may-be-superseded",
+       "currency-unconfirmed"
+      ]
+     },
+     {
+      "chunk_id": "NMC-AD-GUIDE:0005",
+      "exists": true,
+      "rank": 5,
+      "support": "supported",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.8-10",
+      "locator": "§4 Any person trading advertising content, including from the one that is, PDF pp.8-10",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "section": "§4 Any person trading advertising content, including from the one that is",
+      "jurisdiction": "federal",
+      "caveats": [
+       "may-be-superseded",
+       "currency-unconfirmed"
+      ]
+     },
+     {
+      "chunk_id": "MOHAP-PROMO-CODE-2017:0021",
+      "exists": true,
+      "rank": 8,
+      "support": "supported",
+      "citation": "[MOHAP-PROMO-CODE-2017] §15 COMPANY STAFF:, PDF p.14",
+      "locator": "§15 COMPANY STAFF:, PDF p.14",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/code%2Bof%2Bethical%2Bpractices%2Bfor%2Bthe%2Bpromotion%2Band%2Bdistribution%2Bof%2Bmedical%2Bproducts%2Benglish-410.pdf/421e3579-bae1-7214-2878-d604d92e7af5?t=1739157553757",
+      "section": "§15 COMPANY STAFF:",
+      "jurisdiction": "federal",
+      "caveats": [
+       "may-be-superseded"
+      ]
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "authority",
+    "citations": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0071",
+      "exists": true,
+      "rank": 7,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §1 Identify and categorize all means of electronic messaging, PDF pp.77-79",
+      "locator": "§1 Identify and categorize all means of electronic messaging, PDF pp.77-79",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§1 Identify and categorize all means of electronic messaging",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0070",
+      "exists": true,
+      "rank": null,
+      "support": "not-supported-by-finding-text",
+      "citation": "[DOH-ADHICS-V2] §6 Include in the agreements:, PDF pp.76-78",
+      "locator": "§6 Include in the agreements:, PDF pp.76-78",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§6 Include in the agreements:",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "UAE-FL2-2019:0016",
+      "exists": true,
+      "rank": 3,
+      "support": "supported",
+      "citation": "[UAE-FL2-2019] Art. 13, PDF p.21",
+      "locator": "Art. 13, PDF p.21",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1209",
+      "section": "Art. 13",
+      "jurisdiction": "federal",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "abu-dhabi",
+     "federal"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "AI generated or automated personalised health messages in health advertising",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "UAE-PDPL-2021:0013",
+     "UAE-PDPL-2021:0003",
+     "DOH-ADHICS-V2:0083",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0022"
+    ],
+    "query_used": "automated health messages data subject consent",
+    "queries_tried": [
+     {
+      "query": "AI generated or automated personalised health messages in health advertising",
+      "evidence": "weak",
+      "top_score": 10.152
+     },
+     {
+      "query": "automated personalised health messages advertisement approval",
+      "evidence": "weak",
+      "top_score": 11.241
+     },
+     {
+      "query": "artificial intelligence health advertising patient consent",
+      "evidence": "weak",
+      "top_score": 11.382
+     },
+     {
+      "query": "automated health messages data subject consent",
+      "evidence": "weak",
+      "top_score": 15.061
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "UAE-PDPL-2021:0013",
+      "citation": "[UAE-PDPL-2021] Art. 18 Right to Processing and Automated Processing",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "score": 15.061
+     },
+     {
+      "chunk_id": "UAE-PDPL-2021:0003",
+      "citation": "[UAE-PDPL-2021] Art. 1 Definitions",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "score": 13.833
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0083",
+      "citation": "[DOH-ADHICS-V2] §1 Fulfil data subject’s request for:, PDF pp.92-93",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "score": 12.818
+     }
+    ]
+   },
+   {
+    "question": "health claims by AI systems must be accurate and not misleading",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "NMC-AD-GUIDE:0004",
+     "MOHAP-PROMO-CODE-2017:0004",
+     "DHA-MEDAD-2022:0020",
+     "DHA-MEDAD-2022:0008",
+     "DHA-MEDAD-2022:0003"
+    ],
+    "query_used": "advertisement health claims AI systems accuracy misleading",
+    "queries_tried": [
+     {
+      "query": "health claims by AI systems must be accurate and not misleading",
+      "evidence": "weak",
+      "top_score": 14.605
+     },
+     {
+      "query": "health claims artificial intelligence systems accurate not misleading",
+      "evidence": "weak",
+      "top_score": 14.605
+     },
+     {
+      "query": "advertisement health claims AI systems accuracy misleading",
+      "evidence": "weak",
+      "top_score": 17.462
+     },
+     {
+      "query": "artificial intelligence health advertising claims approval licence",
+      "evidence": "weak",
+      "top_score": 16.034
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "NMC-AD-GUIDE:0004",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.7-8",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 17.462
+     },
+     {
+      "chunk_id": "MOHAP-PROMO-CODE-2017:0004",
+      "citation": "[MOHAP-PROMO-CODE-2017] §2 PROMOTIONAL MATERIALS - INFORMATION TO BE MADE AVAILABLE:, PDF pp.4-5",
+      "url": "https://mohap.gov.ae/documents/20117/1212145/code%2Bof%2Bethical%2Bpractices%2Bfor%2Bthe%2Bpromotion%2Band%2Bdistribution%2Bof%2Bmedical%2Bproducts%2Benglish-410.pdf/421e3579-bae1-7214-2878-d604d92e7af5?t=1739157553757",
+      "score": 14.931
+     },
+     {
+      "chunk_id": "DHA-MEDAD-2022:0020",
+      "citation": "[DHA-MEDAD-2022] Not Acceptable, PDF pp.25-26",
+      "url": "https://dha.gov.ae/uploads/042022/Standards%20for%20Medical%20Advertisement%20Content%20in%20Social%20Media2022433965.pdf",
+      "score": 10.959
+     }
+    ]
+   },
+   {
+    "question": "Does UAE law consider in-app AI messages that name a medical outcome as advertising?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DUBAI-AI-ETHICS-2022:0019",
+     "DHA-MEDAD-2022:0010",
+     "NMC-AD-GUIDE:0002",
+     "NMC-AD-GUIDE:0005",
+     "NMC-AD-GUIDE:0010"
+    ],
+    "query_used": "Does UAE law consider in-app AI messages that name a medical outcome as advertising?",
+    "queries_tried": [
+     {
+      "query": "Does UAE law consider in-app AI messages that name a medical outcome as advertising?",
+      "evidence": "weak",
+      "top_score": 15.768
+     },
+     {
+      "query": "definition of advertisement medical claims UAE law",
+      "evidence": "weak",
+      "top_score": 10.45
+     },
+     {
+      "query": "medical advertising electronic communications health authority",
+      "evidence": "weak",
+      "top_score": 11.287
+     },
+     {
+      "query": "prohibited medical outcome claims promotional messages",
+      "evidence": "weak",
+      "top_score": 13.433
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DUBAI-AI-ETHICS-2022:0019",
+      "citation": "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF pp.13-14",
+      "url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "score": 15.768
+     },
+     {
+      "chunk_id": "DHA-MEDAD-2022:0010",
+      "citation": "[DHA-MEDAD-2022] §6 STANDARD TWO: GENERAL CONSIDERATIONS, PDF pp.13-14",
+      "url": "https://dha.gov.ae/uploads/042022/Standards%20for%20Medical%20Advertisement%20Content%20in%20Social%20Media2022433965.pdf",
+      "score": 12.089
+     },
+     {
+      "chunk_id": "NMC-AD-GUIDE:0002",
+      "citation": "[NMC-AD-GUIDE] PDF pp.4-6",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 11.658
+     }
+    ]
+   },
+   {
+    "question": "Does UAE law consider in‑app AI messages that name a medical outcome as health advertisements requiring prior approval?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "NMC-AD-GUIDE:0004",
+     "DUBAI-AI-ETHICS-2022:0019",
+     "NMC-AD-GUIDE:0005",
+     "MOHAP-PROMO-CODE-2017:0003",
+     "DHA-MEDAD-2022:0004"
+    ],
+    "query_used": "Does UAE law consider in‑app AI messages that name a medical outcome as health advertisements requiring prior approval?",
+    "queries_tried": [
+     {
+      "query": "Does UAE law consider in‑app AI messages that name a medical outcome as health advertisements requiring prior approval?",
+      "evidence": "weak",
+      "top_score": 19.434
+     },
+     {
+      "query": "medical advertisement prior approval health outcome",
+      "evidence": "weak",
+      "top_score": 15.485
+     },
+     {
+      "query": "in-app AI messages health advertisement approval",
+      "evidence": "weak",
+      "top_score": 11.241
+     },
+     {
+      "query": "medical outcome advertisement licence approval UAE",
+      "evidence": "weak",
+      "top_score": 11.447
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "NMC-AD-GUIDE:0004",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.7-8",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 19.434
+     },
+     {
+      "chunk_id": "DUBAI-AI-ETHICS-2022:0019",
+      "citation": "[DUBAI-AI-ETHICS-2022] §3.2.2 Guidelines, PDF pp.13-14",
+      "url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "score": 16.492
+     },
+     {
+      "chunk_id": "NMC-AD-GUIDE:0005",
+      "citation": "[NMC-AD-GUIDE] §4 Any person trading advertising content, including from the one that is, PDF pp.8-10",
+      "url": "https://assets.u.ae/api/public/content/895e103ca19241ba9cf15cbad70e86de",
+      "score": 16.31
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "escalate_to_human",
+   "text": "The question requires legal interpretation beyond the scope of the provided passages; escalate to a human policy adviser for a ruling.",
+   "from": "coach"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches public-claim",
+   "touches clinical",
+   "action 'escalate_to_human' needs human approval",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): AI generated or automated personalised health messages in health advertising",
+   "adviser abstained (evidence-weak): health claims by AI systems must be accurate and not misleading",
+   "adviser abstained (evidence-weak): Does UAE law consider in-app AI messages that name a medical outcome as advertis",
+   "adviser abstained (evidence-weak): Does UAE law consider in‑app AI messages that name a medical outcome as health a"
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The provided passages do not explicitly address whether in-app AI messages that name a medical outcome constitute advertising. The available evidence is therefore insufficient to resolve the question.",
+    "provisions": [],
+    "confidence": "low"
+   },
+   "clinic": {
+    "finding": "The clinic is named in a text with 'clinically supervised by our doctors', and the compliance officer asks whether in‑app AI messages that name a medical outcome require the clinic's advertising approvals. The passages indicate that health advertisements generally require prior MOHAP approval and that an advertisement may include multiple establishments without separate objection letters, but they do not explicitly address co‑branded partner‑clinic scenarios or in‑app AI messages. Therefore, it is uncertain whether these specific messages fall under the clinic's advertising approvals.",
+    "provisions": [
+     "MOHAP-HEALTHAD-GUIDE:0001",
+     "NMC-AD-GUIDE:0004",
+     "NMC-AD-GUIDE:0005",
+     "MOHAP-PROMO-CODE-2017:0021"
+    ],
+    "confidence": "low"
+   },
+   "authority": {
+    "finding": "The available passages do not directly address automatically generated personalised health messages. They impose general obligations for electronic messaging and health data protection, including need‑to‑know, authorised recipients, and restrictions on transfer outside the State. Consequently, the specific regulatory treatment of such messages is not settled by the current text.",
+    "provisions": [
+     "DOH-ADHICS-V2:0071",
+     "DOH-ADHICS-V2:0070",
+     "UAE-FL2-2019:0016"
+    ],
+    "confidence": "low"
+   }
+  }
+ }
+]

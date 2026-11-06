@@ -1,0 +1,76 @@
+{
+  "scenario_id": "S3",
+  "title": "A partner clinic asks for a member's records, then for more, across emirates",
+  "synthetic": true,
+  "member": {"alias": "Member A (synthetic)", "note": "invented person; no real data"},
+  "chunks": [
+    {
+      "id": "S3-C1",
+      "title": "The clinic requests twelve months of lab results",
+      "release_note": "A DHA-licensed partner clinic in Dubai asks for the member's labs before a video visit.",
+      "question": {
+        "coach": "May Miqyas send the clinic what it asked for, and what must it not send?",
+        "clinic": "May the clinic receive and use these results, and what must it do first?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["Member A's consent record in Miqyas: agreed to share lab results from the last 12 months with the clinic, signed in the app this week. The record also has a separate tab of mood and sleep notes the member wrote to the coach; the consent does not list that tab."],
+        "clinic": [
+          "A DHA-licensed partner clinic in Dubai asks Miqyas, through its portal, for the member's blood test results of the last 12 months before a video visit.",
+          "The clinic's request form does not say how the clinic checked who the patient is."
+        ],
+        "authority": []
+      },
+      "incomplete": ["How the clinic verified the patient's identity."],
+      "policy_questions": [
+        "what must a telehealth provider do before sharing patient information with another facility",
+        "verification of patient identity before a telehealth consultation"
+      ],
+      "touches": ["data-transfer", "clinical"]
+    },
+    {
+      "id": "S3-C2",
+      "title": "The member now lives in Abu Dhabi; the clinic is in Dubai",
+      "release_note": "Two emirates' rules may apply to one request.",
+      "question": {
+        "coach": "Does the member's move change what Miqyas may send?",
+        "clinic": "Which rules govern a video visit with a patient who is in Abu Dhabi?",
+        "authority": "How should a request from a Dubai facility about an Abu Dhabi resident be routed and treated?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["The member's profile now lists an Abu Dhabi address from last month, while the partner clinic is still the Dubai one."],
+        "clinic": ["The clinic's licence covers its Dubai premises. The visit is by video and the patient says they are currently in Abu Dhabi."],
+        "authority": ["Health-information-exchange note: a request from a Dubai facility about a person resident in Abu Dhabi has no routing rule in the platform's routing table."]
+      },
+      "incomplete": ["Whether either emirate's exchange rules apply to a private consumer app that is not itself a licensed facility."],
+      "policy_questions": [
+        "Abu Dhabi health information exchange rules for sharing patient data between facilities",
+        "Dubai health information sharing policy for patient data between health entities"
+      ],
+      "touches": ["data-transfer"]
+    },
+    {
+      "id": "S3-C3",
+      "title": "After the visit the clinic asks for the whole coach chat",
+      "release_note": "The clinic asks for more than the member agreed to share.",
+      "question": {
+        "coach": "May Miqyas send the coach chat history and the mood notes?",
+        "clinic": "May the clinic ask for and keep the full coach chat as part of the patient record?",
+        "default": "What do the rules say about this step?"
+      },
+      "facts": {
+        "coach": ["The coach chat history contains the member's remarks about low mood and one night of very poor sleep. The member has not mentioned the clinic's new request."],
+        "clinic": ["After the visit the clinic writes: please also send the full coach chat history and the mood notes so our doctor has the whole picture."],
+        "authority": []
+      },
+      "incomplete": ["Whether the member knows the clinic asked, and what the member wants."],
+      "policy_questions": [
+        "disclosure of patient health information requires the patient's consent and is limited to what is necessary",
+        "confidentiality of patient information and the duty of the health facility"
+      ],
+      "touches": ["data-transfer", "clinical"],
+      "scripted_approval": {"decision": "rejected", "note": "Operator: send nothing beyond the signed consent until the member decides (simulated reviewer)."}
+    }
+  ]
+}

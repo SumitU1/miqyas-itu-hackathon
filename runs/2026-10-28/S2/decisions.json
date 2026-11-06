@@ -1,0 +1,1271 @@
+[
+ {
+  "decision_id": "S2-C1-D",
+  "scenario_id": "S2",
+  "round": 1,
+  "chunk_id": "S2-C1",
+  "trigger": {
+   "title": "Member links a wearable whose cloud location is unknown",
+   "release_note": "Member A links a wearable made by BandCo (a fictional vendor).",
+   "incomplete": [
+    "Where BandCo's cloud processes the data.",
+    "Where the Miqyas hosting provider stores the database."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The available passages stress that data privacy, consent, and human oversight are essential for AI systems in the UAE. They do not explicitly address importing wearable data, but they imply that any such import must be based on proper consent and privacy safeguards. Therefore, the coach may import the data only after verifying these requirements.",
+    "provisions": [
+     "UAE-AI-CHARTER-2024:0002",
+     "UAE-AI-STRATEGY-2031:0006"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Confirm that the member's consent covers the import and processing of wearable data and that privacy protections are in place before importing."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Does the member's agreement to the in-app notice constitute valid consent for processing by service providers under UAE data privacy expectations?",
+     "Are there any additional regulatory requirements for health-related data from wearables that are not covered in the current passages?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "UAE-AI-STRATEGY-2031:0006",
+     "DUBAI-AI-ETHICS-2022:0036",
+     "UAE-AI-STRATEGY-2031:0028",
+     "UAE-AI-STRATEGY-2031:0024",
+     "UAE-AI-STRATEGY-2031:0027",
+     "UAE-AI-CHARTER-2024:0002"
+    ],
+    "draft_reply_to_member": "Your wearable data can be imported once we verify that your consent and our privacy safeguards meet the required standards.",
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "authority",
+    "status": "ok",
+    "finding": "The ADHICS V2 requires that health information, including any form (encrypted, anonymized, etc.), must not be stored, processed, or transferred outside the UAE unless an exemption is approved by entity management and then by the DoH. Cloud environments must be physically hosted within the UAE, and remote support from outside the UAE is prohibited. The described data flow involves a BandCo cloud and Miqyas collector/database whose countries are not confirmed, thus raising a localisation question.",
+    "provisions": [
+     "DOH-ADHICS-V2:0079",
+     "DOH-ADHICS-V2:0085"
+    ],
+    "proposed_action": {
+     "class": "inform_member",
+     "text": "Request the platform team to confirm the countries of the BandCo cloud and Miqyas hosting provider and ensure that all health data remains within the UAE in accordance with ADHICS."
+    },
+    "confidence": "high",
+    "open_questions": [
+     "What is the country of the BandCo cloud?",
+     "What is the country of the Miqyas hosting provider?",
+     "Has any exemption been requested or approved by DoH?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DOH-ADHICS-V2:0080",
+     "TDRA-IOT-PROC-V1:0004",
+     "TDRA-IOT-PROC-V1:0005",
+     "DOH-ADHICS-V2:0079",
+     "DOH-ADHICS-V2:0085",
+     "DOH-ADHICS-V2:0004"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [
+     {
+      "chunk_id": "UAE-AI-CHARTER-2024:0002",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[UAE-AI-CHARTER-2024] §3 Algorithmic Bias:, PDF pp.3-5",
+      "locator": "§3 Algorithmic Bias:, PDF pp.3-5",
+      "url": "https://ai.gov.ae/wp-content/uploads/2024/07/UAEAI-Methaq-EN2-3.pdf",
+      "section": "§3 Algorithmic Bias:",
+      "jurisdiction": "federal",
+      "caveats": [
+       "non-binding"
+      ]
+     },
+     {
+      "chunk_id": "UAE-AI-STRATEGY-2031:0006",
+      "exists": true,
+      "rank": null,
+      "support": "not-supported-by-finding-text",
+      "citation": "[UAE-AI-STRATEGY-2031] Opportunities To Lead, PDF p.6",
+      "locator": "Opportunities To Lead, PDF p.6",
+      "url": "https://assets.u.ae/api/public/content/deed2bf9d68244ab8119c27f2c52813f?v=87559d49",
+      "section": "Opportunities To Lead",
+      "jurisdiction": "federal",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "authority",
+    "citations": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0079",
+      "exists": true,
+      "rank": 2,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §1 Implement information security policies, procedures, and, PDF pp.87-88",
+      "locator": "§1 Implement information security policies, procedures, and, PDF pp.87-88",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§1 Implement information security policies, procedures, and",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0085",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §1 Implement the Shared responsibility model for information, PDF p.95",
+      "locator": "§1 Implement the Shared responsibility model for information, PDF p.95",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§1 Implement the Shared responsibility model for information",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "abu-dhabi",
+     "federal"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "may health data be stored or processed outside the UAE",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "UAE-FL2-2019:0016",
+     "UAE-FL2-2019:0015",
+     "UAE-PDPL-2021:0004",
+     "UAE-FL2-2019:0021",
+     "UAE-PDPL-2021:0011"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "The text says that health information and data related to health services provided in the UAE may not be stored, processed, generated or transmitted outside the State, unless in cases defined by decision of the Health Authority in coordination with the Ministry (Federal Law No. (2) of 2019, Art. 13). The text also says that the conditions and controls for storage of health information and data within the State are to be defined by decision of the Minister in coordination with the Health Authorities (Art. 12). The text says the PDPL does not apply to Personal Health Data that has legislation regulating its protection and processing, so the health-specific ICT law governs this question rather than the general data-protection law. The text does not settle what the permitted exception cases are, since those depend on a Health Authority decision in coordination with the Ministry that is not included in the passages. The text also references cross-border processing protections under Articles (22) and (23) of the PDPL, but those articles are not supplied, so their content cannot be assessed here.",
+    "provisions": [
+     "UAE-FL2-2019:0016",
+     "UAE-FL2-2019:0015",
+     "UAE-PDPL-2021:0004",
+     "UAE-PDPL-2021:0011"
+    ],
+    "conditions": [
+     "Before relying on any cross-border storage or processing, confirm whether a decision of the Health Authority in coordination with the Ministry defines the specific case as a permitted exception under Art. 13 of Federal Law No. (2) of 2019.",
+     "Verify the current text of that Health Authority/Ministry decision, since the exception cases are not set out in the supplied passages.",
+     "Check whether the data qualifies as Personal Health Data with its own regulating legislation, since the PDPL excludes such data from its scope.",
+     "Obtain Articles (22) and (23) of the PDPL before assessing any general cross-border transfer protections, as they are referenced but not supplied."
+    ],
+    "binding": true,
+    "caveats": [
+     "currency-unconfirmed",
+     "partial-capture"
+    ],
+    "for_human": [],
+    "query_used": "health data storage outside the State",
+    "queries_tried": [
+     {
+      "query": "may health data be stored or processed outside the UAE",
+      "evidence": "weak",
+      "top_score": 13.75
+     },
+     {
+      "query": "health data storage outside the State",
+      "evidence": "strong",
+      "top_score": 16.817
+     },
+     {
+      "query": "processing health data outside the State regulations",
+      "evidence": "strong",
+      "top_score": 15.382
+     },
+     {
+      "query": "transfer of health data outside the State approval",
+      "evidence": "weak",
+      "top_score": 16.711
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "approval needed for a wearable device or radio equipment used in the UAE",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "TDRA-TAR-REG-V3:0016",
+     "TDRA-TAR-POLICY-V3:0002",
+     "TDRA-TAR-REG-V3:0002",
+     "TDRA-TAR-POLICY-V3:0005",
+     "TDRA-TAR-POLICY-V3:0007"
+    ],
+    "query_used": "approval needed for a wearable device or radio equipment used in the UAE",
+    "queries_tried": [
+     {
+      "query": "approval needed for a wearable device or radio equipment used in the UAE",
+      "evidence": "weak",
+      "top_score": 15.853
+     },
+     {
+      "query": "approval required for patient wearable device",
+      "evidence": "none",
+      "top_score": 9.914
+     },
+     {
+      "query": "radio equipment licence approval transfer",
+      "evidence": "weak",
+      "top_score": 15.853
+     },
+     {
+      "query": "device approval outside State UAE",
+      "evidence": "weak",
+      "top_score": 10.424
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "TDRA-TAR-REG-V3:0016",
+      "citation": "[TDRA-TAR-REG-V3] Table Of Contents, PDF p.14",
+      "url": "https://tdra.gov.ae/-/media/About/Type-approval-PDF/Item-73--Type-approval-regulation-21-clear-version-EN-2.ashx",
+      "score": 15.853
+     },
+     {
+      "chunk_id": "TDRA-TAR-POLICY-V3:0002",
+      "citation": "[TDRA-TAR-POLICY-V3] §1 Definitions, PDF pp.3-4",
+      "url": "https://tdra.gov.ae/-/media/About/Type-approval-PDF/ITem-72-Type-approval-policy-21-clear-version-EN1-1.ashx",
+      "score": 15.264
+     },
+     {
+      "chunk_id": "TDRA-TAR-REG-V3:0002",
+      "citation": "[TDRA-TAR-REG-V3] Table Of Contents, PDF pp.2-4",
+      "url": "https://tdra.gov.ae/-/media/About/Type-approval-PDF/Item-73--Type-approval-regulation-21-clear-version-EN-2.ashx",
+      "score": 15.179
+     }
+    ]
+   },
+   {
+    "question": "Does the member's agreement to the in-app notice constitute valid consent for processing by service providers under UAE data privacy expectations?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DOH-ADHICS-V2:0114",
+     "DHA-TELEHEALTH-STD-V4:0050",
+     "DOH-ADHICS-V2:0079",
+     "DHA-AI-2021:0003",
+     "DOH-HIE-2020:0051"
+    ],
+    "query_used": "Does the member's agreement to the in-app notice constitute valid consent for processing by service providers under UAE data privacy expectations?",
+    "queries_tried": [
+     {
+      "query": "Does the member's agreement to the in-app notice constitute valid consent for processing by service providers under UAE data privacy expectations?",
+      "evidence": "weak",
+      "top_score": 17.571
+     },
+     {
+      "query": "...",
+      "evidence": "none",
+      "top_score": 0.0
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0114",
+      "citation": "[DOH-ADHICS-V2] §8 Appendices, PDF pp.134-135",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "score": 17.571
+     },
+     {
+      "chunk_id": "DHA-TELEHEALTH-STD-V4:0050",
+      "citation": "[DHA-TELEHEALTH-STD-V4] §15.12.2 Maintenance and servicing of PRM equipment and devices should be, PDF pp.61-62",
+      "url": "https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf",
+      "score": 13.239
+     },
+     {
+      "chunk_id": "DOH-ADHICS-V2:0079",
+      "citation": "[DOH-ADHICS-V2] §1 Implement information security policies, procedures, and, PDF pp.87-88",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "score": 13.0
+     }
+    ]
+   },
+   {
+    "question": "What is the country of the BandCo cloud?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DOH-ADHICS-V2:0085",
+     "UAE-FL2-2019:0016",
+     "UAE-PDPL-2021:0004",
+     "UAE-PDPL-2021:0016",
+     "UAE-PDPL-2021:0017"
+    ],
+    "query_used": "BandCo cloud data location outside the State",
+    "queries_tried": [
+     {
+      "query": "What is the country of the BandCo cloud?",
+      "evidence": "none",
+      "top_score": 9.319
+     },
+     {
+      "query": "BandCo cloud country of establishment",
+      "evidence": "none",
+      "top_score": 9.319
+     },
+     {
+      "query": "BandCo cloud data location outside the State",
+      "evidence": "weak",
+      "top_score": 11.871
+     },
+     {
+      "query": "BandCo cloud controller country",
+      "evidence": "weak",
+      "top_score": 10.347
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0085",
+      "citation": "[DOH-ADHICS-V2] §1 Implement the Shared responsibility model for information, PDF p.95",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "score": 11.871
+     },
+     {
+      "chunk_id": "UAE-FL2-2019:0016",
+      "citation": "[UAE-FL2-2019] Art. 13, PDF p.21",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1209",
+      "score": 11.399
+     },
+     {
+      "chunk_id": "UAE-PDPL-2021:0004",
+      "citation": "[UAE-PDPL-2021] Art. 2 Scope of Application of the Decree by Law",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "score": 10.491
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "inform_member",
+   "text": "Confirm that the member's consent covers the import and processing of wearable data and that privacy protections are in place before importing.",
+   "from": "coach"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches data-transfer",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): approval needed for a wearable device or radio equipment used in the UAE",
+   "adviser abstained (evidence-weak): Does the member's agreement to the in-app notice constitute valid consent for pr",
+   "adviser abstained (evidence-weak): What is the country of the BandCo cloud?"
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The available passages stress that data privacy, consent, and human oversight are essential for AI systems in the UAE. They do not explicitly address importing wearable data, but they imply that any such import must be based on proper consent and privacy safeguards. Therefore, the coach may import the data only after verifying these requirements.",
+    "provisions": [
+     "UAE-AI-CHARTER-2024:0002",
+     "UAE-AI-STRATEGY-2031:0006"
+    ],
+    "confidence": "low"
+   },
+   "authority": {
+    "finding": "The ADHICS V2 requires that health information, including any form (encrypted, anonymized, etc.), must not be stored, processed, or transferred outside the UAE unless an exemption is approved by entity management and then by the DoH. Cloud environments must be physically hosted within the UAE, and remote support from outside the UAE is prohibited. The described data flow involves a BandCo cloud and Miqyas collector/database whose countries are not confirmed, thus raising a localisation question.",
+    "provisions": [
+     "DOH-ADHICS-V2:0079",
+     "DOH-ADHICS-V2:0085"
+    ],
+    "confidence": "high"
+   }
+  }
+ },
+ {
+  "decision_id": "S2-C2-D",
+  "scenario_id": "S2",
+  "round": 2,
+  "chunk_id": "S2-C2",
+  "trigger": {
+   "title": "The vendor answers: processing happens in Europe; consent text is silent on transfer",
+   "release_note": "BandCo support replies; the coach checks what the member actually agreed to.",
+   "incomplete": [
+    "Which European countries, and under what contract between BandCo and Miqyas."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The supplied passages do not contain the specific legal text regarding cross-border data transfer or consent requirements for health data. While the coordinator's ruling cites Federal Law No. (2) of 2019, Articles 12 and 13, these articles are not present in the provided PASSAGES list, so I cannot ground a legal statement about the validity of the member's consent or the prohibition on offshore storage in the supplied evidence. The available passages discuss general AI strategy, ethics, and privacy principles but do not settle the specific regulatory question of whether the in-app notice constitutes valid consent for international transfer.",
+    "provisions": [],
+    "proposed_action": {
+     "class": "escalate_to_human",
+     "text": "Escalate to a human policy adviser to verify the applicability of Federal Law No. (2) of 2019 and determine if the member's consent is valid, as the specific legal provisions are not included in the provided passages."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "Does the in-app notice 'We import your wearable data to coach you. Your data may be processed by service providers' constitute valid consent for cross-border transfer under the specific health data regulations cited in the coordinator's ruling?",
+     "Are the specific articles of Federal Law No. (2) of 2019 regarding cross-border health data transfer available in a different passage set that should be consulted?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "UAE-AI-STRATEGY-2031:0018",
+     "UAE-AI-STRATEGY-2031:0006",
+     "UAE-AI-STRATEGY-2031:0029",
+     "DUBAI-AI-ETHICS-2022:0033",
+     "UAE-AI-STRATEGY-2031:0027",
+     "UAE-AI-CHARTER-2024:0002"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "authority",
+    "status": "ok",
+    "finding": "The member's consent alone is not sufficient for this cross‑border transfer. The ADHICS standard requires that cloud environments hosting health data be physically hosted within the UAE, including backups, with no exception for consent. While PDPL Article 23 allows transfer on the basis of explicit consent, it also demands that the transfer not contradict the public or security interest, and the specific health‑data law (Federal Law No. (2) of 2019) may impose further restrictions that are not met here.",
+    "provisions": [
+     "DOH-ADHICS-V2:0085",
+     "UAE-PDPL-2021:0017",
+     "UAE-PDPL-2021:0018"
+    ],
+    "proposed_action": {
+     "class": "withhold",
+     "text": "The transfer should be withheld until the data is hosted within the UAE as required by ADHICS."
+    },
+    "confidence": "medium",
+    "open_questions": [
+     "What is the precise country of the BandCo cloud?",
+     "Does the health‑specific law (Federal Law No. (2) of 2019) contain any exception that would permit this transfer despite the ADHICS requirement?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "UAE-PDPL-2021:0017",
+     "DOH-ADHICS-V2:0083",
+     "UAE-PDPL-2021:0008",
+     "UAE-PDPL-2021:0018",
+     "DOH-ADHICS-V2:0085",
+     "DOH-ADHICS-V2:0004"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [],
+    "citation_violations": []
+   },
+   {
+    "agent": "authority",
+    "citations": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0085",
+      "exists": true,
+      "rank": 4,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §1 Implement the Shared responsibility model for information, PDF p.95",
+      "locator": "§1 Implement the Shared responsibility model for information, PDF p.95",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§1 Implement the Shared responsibility model for information",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     },
+     {
+      "chunk_id": "UAE-PDPL-2021:0017",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "locator": "Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "section": "Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "jurisdiction": "federal",
+      "caveats": [
+       "currency-unconfirmed",
+       "partial-capture"
+      ]
+     },
+     {
+      "chunk_id": "UAE-PDPL-2021:0018",
+      "exists": true,
+      "rank": 2,
+      "support": "supported",
+      "citation": "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "locator": "Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "section": "Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "jurisdiction": "federal",
+      "caveats": [
+       "currency-unconfirmed",
+       "partial-capture"
+      ]
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "abu-dhabi",
+     "federal"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "is explicit consent enough to transfer personal data outside the country",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "UAE-PDPL-2021:0017",
+     "UAE-PDPL-2021:0016",
+     "DHA-TELEHEALTH-POL-2021:0003",
+     "UAE-PDPL-2021:0018",
+     "UAE-PDPL-2021:0004"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "The text says that explicit consent is a valid basis for transferring personal data outside the State under Article 23(1)(b) of Federal Decree-Law No. (45) of 2021, but it is not sufficient on its own because the transfer must not contradict the public or security interest of the State. The text says that Article 23 applies specifically when a proper protection level is not available in the destination country, whereas Article 22 governs transfers to countries with adequate legislation or agreements. The text says that the Executive Regulations set forth additional controls and stipulations that must be observed during such transfers, but the status of these regulations is not confirmed by this project. The text says that Personal Health Data may be excluded from the general law if specific legislation regulates its protection, which requires checking for applicable sector-specific rules.",
+    "provisions": [
+     "UAE-PDPL-2021:0017",
+     "UAE-PDPL-2021:0016",
+     "UAE-PDPL-2021:0018",
+     "UAE-PDPL-2021:0004"
+    ],
+    "conditions": [
+     "Verify that the transfer does not contradict the public or security interest of the State.",
+     "Confirm whether the destination country has adequate data protection legislation or a relevant agreement, which would trigger Article 22 instead of Article 23.",
+     "Check the Executive Regulations for specific controls and stipulations required for the transfer, as their status is not confirmed.",
+     "Determine if the data is Personal Health Data regulated by specific legislation, which may exclude it from the general PDPL provisions."
+    ],
+    "binding": true,
+    "caveats": [
+     "currency-unconfirmed",
+     "partial-capture"
+    ],
+    "for_human": [],
+    "query_used": "is explicit consent enough to transfer personal data outside the country",
+    "queries_tried": [
+     {
+      "query": "is explicit consent enough to transfer personal data outside the country",
+      "evidence": "strong",
+      "top_score": 24.687
+     },
+     {
+      "query": "transfer personal data outside the State",
+      "evidence": "strong",
+      "top_score": 18.939
+     },
+     {
+      "query": "explicit consent data transfer abroad",
+      "evidence": "strong",
+      "top_score": 18.512
+     },
+     {
+      "query": "conditions for transferring data outside country",
+      "evidence": "strong",
+      "top_score": 19.371
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "transfer of health data outside the State under the law on information and communication technology in health fields",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "UAE-FL2-2019:0016",
+     "UAE-FL2-2019:0021",
+     "UAE-FL2-2019:0015",
+     "UAE-FL2-2019:0006",
+     "UAE-FL2-2019:0005"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says that health information and data related to health services provided in the State may not be stored, processed, generated, or transmitted outside the State, unless in cases defined by a decision of the Health Authority in coordination with the Ministry. This restriction applies to all ICT methods and uses in health fields within the State, including the Free Zones. The law also aims to ensure the security and safety of health information and data. The conditions and controls for storing health data within the State are to be defined by a decision of the Minister in coordination with the Health Authorities.",
+    "provisions": [
+     "UAE-FL2-2019:0016",
+     "UAE-FL2-2019:0015",
+     "UAE-FL2-2019:0005",
+     "UAE-FL2-2019:0006"
+    ],
+    "conditions": [
+     "An exception to the prohibition of transferring health data outside the State requires a decision by the Health Authority in coordination with the Ministry.",
+     "The scope of the law includes all ICT methods and uses in health fields in the State, including the Free Zones.",
+     "The specific conditions and controls for storing health information and data in the State must be defined by a decision of the Minister in coordination with the Health Authorities.",
+     "The passages do not settle the specific procedural steps for obtaining approval for cross-border data transfer, nor do they specify the technical security standards, which are left to ministerial or authority decisions."
+    ],
+    "binding": true,
+    "caveats": [],
+    "for_human": [],
+    "query_used": "transfer of health data outside the State under the law on information and communication technology in health fields",
+    "queries_tried": [
+     {
+      "query": "transfer of health data outside the State under the law on information and communication technology in health fields",
+      "evidence": "strong",
+      "top_score": 27.602
+     },
+     {
+      "query": "transfer health data outside State",
+      "evidence": "strong",
+      "top_score": 16.711
+     },
+     {
+      "query": "information communication technology health fields",
+      "evidence": "weak",
+      "top_score": 11.126
+     },
+     {
+      "query": "health data export approval requirements",
+      "evidence": "none",
+      "top_score": 8.938
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "Does the in-app notice 'We import your wearable data to coach you. Your data may be processed by service providers' constitute valid consent for cross-border transfer under the specific health data regulations cited in the coordinator's ruling?",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "UAE-PDPL-2021:0017",
+     "UAE-PDPL-2021:0018",
+     "UAE-PDPL-2021:0016",
+     "DOH-ADHICS-V2:0080",
+     "UAE-PDPL-2021:0003"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "The text says that under Article 23(1)(b) of Federal Decree-Law No. (45) of 2021, personal data may be transferred outside the State if there is an 'explicit consent' granted by the Data Subject, provided the transfer does not contradict the public or security interest of the State. The text says that the definition of consent in Article 1 requires the Data Subject to authorize a third party to process their Personal Data, but the provided passages do not specify the exact technical or procedural requirements for what constitutes 'explicit' consent versus general consent. The text says that ADHICS V2 requires a Data Privacy Impact Assessment (DPIA) before initiating processing activities likely to result in high risks, including cross-border movement, but it does not state that a DPIA substitutes for or validates the specific legal standard of explicit consent required by the Federal Decree-Law. The text says that the Executive Regulations, which set forth the controls and stipulations for cross-border transfers, are not confirmed by this project, leaving the specific operational criteria for valid consent undefined in the supplied passages. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "UAE-PDPL-2021:0017",
+     "UAE-PDPL-2021:0018",
+     "UAE-PDPL-2021:0016",
+     "DOH-ADHICS-V2:0080",
+     "UAE-PDPL-2021:0003"
+    ],
+    "conditions": [
+     "Verify whether the in-app notice meets the specific criteria for 'explicit consent' as potentially defined in the unconfirmed Executive Regulations or other binding guidance not provided here.",
+     "Confirm that the transfer does not contradict the public or security interest of the State as required by Article 23(1)(b).",
+     "Ensure that a Data Privacy Impact Assessment (DPIA) has been conducted and documented as required by ADHICS V2 for high-risk processing involving cross-border movement.",
+     "Check if the destination country has adequate data protection legislation or if a contract/agreement obligating the recipient to adopt the Decree-Law's measures is in place, as alternative grounds under Article 23(1)(a) or Article 22."
+    ],
+    "binding": false,
+    "caveats": [
+     "currency-unconfirmed",
+     "partial-capture"
+    ],
+    "for_human": [],
+    "query_used": "consent cross-border transfer health data",
+    "queries_tried": [
+     {
+      "query": "Does the in-app notice 'We import your wearable data to coach you. Your data may be processed by service providers' constitute valid consent for cross-border transfer under the specific health data regulations cited in the coordinator's ruling?",
+      "evidence": "weak",
+      "top_score": 25.393
+     },
+     {
+      "query": "consent cross-border transfer health data",
+      "evidence": "strong",
+      "top_score": 21.315
+     },
+     {
+      "query": "wearable data service provider processing",
+      "evidence": "weak",
+      "top_score": 11.318
+     },
+     {
+      "query": "in-app notice valid consent transfer",
+      "evidence": "none",
+      "top_score": 9.421
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "What is the precise country of the BandCo cloud?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "DOH-ADHICS-V2:0085",
+     "ITU-AIREADY-2:0007",
+     "ITU-AIREADY-2:0062",
+     "ITU-AIREADY-2:0063",
+     "DOH-ADHICS-V2:0084"
+    ],
+    "query_used": "BandCo cloud hosting country",
+    "queries_tried": [
+     {
+      "query": "What is the precise country of the BandCo cloud?",
+      "evidence": "none",
+      "top_score": 9.319
+     },
+     {
+      "query": "BandCo cloud country location",
+      "evidence": "none",
+      "top_score": 9.319
+     },
+     {
+      "query": "BandCo cloud data center jurisdiction",
+      "evidence": "none",
+      "top_score": 8.064
+     },
+     {
+      "query": "BandCo cloud hosting country",
+      "evidence": "weak",
+      "top_score": 13.42
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0085",
+      "citation": "[DOH-ADHICS-V2] §1 Implement the Shared responsibility model for information, PDF p.95",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "score": 13.42
+     },
+     {
+      "chunk_id": "ITU-AIREADY-2:0007",
+      "citation": "[ITU-AIREADY-2] §1 Introduction, PDF pp.9-10",
+      "url": "https://www.itu.int/dms_pub/itu-t/opb/ai4g/T-AI4G-AI4GOOD-2025-6-PDF-E.pdf",
+      "score": 8.808
+     },
+     {
+      "chunk_id": "ITU-AIREADY-2:0062",
+      "citation": "[ITU-AIREADY-2] §6 Future work, PDF p.45",
+      "url": "https://www.itu.int/dms_pub/itu-t/opb/ai4g/T-AI4G-AI4GOOD-2025-6-PDF-E.pdf",
+      "score": 8.569
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "escalate_to_human",
+   "text": "Escalate to a human policy adviser to verify the applicability of Federal Law No. (2) of 2019 and determine if the member's consent is valid, as the specific legal provisions are not included in the provided passages.",
+   "from": "coach"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches data-transfer",
+   "action 'escalate_to_human' needs human approval",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): What is the precise country of the BandCo cloud?"
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The supplied passages do not contain the specific legal text regarding cross-border data transfer or consent requirements for health data. While the coordinator's ruling cites Federal Law No. (2) of 2019, Articles 12 and 13, these articles are not present in the provided PASSAGES list, so I cannot ground a legal statement about the validity of the member's consent or the prohibition on offshore storage in the supplied evidence. The available passages discuss general AI strategy, ethics, and privacy principles but do not settle the specific regulatory question of whether the in-app notice constitutes valid consent for international transfer.",
+    "provisions": [],
+    "confidence": "low"
+   },
+   "authority": {
+    "finding": "The member's consent alone is not sufficient for this cross‑border transfer. The ADHICS standard requires that cloud environments hosting health data be physically hosted within the UAE, including backups, with no exception for consent. While PDPL Article 23 allows transfer on the basis of explicit consent, it also demands that the transfer not contradict the public or security interest, and the specific health‑data law (Federal Law No. (2) of 2019) may impose further restrictions that are not met here.",
+    "provisions": [
+     "DOH-ADHICS-V2:0085",
+     "UAE-PDPL-2021:0017",
+     "UAE-PDPL-2021:0018"
+    ],
+    "confidence": "medium"
+   }
+  }
+ },
+ {
+  "decision_id": "S2-C3-D",
+  "scenario_id": "S2",
+  "round": 3,
+  "chunk_id": "S2-C3",
+  "trigger": {
+   "title": "A partner clinic asks for all the wearable data",
+   "release_note": "The partner clinic's intake form asks for everything the member's wearable has recorded.",
+   "incomplete": [
+    "Whether a spoken instruction to a chatbot counts as consent for the clinic."
+   ]
+  },
+  "assessments": [
+   {
+    "agent": "coach",
+    "status": "ok",
+    "finding": "The text says that health information and data related to health services provided in the UAE may not be stored, processed, generated, or transmitted outside the State, unless in cases defined by a decision of the Health Authority in coordination with the Ministry. The supplied passages do not contain the specific Health Authority decision that would define permitted exceptions for cross-border transfer, nor do they confirm the country of the BandCo cloud or whether the in-app notice constitutes valid explicit consent for such a transfer. Therefore, the legal basis for passing the wearable history to the clinic, particularly if it involves cross-border processing, cannot be established from the provided evidence.",
+    "provisions": [],
+    "proposed_action": {
+     "class": "withhold",
+     "text": "Withhold the transfer of the wearable history to the clinic until a human reviewer confirms the legal basis for cross-border data processing and obtains valid explicit consent."
+    },
+    "confidence": "low",
+    "open_questions": [
+     "What is the specific Health Authority decision that defines the permitted exceptions for storing or transmitting health data outside the UAE?",
+     "Does the in-app consent notice satisfy the legal requirement for 'explicit consent' for cross-border transfer of Personal Health Data?",
+     "Is the BandCo cloud located within the UAE or outside the State?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "UAE-AI-STRATEGY-2031:0019",
+     "DHA-AI-2021:0005",
+     "DUBAI-AI-ETHICS-2022:0014",
+     "UAE-AI-STRATEGY-2031:0020",
+     "UAE-AI-STRATEGY-2031:0027",
+     "UAE-AI-CHARTER-2024:0002"
+    ],
+    "draft_reply_to_member": "We cannot share your wearable data with the clinic yet because we need to confirm the legal requirements for transferring health data. Please wait for further instructions from our team.",
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "clinic",
+    "status": "ok",
+    "finding": "The text states that health data and information should only be disclosed when the consent of the Data Subject/Patient has been obtained, and that consent must be obtained before sharing Protected Health Information (PHI). The clinic's current consent form lists only lab results, which does not explicitly cover the 'all wearable data' requested in the intake form. Therefore, the clinic may not receive the wearable data under the current consent scope.",
+    "provisions": [
+     "DHA-HIS-2024:0023",
+     "DHA-HIS-2024:0017"
+    ],
+    "proposed_action": {
+     "class": "withhold",
+     "text": "Withhold the transfer of wearable data until the member provides explicit consent specifically covering that data type."
+    },
+    "confidence": "high",
+    "open_questions": [],
+    "citation_violations": [],
+    "retrieved": [
+     "DHA-HIS-2024:0023",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0020",
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0020",
+     "DHA-TELEHEALTH-STD-V4:0019"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   },
+   {
+    "agent": "authority",
+    "status": "ok",
+    "finding": "The ADHICS V2 requires that any cloud environment used for health information be physically hosted within the UAE, including backup and disaster recovery systems. The described data flow processes data in a European data centre and backs it up in another European country, which directly violates this requirement. No exception to this hosting rule is stated in the provided passages.",
+    "provisions": [
+     "DOH-ADHICS-V2:0085"
+    ],
+    "proposed_action": {
+     "class": "withhold",
+     "text": "The step cannot proceed because the cloud environment is not physically hosted within the UAE as required."
+    },
+    "confidence": "high",
+    "open_questions": [
+     "Does any applicable exception under sector-specific legislation or a Health Authority decision permit storage of health data outside the UAE?"
+    ],
+    "citation_violations": [],
+    "retrieved": [
+     "DOH-ADHICS-V2:0094",
+     "DOH-ADHICS-V2:0055",
+     "DOH-ADHICS-V2:0021",
+     "DOH-ADHICS-V2:0082",
+     "DOH-ADHICS-V2:0085",
+     "DOH-ADHICS-V2:0004"
+    ],
+    "draft_reply_to_member": null,
+    "guard": {
+     "violations": []
+    }
+   }
+  ],
+  "verification": [
+   {
+    "agent": "coach",
+    "citations": [],
+    "citation_violations": []
+   },
+   {
+    "agent": "clinic",
+    "citations": [
+     {
+      "chunk_id": "DHA-HIS-2024:0023",
+      "exists": true,
+      "rank": 2,
+      "support": "supported",
+      "citation": "[DHA-HIS-2024] §4.13 Sharing Protected Health Information through Mailing/Posting/Courier, PDF pp.25-26",
+      "locator": "§4.13 Sharing Protected Health Information through Mailing/Posting/Courier, PDF pp.25-26",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "section": "§4.13 Sharing Protected Health Information through Mailing/Posting/Courier",
+      "jurisdiction": "dubai",
+      "caveats": []
+     },
+     {
+      "chunk_id": "DHA-HIS-2024:0017",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DHA-HIS-2024] §3 In cases of Public safety emergencies to maintain the health and, PDF pp.18-19",
+      "locator": "§3 In cases of Public safety emergencies to maintain the health and, PDF pp.18-19",
+      "url": "https://www.dha.gov.ae/uploads/082024/Policy%20for%20Health%20Information%20Sharing_EN202480306.pdf",
+      "section": "§3 In cases of Public safety emergencies to maintain the health and",
+      "jurisdiction": "dubai",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   },
+   {
+    "agent": "authority",
+    "citations": [
+     {
+      "chunk_id": "DOH-ADHICS-V2:0085",
+      "exists": true,
+      "rank": 1,
+      "support": "supported",
+      "citation": "[DOH-ADHICS-V2] §1 Implement the Shared responsibility model for information, PDF p.95",
+      "locator": "§1 Implement the Shared responsibility model for information, PDF p.95",
+      "url": "https://www.doh.gov.ae/-/media/78A323607B4C4ACAA58D0C9ACCFB3D59.ashx",
+      "section": "§1 Implement the Shared responsibility model for information",
+      "jurisdiction": "abu-dhabi",
+      "caveats": []
+     }
+    ],
+    "citation_violations": []
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "jurisdiction-spread",
+    "jurisdictions": [
+     "abu-dhabi",
+     "dubai"
+    ],
+    "detail": "cited provisions come from more than one of federal / Dubai / Abu Dhabi: which applies must be settled by a human"
+   }
+  ],
+  "adviser_answers": [
+   {
+    "question": "patient consent required before sharing health information with another healthcare facility",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DOH-HIE-2020:0022",
+     "DOH-HIE-2020:0023",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0013",
+     "DHA-MEDAD-2022:0015"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says that patient consent is generally required before sharing health information or patient data with another healthcare facility, whether through the ADHIE/HIE or via direct medical record transfers. Under the Abu Dhabi DOH policy, healthcare facilities must obtain patient consent for sharing data via the ADHIE, but are authorized to share it notwithstanding unavailability of consent (such as for legacy data) as mandated by the regulator. Under the Dubai DHA policy, consent is also required for sharing protected health information, with specific exceptions for public safety emergencies, police requests, or when the patient is a minor or incapable of providing consent. In these exceptional cases, the consent of a parent or legal guardian is required instead. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DOH-HIE-2020:0022",
+     "DOH-HIE-2020:0023",
+     "DHA-HIS-2024:0017",
+     "DHA-HIS-2024:0013",
+     "DHA-MEDAD-2022:0015"
+    ],
+    "conditions": [
+     "The specific jurisdiction and regulatory authority (DOH for Abu Dhabi or DHA for Dubai) must be identified, as the policies and exceptions differ.",
+     "The patient's capacity, age, and availability must be assessed to determine if personal consent is required or if parental/guardian consent applies.",
+     "It must be verified if the data sharing falls under an exception (e.g., public safety emergencies, police requests, or legacy data) that permits sharing without patient consent.",
+     "The current effective status of the policies (e.g., whether the DOH 2020 policy has been replaced) must be confirmed before relying on them."
+    ],
+    "binding": false,
+    "caveats": [
+     "currency-unconfirmed"
+    ],
+    "for_human": [],
+    "query_used": "patient consent sharing health information facility",
+    "queries_tried": [
+     {
+      "query": "patient consent required before sharing health information with another healthcare facility",
+      "evidence": "weak",
+      "top_score": 19.251
+     },
+     {
+      "query": "patient consent sharing health information facility",
+      "evidence": "strong",
+      "top_score": 16.224
+     },
+     {
+      "query": "health data transfer consent between facilities",
+      "evidence": "weak",
+      "top_score": 12.574
+     },
+     {
+      "query": "approval for patient data sharing with facility",
+      "evidence": "weak",
+      "top_score": 12.253
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "what must a telehealth provider do before sharing patient information with another facility",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "DHA-TELEHEALTH-POL-2021:0003",
+     "DHA-TELEHEALTH-POL-2021:0002",
+     "DHA-TELEHEALTH-STD-V4:0039",
+     "DHA-TELEHEALTH-STD-V4:0021",
+     "DHA-TELEHEALTH-STD-V4:0022"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "the text says that before sharing patient information with another facility, a telehealth provider must obtain the patient’s consent before transferring their information to another entity for the provision of telehealth services. The transfer of information must be within the limits of need required by the patient's health condition. The provider must also adopt accurate procedures on how to transfer, save, store, protect, and maintain the confidentiality of the patient's data. Furthermore, if an alternative service provider is recommended, the physician must ensure all necessary patient information and data is transferred through patient consent. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "DHA-TELEHEALTH-POL-2021:0003",
+     "DHA-TELEHEALTH-STD-V4:0039"
+    ],
+    "conditions": [
+     "The DHA Telehealth Policy (v1, 2021) has a stated revision date of 2026-08-16 which has passed, meaning a newer version may exist and should be checked before relying on it.",
+     "The DHA Standards for Telehealth Services (Version 4) is effective from 2025-11-26, but users should verify if it is the most current version in force.",
+     "The patient's consent must be explicitly obtained and the transfer must be limited to what is necessary for the patient's health condition."
+    ],
+    "binding": false,
+    "caveats": [
+     "clinical-unreviewed",
+     "currency-unconfirmed",
+     "revision-date-passed"
+    ],
+    "for_human": [],
+    "query_used": "telehealth provider approval before transferring patient data",
+    "queries_tried": [
+     {
+      "query": "what must a telehealth provider do before sharing patient information with another facility",
+      "evidence": "strong",
+      "top_score": 17.667
+     },
+     {
+      "query": "patient consent required for sharing information with facility",
+      "evidence": "strong",
+      "top_score": 16.554
+     },
+     {
+      "query": "telehealth provider approval before transferring patient data",
+      "evidence": "strong",
+      "top_score": 18.242
+     },
+     {
+      "query": "rules for transferring patient data to another facility",
+      "evidence": "weak",
+      "top_score": 11.44
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "What is the specific Health Authority decision that defines the permitted exceptions for storing or transmitting health data outside the UAE?",
+    "asked_by": "coordinator",
+    "evidence": "strong",
+    "retrieved": [
+     "UAE-FL2-2019:0016",
+     "MOHAP-MD51-2021:0001",
+     "DHA-TELEHEALTH-POL-2021:0005",
+     "UAE-FL2-2019:0015",
+     "UAE-FL2-2019:0003"
+    ],
+    "outcome": "ruling",
+    "abstain_reason": null,
+    "ruling": "The text says the permitted exceptions are set out in Ministerial Resolution No. (51) of 2021 regarding the cases in which health data and information may be stored or transferred outside the country, which the DHA Telehealth Policy cites as an addendum to Federal Law No. (2) of 2019. Article 13 of that Law provides that health data may not be stored, processed, generated or transmitted outside the State unless in cases defined by decision of the Health Authority in coordination with the Ministry. The MOHAP brief summarizes the resolution's cases, including treatment abroad, samples sent to foreign laboratories, insurance institutions under specific conditions, simple medical devices, other approved data with copies kept in the UAE, and encrypted scientific research data. However, the MOHAP entry is expressly a summary, not the full binding text (the full text is an Arabic PDF), so the exact article numbers and full conditions are not settled by these passages. (Note added by the system: the cited documents are guidance, standards or summaries, not binding law.)",
+    "provisions": [
+     "UAE-FL2-2019:0016",
+     "MOHAP-MD51-2021:0001",
+     "DHA-TELEHEALTH-POL-2021:0005"
+    ],
+    "conditions": [
+     "Confirm the full Arabic text of Ministerial Resolution No. (51) of 2021, since the MOHAP entry is only a summary and not the binding text.",
+     "Verify the resolution remains in force and has not been amended or replaced.",
+     "Confirm whether the 'decision of the Health Authority in coordination with the Ministry' under Article 13 is satisfied by this Ministerial Resolution or requires a separate Health Authority decision.",
+     "Check for a newer version of the DHA Telehealth Policy, whose stated revision date has passed."
+    ],
+    "binding": false,
+    "caveats": [
+     "clinical-unreviewed",
+     "currency-unconfirmed",
+     "revision-date-passed",
+     "summary-only"
+    ],
+    "for_human": [],
+    "query_used": "Health Authority decision exceptions storing health data outside State",
+    "queries_tried": [
+     {
+      "query": "What is the specific Health Authority decision that defines the permitted exceptions for storing or transmitting health data outside the UAE?",
+      "evidence": "weak",
+      "top_score": 25.309
+     },
+     {
+      "query": "Health Authority decision exceptions storing health data outside State",
+      "evidence": "strong",
+      "top_score": 22.21
+     },
+     {
+      "query": "permitted cases transfer health data outside State Health Authority",
+      "evidence": "strong",
+      "top_score": 21.706
+     },
+     {
+      "query": "health data storage transmission outside State exceptions decision",
+      "evidence": "weak",
+      "top_score": 19.6
+     }
+    ],
+    "rejected_citations": []
+   },
+   {
+    "question": "Does any applicable exception under sector-specific legislation or a Health Authority decision permit storage of health data outside the UAE?",
+    "asked_by": "coordinator",
+    "evidence": "weak",
+    "retrieved": [
+     "UAE-PDPL-2021:0016",
+     "UAE-PDPL-2021:0017",
+     "UAE-PDPL-2021:0018",
+     "DOH-ADHICS-V2:0080",
+     "DHA-HIS-2024:0015"
+    ],
+    "query_used": "cross-border transfer health data Health Authority approval",
+    "queries_tried": [
+     {
+      "query": "Does any applicable exception under sector-specific legislation or a Health Authority decision permit storage of health data outside the UAE?",
+      "evidence": "weak",
+      "top_score": 18.938
+     },
+     {
+      "query": "health data storage outside the State exception",
+      "evidence": "weak",
+      "top_score": 16.817
+     },
+     {
+      "query": "cross-border transfer health data Health Authority approval",
+      "evidence": "weak",
+      "top_score": 21.359
+     },
+     {
+      "query": "health data localization exception sector-specific legislation",
+      "evidence": "none",
+      "top_score": 9.173
+     }
+    ],
+    "rejected_citations": [],
+    "outcome": "abstain",
+    "abstain_reason": "evidence-weak",
+    "ruling": null,
+    "provisions": [],
+    "binding": false,
+    "caveats": [],
+    "for_human": [
+     {
+      "chunk_id": "UAE-PDPL-2021:0016",
+      "citation": "[UAE-PDPL-2021] Art. 22 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "score": 21.359
+     },
+     {
+      "chunk_id": "UAE-PDPL-2021:0017",
+      "citation": "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "score": 20.818
+     },
+     {
+      "chunk_id": "UAE-PDPL-2021:0018",
+      "citation": "[UAE-PDPL-2021] Art. 23 Cross-Border Transfer and Sharing of Personal Data for Processing Purposes if a Pr",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "score": 19.742
+     }
+    ]
+   }
+  ],
+  "action": {
+   "class": "withhold",
+   "text": "Withhold the transfer of the wearable history to the clinic until a human reviewer confirms the legal basis for cross-border data processing and obtains valid explicit consent.",
+   "from": "coach"
+  },
+  "owner": "Miqyas operator",
+  "needs_human": true,
+  "needs_human_reasons": [
+   "touches data-transfer",
+   "touches clinical",
+   "conflict: jurisdiction-spread",
+   "adviser abstained (evidence-weak): Does any applicable exception under sector-specific legislation or a Health Auth"
+  ],
+  "approval": {
+   "status": "pending"
+  },
+  "kb_build_id": "20261026T1648Z",
+  "reasoning_trace": {
+   "coach": {
+    "finding": "The text says that health information and data related to health services provided in the UAE may not be stored, processed, generated, or transmitted outside the State, unless in cases defined by a decision of the Health Authority in coordination with the Ministry. The supplied passages do not contain the specific Health Authority decision that would define permitted exceptions for cross-border transfer, nor do they confirm the country of the BandCo cloud or whether the in-app notice constitutes valid explicit consent for such a transfer. Therefore, the legal basis for passing the wearable history to the clinic, particularly if it involves cross-border processing, cannot be established from the provided evidence.",
+    "provisions": [],
+    "confidence": "low"
+   },
+   "clinic": {
+    "finding": "The text states that health data and information should only be disclosed when the consent of the Data Subject/Patient has been obtained, and that consent must be obtained before sharing Protected Health Information (PHI). The clinic's current consent form lists only lab results, which does not explicitly cover the 'all wearable data' requested in the intake form. Therefore, the clinic may not receive the wearable data under the current consent scope.",
+    "provisions": [
+     "DHA-HIS-2024:0023",
+     "DHA-HIS-2024:0017"
+    ],
+    "confidence": "high"
+   },
+   "authority": {
+    "finding": "The ADHICS V2 requires that any cloud environment used for health information be physically hosted within the UAE, including backup and disaster recovery systems. The described data flow processes data in a European data centre and backs it up in another European country, which directly violates this requirement. No exception to this hosting rule is stated in the provided passages.",
+    "provisions": [
+     "DOH-ADHICS-V2:0085"
+    ],
+    "confidence": "high"
+   }
+  }
+ }
+]

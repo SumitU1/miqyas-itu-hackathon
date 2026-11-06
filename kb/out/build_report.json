@@ -1,0 +1,219 @@
+{
+  "build_id": "20261026T1648Z",
+  "chunk_words": 256,
+  "overlap_words": 30,
+  "sources": {
+    "ITU-Y3172": {
+      "file": "ITU-Y3172.pdf",
+      "status": "ingested",
+      "chunks": 46,
+      "words": 11555,
+      "empty_pages": [
+        6,
+        32,
+        33
+      ]
+    },
+    "ITU-AIREADY-2": {
+      "file": "ITU-AIREADY-2.pdf",
+      "status": "ingested",
+      "chunks": 76,
+      "words": 19279,
+      "empty_pages": []
+    },
+    "UAE-FL2-2019": {
+      "file": "DOH-ENC-BOOK10.pdf",
+      "status": "ingested",
+      "chunks": 34,
+      "words": 2697,
+      "empty_pages": []
+    },
+    "UAE-CR32-2020": {
+      "file": "DOH-ENC-BOOK10.pdf",
+      "status": "ingested",
+      "chunks": 16,
+      "words": 2303,
+      "empty_pages": [
+        37,
+        38
+      ]
+    },
+    "MOHAP-MD51-2021": {
+      "file": "MOHAP-MD51-2021.txt",
+      "status": "ingested",
+      "chunks": 1,
+      "words": 170,
+      "empty_pages": []
+    },
+    "UAE-PDPL-2021": {
+      "file": "UAE-PDPL-2021.txt",
+      "status": "ingested",
+      "chunks": 18,
+      "words": 3149,
+      "empty_pages": []
+    },
+    "DHA-AI-2021": {
+      "file": "DHA-AI-2021.pdf",
+      "status": "ingested",
+      "chunks": 13,
+      "words": 3267,
+      "empty_pages": []
+    },
+    "DOH-AI-2018": {
+      "file": "DOH-AI-2018.pdf",
+      "status": "ingested",
+      "chunks": 11,
+      "words": 2597,
+      "empty_pages": []
+    },
+    "DHA-TELEHEALTH-POL-2021": {
+      "file": "DHA-TELEHEALTH-POL-2021.pdf",
+      "status": "ingested",
+      "chunks": 5,
+      "words": 1164,
+      "empty_pages": []
+    },
+    "DHA-TELEHEALTH-STD-V4": {
+      "file": "DHA-TELEHEALTH-STD-V4.pdf",
+      "status": "ingested",
+      "chunks": 76,
+      "words": 19256,
+      "empty_pages": []
+    },
+    "DHA-HIS-2024": {
+      "file": "DHA-HIS-2024.pdf",
+      "status": "ingested",
+      "chunks": 36,
+      "words": 9017,
+      "empty_pages": []
+    },
+    "DOH-HIE-2020": {
+      "file": "DOH-HIE-2020.pdf",
+      "status": "ingested",
+      "chunks": 55,
+      "words": 14056,
+      "empty_pages": []
+    },
+    "DOH-ADHICS-V2": {
+      "file": "DOH-ADHICS-V2.pdf",
+      "status": "ingested",
+      "chunks": 116,
+      "words": 29588,
+      "empty_pages": [
+        26
+      ]
+    },
+    "DHA-MEDAD-2022": {
+      "file": "DHA-MEDAD-2022.pdf",
+      "status": "ingested",
+      "chunks": 24,
+      "words": 5921,
+      "empty_pages": []
+    },
+    "MOHAP-HEALTHAD-GUIDE": {
+      "file": "MOHAP-HEALTHAD-GUIDE.pdf",
+      "status": "ingested",
+      "chunks": 4,
+      "words": 840,
+      "empty_pages": []
+    },
+    "MOHAP-PROMO-CODE-2017": {
+      "file": "MOHAP-PROMO-CODE-2017.pdf",
+      "status": "ingested",
+      "chunks": 22,
+      "words": 5579,
+      "empty_pages": []
+    },
+    "NMC-AD-GUIDE": {
+      "file": "NMC-AD-GUIDE.pdf",
+      "status": "ingested",
+      "chunks": 12,
+      "words": 3005,
+      "empty_pages": []
+    },
+    "TDRA-TAR-POLICY-V3": {
+      "file": "TDRA-TAR-POLICY-V3.pdf",
+      "status": "ingested",
+      "chunks": 9,
+      "words": 2101,
+      "empty_pages": []
+    },
+    "TDRA-TAR-REG-V3": {
+      "file": "TDRA-TAR-REG-V3.pdf",
+      "status": "ingested",
+      "chunks": 25,
+      "words": 5717,
+      "empty_pages": []
+    },
+    "TDRA-IOT-PROC-V1": {
+      "file": "TDRA-IOT-PROC-V1.pdf",
+      "status": "ingested",
+      "chunks": 6,
+      "words": 1498,
+      "empty_pages": []
+    },
+    "UAE-AI-CHARTER-2024": {
+      "file": "UAE-AI-CHARTER-2024.pdf",
+      "status": "ingested",
+      "chunks": 3,
+      "words": 649,
+      "empty_pages": []
+    },
+    "UAE-AI-STRATEGY-2031": {
+      "file": "UAE-AI-STRATEGY-2031.pdf",
+      "status": "ingested",
+      "chunks": 44,
+      "words": 11250,
+      "empty_pages": [
+        1,
+        25
+      ]
+    },
+    "DUBAI-AI-ETHICS-2022": {
+      "file": "DUBAI-AI-ETHICS-2022.pdf",
+      "status": "ingested",
+      "chunks": 37,
+      "words": 9432,
+      "empty_pages": [
+        25
+      ]
+    },
+    "UAE-FDL38-2024": {
+      "file": "UAE-FDL38-2024.pdf",
+      "status": "not-ingested: file absent (manual-pending)",
+      "chunks": 0,
+      "words": 0,
+      "empty_pages": []
+    },
+    "UAE-FL15-2020": {
+      "file": "UAE-FL15-2020.pdf",
+      "status": "not-ingested: file absent (manual-pending)",
+      "chunks": 0,
+      "words": 0,
+      "empty_pages": []
+    },
+    "UAE-FDL4-2016": {
+      "file": "UAE-FDL4-2016.pdf",
+      "status": "not-ingested: file absent (manual-pending)",
+      "chunks": 0,
+      "words": 0,
+      "empty_pages": []
+    },
+    "WHO-AI-HEALTH-2021": {
+      "file": "WHO-AI-HEALTH-2021.pdf",
+      "status": "not-ingested: file absent (manual-pending)",
+      "chunks": 0,
+      "words": 0,
+      "empty_pages": []
+    }
+  },
+  "warnings": [
+    "ITU-Y3172: 3 page(s) with no text layer (needs OCR): [6, 32, 33]",
+    "UAE-CR32-2020: 2 page(s) with no text layer (needs OCR): [37, 38]",
+    "DOH-ADHICS-V2: 1 page(s) with no text layer (needs OCR): [26]",
+    "UAE-AI-STRATEGY-2031: 2 page(s) with no text layer (needs OCR): [1, 25]",
+    "DUBAI-AI-ETHICS-2022: 1 page(s) with no text layer (needs OCR): [25]"
+  ],
+  "total_chunks": 689,
+  "total_words": 164090
+}

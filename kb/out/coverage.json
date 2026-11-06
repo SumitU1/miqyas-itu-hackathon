@@ -1,0 +1,449 @@
+{
+  "generated": "2026-10-28 19:08 UTC",
+  "rows": [
+    {
+      "id": "ITU-Y3172",
+      "ingested": true,
+      "method": "http",
+      "chunks": 46,
+      "words": 11555,
+      "pages_covered": 34,
+      "pages_expected": null,
+      "empty_pages": [
+        6,
+        32,
+        33
+      ],
+      "kind": "standard",
+      "jurisdiction": "international",
+      "version_status": "in force",
+      "partial": false
+    },
+    {
+      "id": "ITU-AIREADY-2",
+      "ingested": true,
+      "method": "http",
+      "chunks": 76,
+      "words": 19279,
+      "pages_covered": 55,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "standard",
+      "jurisdiction": "international",
+      "version_status": "current",
+      "partial": false
+    },
+    {
+      "id": "UAE-FL2-2019",
+      "ingested": true,
+      "method": "http",
+      "chunks": 34,
+      "words": 2697,
+      "pages_covered": 12,
+      "pages_expected": 12,
+      "empty_pages": [],
+      "kind": "law",
+      "jurisdiction": "federal",
+      "version_status": "in force",
+      "partial": false
+    },
+    {
+      "id": "UAE-CR32-2020",
+      "ingested": true,
+      "method": "http",
+      "chunks": 16,
+      "words": 2303,
+      "pages_covered": 12,
+      "pages_expected": 12,
+      "empty_pages": [
+        37,
+        38
+      ],
+      "kind": "regulation",
+      "jurisdiction": "federal",
+      "version_status": "in force (effective 2020-10-30 per the legislation portal)",
+      "partial": false
+    },
+    {
+      "id": "MOHAP-MD51-2021",
+      "ingested": true,
+      "method": "browser",
+      "chunks": 1,
+      "words": 170,
+      "pages_covered": null,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "regulation",
+      "jurisdiction": "federal",
+      "version_status": "in force; THIS ENTRY IS THE MINISTRY'S SUMMARY, not the full text (full text is an Arabic PDF)",
+      "partial": true
+    },
+    {
+      "id": "UAE-PDPL-2021",
+      "ingested": true,
+      "method": "browser",
+      "chunks": 18,
+      "words": 3149,
+      "pages_covered": null,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "law",
+      "jurisdiction": "federal",
+      "version_status": "in force from 2022-01-02. Executive Regulations: status NOT confirmed by this project",
+      "partial": true
+    },
+    {
+      "id": "DHA-AI-2021",
+      "ingested": true,
+      "method": "http",
+      "chunks": 13,
+      "words": 3267,
+      "pages_covered": 17,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "policy",
+      "jurisdiction": "dubai",
+      "version_status": "issued 2021-07-01, effective 2021-10-01; stated revision date 2026-07-01 has PASSED: check for a newer version",
+      "partial": false
+    },
+    {
+      "id": "DOH-AI-2018",
+      "ingested": true,
+      "method": "http",
+      "chunks": 11,
+      "words": 2597,
+      "pages_covered": 11,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "policy",
+      "jurisdiction": "abu-dhabi",
+      "version_status": "version 0.9, April 2018; not confirmed whether replaced",
+      "partial": false
+    },
+    {
+      "id": "DHA-TELEHEALTH-POL-2021",
+      "ingested": true,
+      "method": "http",
+      "chunks": 5,
+      "words": 1164,
+      "pages_covered": 5,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "policy",
+      "jurisdiction": "dubai",
+      "version_status": "issued 2021-08-16; stated revision date 2026-08-16 has PASSED: check for a newer version",
+      "partial": false
+    },
+    {
+      "id": "DHA-TELEHEALTH-STD-V4",
+      "ingested": true,
+      "method": "http",
+      "chunks": 76,
+      "words": 19256,
+      "pages_covered": 94,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "standard",
+      "jurisdiction": "dubai",
+      "version_status": "Version 4, issued 2025-09-26, effective 2025-11-26",
+      "partial": false
+    },
+    {
+      "id": "DHA-HIS-2024",
+      "ingested": true,
+      "method": "http",
+      "chunks": 36,
+      "words": 9017,
+      "pages_covered": 39,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "policy",
+      "jurisdiction": "dubai",
+      "version_status": "issued 2024-08-10, effective 2024-11-10",
+      "partial": false
+    },
+    {
+      "id": "DOH-HIE-2020",
+      "ingested": true,
+      "method": "http",
+      "chunks": 55,
+      "words": 14056,
+      "pages_covered": 44,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "policy",
+      "jurisdiction": "abu-dhabi",
+      "version_status": "effective 2020-04-16; not confirmed whether replaced",
+      "partial": false
+    },
+    {
+      "id": "DOH-ADHICS-V2",
+      "ingested": true,
+      "method": "http",
+      "chunks": 116,
+      "words": 29588,
+      "pages_covered": 137,
+      "pages_expected": null,
+      "empty_pages": [
+        26
+      ],
+      "kind": "standard",
+      "jurisdiction": "abu-dhabi",
+      "version_status": "V2, published May 2024, effective August 2024",
+      "partial": false
+    },
+    {
+      "id": "DHA-MEDAD-2022",
+      "ingested": true,
+      "method": "http",
+      "chunks": 24,
+      "words": 5921,
+      "pages_covered": 28,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "standard",
+      "jurisdiction": "dubai",
+      "version_status": "v1.1, issued 2022-08-03, effective 2022-10-03",
+      "partial": false
+    },
+    {
+      "id": "MOHAP-HEALTHAD-GUIDE",
+      "ingested": true,
+      "method": "http",
+      "chunks": 4,
+      "words": 840,
+      "pages_covered": 4,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "guideline",
+      "jurisdiction": "federal",
+      "version_status": "date not stated in the document; check currency",
+      "partial": false
+    },
+    {
+      "id": "MOHAP-PROMO-CODE-2017",
+      "ingested": true,
+      "method": "http",
+      "chunks": 22,
+      "words": 5579,
+      "pages_covered": 15,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "guideline",
+      "jurisdiction": "federal",
+      "version_status": "Nov 2017; may predate Federal Decree-Law 38/2024",
+      "partial": false
+    },
+    {
+      "id": "NMC-AD-GUIDE",
+      "ingested": true,
+      "method": "http",
+      "chunks": 12,
+      "words": 3005,
+      "pages_covered": 17,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "guideline",
+      "jurisdiction": "federal",
+      "version_status": "pre-2023 guide: may be superseded by the current media law and executive regulations; check currency",
+      "partial": false
+    },
+    {
+      "id": "TDRA-TAR-POLICY-V3",
+      "ingested": true,
+      "method": "http",
+      "chunks": 9,
+      "words": 2101,
+      "pages_covered": 9,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "policy",
+      "jurisdiction": "federal",
+      "version_status": "Version 3.0, issued 2022-05-09",
+      "partial": false
+    },
+    {
+      "id": "TDRA-TAR-REG-V3",
+      "ingested": true,
+      "method": "http",
+      "chunks": 25,
+      "words": 5717,
+      "pages_covered": 22,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "regulation",
+      "jurisdiction": "federal",
+      "version_status": "Version 3.0, issued 2022-05-09",
+      "partial": false
+    },
+    {
+      "id": "TDRA-IOT-PROC-V1",
+      "ingested": true,
+      "method": "http",
+      "chunks": 6,
+      "words": 1498,
+      "pages_covered": 8,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "regulation",
+      "jurisdiction": "federal",
+      "version_status": "Version 1; the companion IoT Regulatory Policy (English) was NOT located as a primary document",
+      "partial": false
+    },
+    {
+      "id": "UAE-AI-CHARTER-2024",
+      "ingested": true,
+      "method": "http",
+      "chunks": 3,
+      "words": 649,
+      "pages_covered": 6,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "strategy",
+      "jurisdiction": "federal",
+      "version_status": "current; non-binding guidance",
+      "partial": false
+    },
+    {
+      "id": "UAE-AI-STRATEGY-2031",
+      "ingested": true,
+      "method": "http",
+      "chunks": 44,
+      "words": 11250,
+      "pages_covered": 23,
+      "pages_expected": null,
+      "empty_pages": [
+        1,
+        25
+      ],
+      "kind": "strategy",
+      "jurisdiction": "federal",
+      "version_status": "current strategy document",
+      "partial": false
+    },
+    {
+      "id": "DUBAI-AI-ETHICS-2022",
+      "ingested": true,
+      "method": "http",
+      "chunks": 37,
+      "words": 9432,
+      "pages_covered": 24,
+      "pages_expected": null,
+      "empty_pages": [
+        25
+      ],
+      "kind": "guideline",
+      "jurisdiction": "dubai",
+      "version_status": "Dec 2022 edition; non-binding",
+      "partial": false
+    },
+    {
+      "id": "UAE-FDL38-2024",
+      "ingested": false,
+      "method": "manual-pending",
+      "chunks": 0,
+      "words": 0,
+      "pages_covered": null,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "law",
+      "jurisdiction": "federal",
+      "version_status": "in force from 2025-01-02 with a one-year grace period (per law-firm summaries; not verified against the text)",
+      "partial": false
+    },
+    {
+      "id": "UAE-FL15-2020",
+      "ingested": false,
+      "method": "manual-pending",
+      "chunks": 0,
+      "words": 0,
+      "pages_covered": null,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "law",
+      "jurisdiction": "federal",
+      "version_status": "in force; amended by Federal Decree-Law 5/2023 (per secondary summaries, unverified)",
+      "partial": false
+    },
+    {
+      "id": "UAE-FDL4-2016",
+      "ingested": false,
+      "method": "manual-pending",
+      "chunks": 0,
+      "words": 0,
+      "pages_covered": null,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "law",
+      "jurisdiction": "federal",
+      "version_status": "in force; executive regulations are Cabinet Resolution 40/2019 (per secondary summaries, unverified)",
+      "partial": false
+    },
+    {
+      "id": "WHO-AI-HEALTH-2021",
+      "ingested": false,
+      "method": "manual-pending",
+      "chunks": 0,
+      "words": 0,
+      "pages_covered": null,
+      "pages_expected": null,
+      "empty_pages": [],
+      "kind": "guideline",
+      "jurisdiction": "international",
+      "version_status": "2021 guidance",
+      "partial": false
+    }
+  ],
+  "checks": [
+    {
+      "check": "every chunk carries all citation fields",
+      "ok": true,
+      "detail": "689 chunks checked"
+    },
+    {
+      "check": "chunk ids are unique",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "every chunk points to a registered source",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "chunk text hashes recompute",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "raw files match the download manifest",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "public export is excerpt-only for excerpt sources (<= 60 words + marker)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no source is marked 'full' redistribution without a licence review",
+      "ok": true,
+      "detail": "all sources are excerpt-only"
+    },
+    {
+      "check": "every ingested source has a canonical URL",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "all chunks marked not-legally-reviewed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "clinical-content sources labelled clinical-unreviewed",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
